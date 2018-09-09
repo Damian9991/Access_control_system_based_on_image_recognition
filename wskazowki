@@ -1,0 +1,3 @@
+Jezeli skrypt do rozpoznawania twarzy nie dziala to nalezy odpalic skrypt test.py 
+Jezeli on zwraca False i None to wydac polecenie: sudo modprobe bcm2835-v4l2 
+https://www.raspberrypi.org/forums/viewtopic.php?f=43&t=62364
