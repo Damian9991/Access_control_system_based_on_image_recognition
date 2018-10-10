@@ -59,5 +59,3 @@ class FaceRecognition:
                     return True
         else:
             return False
-
-x = FaceRecognition()
