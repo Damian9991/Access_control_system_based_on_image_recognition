@@ -43,9 +43,9 @@ class FaceRecognition:
     def remove_face_from_collection(self, face_id):
         self.client.delete_faces(CollectionId=self.collection_id_faces, FaceIds=[face_id])
 
-    def check_if_face_in_collection(self, path):
-        image_name = datetime.datetime.now().strftime("%d%m%Y_%H%M%S.jpg")
-        upload_image_to_s3_bucket(path, self.faces_bucket, image_name)
+    def check_if_face_in_collection(self, image_path):
+        image_name = datetime.datetime.now().strftime("face_%d%m%Y_%H%M%S.jpg")
+        upload_image_to_s3_bucket(image_path, self.faces_bucket, image_name)
         threshold = 80
         response_dict = self.client.search_faces_by_image(CollectionId=self.collection_id_faces,
                                                           Image={'S3Object': {'Bucket': self.faces_bucket, 'Name': image_name}},
@@ -54,10 +54,10 @@ class FaceRecognition:
         face_matches = response_dict['FaceMatches']
         if face_matches:
             for match in face_matches:
-                print(path)
+                print(image_path)
                 print('FaceId:' + match['Face']['FaceId'])
                 print('Similarity: ' + "{:.2f}".format(match['Similarity']) + "%")
-                if match["Similarity"] > 90:
+                if match["Similarity"] > 80:
                     return True
         else:
             return False
