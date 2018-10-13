@@ -42,7 +42,7 @@ def upload_image_to_s3_bucket(path, bucket, image_name):
     s3.meta.client.upload_file(path, bucket, image_name)
 
 
-def add_to_json_file(licence_plate, name_list):
+def add_licence_plate_number_to_database(licence_plate, name_list):
     licence_plate_hash = create_hash(licence_plate)
     name_list_hash = []
     for name in name_list:
