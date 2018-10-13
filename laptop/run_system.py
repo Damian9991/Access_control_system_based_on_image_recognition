@@ -223,7 +223,6 @@ def get_arguments(parser):
 	args = vars(parser.parse_args())
 
 if __name__ == "__main__":
-	pass	
 	parser = argparse.ArgumentParser(description="Access_control_system_based_on_image_recognition")
 	args = Get_arguments(parser)
 	raspberry_face_ip = args['raspberry_face']
