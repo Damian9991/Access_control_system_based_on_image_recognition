@@ -20,30 +20,29 @@ def capture_video(video_source):
             gray,
             scaleFactor=1.1,
             minNeighbors=5,
-            minSize=(30, 30),
+            minSize=(70, 70),
             flags=cv2.cv.CV_HAAR_SCALE_IMAGE
         )
 
+
         # Draw a rectangle around the faces
-#        for (x, y, w, h) in faces:
-#            cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
-        if len(faces) > 0:
-            img_name = "opencv_frame_{}.png".format(img_counter)
-            resize = cv2.resize(frame, (600, 400))
-            cv2.imwrite(img_name, resize)
-            print("{} written!".format(img_name))
-            img_counter += 1
-            time.sleep(5) 
+        for (x, y, w, h) in faces:
+            cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
 
-
-        # Display the resulting frame
-        cv2.imshow('Video', frame)
+#        print(len(faces))
+#        if len(faces) > 0:
+#            img_name = "opencv_frame_{}.png".format(img_counter)
+#            resize = cv2.resize(frame, (500, 300))
+#            cv2.imwrite(img_name, resize)
+#            print("{} written!".format(img_name))
+#            img_counter += 1
+#            time.sleep(5)
+#            video_capture = cv2.VideoCapture(video_source)
 
         if cv2.waitKey(1) & 0xFF == ord('q'):
             video_capture.release()
             cv2.destroyAllWindows()
             break
-
 
 #        if cv2.waitKey(1)%256 == 32:
 #            # SPACE pressed
@@ -52,6 +51,9 @@ def capture_video(video_source):
 #            cv2.imwrite(img_name, resize)
 #            print("{} written!".format(img_name))
 #            img_counter += 1
+
+       # Display the resulting frame
+        cv2.imshow('Video', frame)
 
 
 
