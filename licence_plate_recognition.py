@@ -19,7 +19,6 @@ class LicencePlateRecognition:
         detected_texts_dict = response['TextDetections']
         for text_dict in detected_texts_dict:
             if text_dict['Confidence'] > 80 and self.check_if_text_matches_to_licence_plate_regex(text_dict['DetectedText']):
-                # print(text_dict['DetectedText'])
                 return text_dict['DetectedText']
 
     @staticmethod
@@ -29,6 +28,3 @@ class LicencePlateRecognition:
             if re.fullmatch(regex, text):
                 return True
         return False
-
-x = LicencePlateRecognition()
-x.recognise_licence_plate('')

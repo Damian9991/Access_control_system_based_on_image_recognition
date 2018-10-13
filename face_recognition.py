@@ -54,10 +54,10 @@ class FaceRecognition:
         face_matches = response_dict['FaceMatches']
         if face_matches:
             for match in face_matches:
-                print(image_path)
-                print('FaceId:' + match['Face']['FaceId'])
-                print('Similarity: ' + "{:.2f}".format(match['Similarity']) + "%")
+                # print(match)
+                # print('FaceId:' + match['Face']['FaceId'])
+                # print('Similarity: ' + "{:.2f}".format(match['Similarity']) + "%")
                 if match["Similarity"] > 80:
-                    return True
+                    return match['Face']['ExternalImageId']
         else:
-            return False
+            return None
