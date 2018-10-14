@@ -9,9 +9,11 @@
 #-----------------------------------------------------------
 
 import sqlite3
+import os
+
 import logging
-logger = logging.getLogger("Access_control_system_based_on_image_recognition")
-hdlr = logging.FileHandler(os.popen("pwd").read().replace('\n', '').replace(' ', '') + "/Access_control_system_based_on_image_recognition.log")
+logger = logging.getLogger("sql.log")
+hdlr = logging.FileHandler(os.popen("pwd").read().replace('\n', '').replace(' ', '') + "/sql.log")
 formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 hdlr.setFormatter(formatter)
 logger.addHandler(hdlr)

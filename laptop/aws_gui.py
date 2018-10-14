@@ -19,8 +19,8 @@ from tkinter import *
 from PIL import ImageTk
 
 import logging
-logger = logging.getLogger("Access_control_system_based_on_image_recognition")
-hdlr = logging.FileHandler(os.popen("pwd").read().replace('\n', '').replace(' ', '') + "/Access_control_system_based_on_image_recognition.log")
+logger = logging.getLogger("gui.log")
+hdlr = logging.FileHandler(os.popen("pwd").read().replace('\n', '').replace(' ', '') + "/gui.log")
 formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 hdlr.setFormatter(formatter)
 logger.addHandler(hdlr)
@@ -146,11 +146,11 @@ class StartPage(Frame):
         username = self.nameEntry.get()
         password = self.passwordEntry.get()
 
-        with sqlite3.connect("Users.db") as db:
-            cursor = db.cursor()
-        find_user = ("SELECT * FROM user WHERE username = ? AND password =?")
-        cursor.execute(find_user, [(username), (password)])
-        results = cursor.fetchall()
+#        with sqlite3.connect("Users.db") as db:
+ #           cursor = db.cursor()
+  #      find_user = ("SELECT * FROM user WHERE username = ? AND password =?")
+#        cursor.execute(find_user, [(username), (password)])
+  #      results = cursor.fetchall()
 
         if True:
             tkinter.messagebox.showinfo('Information', 'You have been logged in!')
@@ -341,7 +341,6 @@ class TurnOffMenu(Frame):
         self.controller = controller
 
         self.showText()
-        self.showImg()
         self.addElementsOffMenu()
 
     def Back_home_button(self):
@@ -355,31 +354,10 @@ class TurnOffMenu(Frame):
         text = Label(self, text="Access control system based on image recognition", font=("Helvetica bold", 16), bg="yellow",anchor=CENTER)
         text.place(x=300, y=10)
 
-    def showImg(self):
-        # logLabel.pack()
-        load = PIL.Image.open("mainMenu.png")
-        render = ImageTk.PhotoImage(load)
-
-        # labels can be text or images
-        img = Label(self, image=render)
-        img.Image = render
-        img.place(x=0, y=170)
-
     def addElementsOffMenu(self):
-        load = PIL.Image.open("onStatus.png")
-        render = ImageTk.PhotoImage(load)
-
-        # labels can be text or images
-        img = Label(self, image=render)
-        img.Image = render
-        img.place(x=330, y=45)
 
         self.TurnOffLabel = Label(self, text="Click button below to turn off sensor")
         self.TurnOffLabel.place(x=260, y=150)
-
-        self.load = tk.PhotoImage(file="ooffButton.png")
-        self.TurnOffButton = Button(self, image=self.load, highlightcolor="red", command=lambda: self.entryPIN("turn_off"))
-        self.TurnOffButton.place(x=325, y=180)
 
         self.button = Button(self, text="Back Home", command=lambda: self.entryPIN("back_home"))
         self.button.place(x=330, y=310)
