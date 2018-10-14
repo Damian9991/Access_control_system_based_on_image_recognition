@@ -59,5 +59,4 @@ class FaceRecognition:
                 # print('Similarity: ' + "{:.2f}".format(match['Similarity']) + "%")
                 if match["Similarity"] > 80:
                     return match['Face']['ExternalImageId']
-        else:
-            return None
+        return None
