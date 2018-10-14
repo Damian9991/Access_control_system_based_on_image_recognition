@@ -28,6 +28,10 @@ logger.addHandler(hdlr)
 logger.setLevel(logging.INFO)
 
 
+########################################################################################################################
+#----------------------------------------------SetUpConnections class -------------------------------------------------#
+########################################################################################################################
+
 class SetUpConnections(object):
 
 	""" class is designed to start Access control system based on image recognition system
@@ -79,6 +83,10 @@ class SetUpConnections(object):
 		except AttributeError as err:
 			logger.warning(str(err))
 
+########################################################################################################################
+#----------------------------------------------AwsCommunication class -------------------------------------------------#
+########################################################################################################################
+
 class AwsCommunication(object):
 	""" The class is desgined to communicate with aws cloud system to check whether the detected face is available in aws database
 		-- check whether face is available, similarity should be more than 80%
@@ -109,8 +117,9 @@ class AwsCommunication(object):
 		else:
 			return None
 
-
-
+########################################################################################################################
+#----------------------------------------------RaspberriesObserver class ----------------------------------------------#
+########################################################################################################################
 
 class RaspberriesObserver(object):
 
