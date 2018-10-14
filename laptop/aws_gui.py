@@ -17,6 +17,7 @@ import sys
 import os
 from tkinter import *
 from PIL import ImageTk
+from SQLite import SQLiteManager
 
 import logging
 logger = logging.getLogger("gui.log")
@@ -33,7 +34,6 @@ LARGE_FONT=("Verdana", 12)
 ########################################################################################################################
 
 class GuiManager(tk.Tk):
-
     def __init__(self, *args, **kwargs):
         tk.Tk.__init__(self, *args, **kwargs)
         container = Frame(self)
@@ -41,7 +41,7 @@ class GuiManager(tk.Tk):
         container.grid_rowconfigure(0, weight =1)
         container.grid_columnconfigure(0, weight=1)
 
-        self.label = tk.Label(text="", bg="yellow", font=("Helvetica ", 14))
+        self.label = tk.Label(text="", bg="grey", font=("Helvetica ", 14))
         self.label.place(x=660, y =0)
         self.update_clock()
 
@@ -137,22 +137,27 @@ class StartPage(Frame):
         img.place(x=0, y=50)
 
     def showText(self):
-        text = Label(self, text="Access control system", font=("Helvetica bold", 16), bg ="yellow", anchor= CENTER)
+        text = Label(self, text="Access control system", font=("Helvetica bold", 16), bg ="grey", anchor= CENTER)
         text.place(x=310, y=30)
-        text2 = Label(self, text="based on image recognition", font=("Helvetica bold", 16), bg ="yellow", anchor= CENTER)
+        text2 = Label(self, text="based on image recognition", font=("Helvetica bold", 16), bg ="grey", anchor= CENTER)
         text2.place(x=280, y=60)
 
     def checkUser(self):
+
+        db_name = "aws_system.db"
+        table_name = "users"
+        sqlite3_object = SQLiteManager.SQLiteManager(db_name)
+        try:
+            sqlite3_object.create_or_drop_table("CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)")
+        except sqlite3.OperationalError:
+            pass
+
         username = self.nameEntry.get()
-        password = self.passwordEntry.get()
+        password = sqlite3_object.create_hash_before_add_to_db(self.passwordEntry.get())
 
-#        with sqlite3.connect("Users.db") as db:
- #           cursor = db.cursor()
-  #      find_user = ("SELECT * FROM user WHERE username = ? AND password =?")
-#        cursor.execute(find_user, [(username), (password)])
-  #      results = cursor.fetchall()
+        results = sqlite3_object.select_data(table_name, username, password)
 
-        if True:
+        if results:
             tkinter.messagebox.showinfo('Information', 'You have been logged in!')
             print("Login done")
             a = 1 # Depends which window we want
@@ -413,9 +418,6 @@ class TurnOffMenu(Frame):
 
             if self.action_type == "back_home":
                 self.controller.show_frame(StartPage)
-                self.addElementsOffMenu()
-            elif self.action_type == "turn_off":
-                OpenWindow(self.controller)
                 self.addElementsOffMenu()
 
         else:

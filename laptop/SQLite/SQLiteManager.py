@@ -10,6 +10,7 @@
 
 import sqlite3
 import os
+import hashlib
 
 import logging
 logger = logging.getLogger("sql.log")
@@ -22,29 +23,39 @@ logger.setLevel(logging.INFO)
 
 class SQLiteManager(object):
     def __init__(self, db_name):
-		logger.info("connecting to db: " + db_name)
+        logger.info("connecting to db: " + db_name)
         self.db = sqlite3.connect(db_name)
         self.cursor = self.db.cursor()
 
     def create_or_drop_table(self, command):
-		logger.info("creating or droping table: " + command)
+        logger.info("creating or droping table: " + command)
         self.cursor.execute(command)
         self.db.commit()
 
     def insert_data(self, command):
-		logger.info("inserting data to db: " + command)
+        logger.info("inserting data to db: " + command)
         self.cursor.execute(command)
 
-    def select_data(self, db_name, arg1, arg2):
-		logger.info("checking data in db: " + arg1 + " " + arg2)
-        query = "SELECT * FROM {} WHERE username = ? AND password =?".format(db_name)
-        self.cursor.execute(query, [ (arg1), (arg2)])
-        results = self.cursor.fetchall()
-        return results
+    def select_data(self, table_name, arg1, arg2):
+        logger.info("checking data in db: " + arg1 + " " + arg2)
+        query = "SELECT * FROM {} WHERE username = ? AND password =?".format(table_name)
+        try:
+            self.cursor.execute(query, [ (arg1), (arg2)])
+            results = self.cursor.fetchall()
+            return results
+        except sqlite3.OperationalError as err:
+            print(str(err))
+            logger.error(str(err))
+            # return None
 
     def close_connection_to_db(self):
-		logger.info("closing connection to db: " + command)
+        logger.info("closing connection to db")
         self.db.close()
+
+    def create_hash_before_add_to_db(self, input_str):
+        hash_object = hashlib.sha256(bytes(input_str, encoding='utf-8'))
+        output = hash_object.hexdigest()
+        return output
 
 
 if __name__ == "__main__":
