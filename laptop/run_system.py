@@ -193,14 +193,12 @@ class RaspberriesObserver(object):
 
 			cv2.imshow('Video', frame)
 
-
-	def raspberry_plate_take_picture(self):
-		raspberry_plate_ip = "1.1.1.1"
-		take_plate_picture_command = "python /home/pi/take_photo.py"
-		stdin, stdout, stderr = self.raspberries_connection.ssh_raspberry_plate_connection.exec_command(take_plate_picture_command)
-		logger.info(str(stdout))
-		logger.error(str(stderr))
-		self.licence_plate = stdout
+    def recognise_licence_plate_number(self):
+        python_script = "python /home/pi/licence_plate_recognition.py"
+        stdin, stdout, stderr = self.raspberries_connection.ssh_raspberry_plate_connection.exec_command(python_script)
+        logger.info(str(stdout))
+        logger.error(str(stderr))
+        self.licence_plate = stdout
 
 	def save_face_photo(self, frame):
 		img_name = "frame_{}.png".format(self.img_counter)
