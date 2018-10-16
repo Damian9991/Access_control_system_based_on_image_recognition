@@ -14,6 +14,7 @@ class LicencePlateRecognition:
         self.image_path = '/tmp/licence_plate.jpg'
 
     def recognise_licence_plate(self):
+        self.take_picture()
         image_name = datetime.datetime.now().strftime("licence_plate_%d%m%Y_%H%M%S.jpg")
         upload_image_to_s3_bucket(self.image_path, self.licence_plates_bucket, image_name)
         response = self.client.detect_text(Image={'S3Object': {'Bucket': self.licence_plates_bucket, 'Name': image_name}})
