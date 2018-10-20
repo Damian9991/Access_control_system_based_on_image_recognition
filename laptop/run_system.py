@@ -119,7 +119,7 @@ class FaceRecognition(object):
 #----------------------------------------------RaspberryObserver class ----------------------------------------------#
 ########################################################################################################################
 
-class RaspberryObserver(object):
+class RaspberryAdministrator(object):
 
     """
         The class is designed to manage two raspberries and perform verification of any attempt to access the parking lot
@@ -242,5 +242,5 @@ if __name__ == "__main__":
     raspberry_face_ip = args['raspberry_face']
     raspberry_plate_ip = args['raspberry_plate']
 
-    ACSBOIR = RaspberryObserver(raspberry_face_ip, raspberry_plate_ip)
-    ACSBOIR.capture_stream_and_perform_access_verification()
+    raspberry_administrator = RaspberryAdministrator(raspberry_face_ip, raspberry_plate_ip)
+    raspberry_administrator.capture_stream_and_perform_access_verification()
