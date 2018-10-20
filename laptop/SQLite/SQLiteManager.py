@@ -22,9 +22,9 @@ logger.setLevel(logging.INFO)
 
 
 class SQLiteManager(object):
-    def __init__(self, db_name):
-        logger.info("connecting to db: " + db_name)
-        self.db = sqlite3.connect(db_name)
+    def __init__(self):
+        logger.info("connecting to Access_control_system.db")
+        self.db = sqlite3.connect('Access_control_system.db')
         self.cursor = self.db.cursor()
 
     def create_or_drop_table(self, command):
@@ -32,33 +32,66 @@ class SQLiteManager(object):
         self.cursor.execute(command)
         self.db.commit()
 
-    def insert_data(self, command):
+    def insert_data(self, table_name, *args):
+        command = "insert into {} values{};".format(table_name, args)
         logger.info("inserting data to db: " + command)
         self.cursor.execute(command)
+        self.db.commit()
 
-    def select_data(self, table_name, arg1, arg2):
-        logger.info("checking data in db: " + arg1 + " " + arg2)
-        query = "SELECT * FROM {} WHERE username = ? AND password =?".format(table_name)
+    def get_users_password_from_db(self, username):
+        logger.info("Fetching user's password from users database for user {}".format(username))
+        query = "SELECT password FROM users WHERE username = '{}'".format(username)
+        logger.info(query)
         try:
-            self.cursor.execute(query, [ (arg1), (arg2)])
+            self.cursor.execute(query)
             results = self.cursor.fetchall()
+            if not results:
+                return None
             return results
         except sqlite3.OperationalError as err:
             print(str(err))
             logger.error(str(err))
-            # return None
+            return None
+
+    def get_licence_plate_number_from_db(self, owner):
+        logger.info("Fetching licence plate number from licence_plates database for user {}".format(owner))
+        query = "SELECT licence_plate_number FROM licence_plates WHERE name = '{}'".format(owner)
+        logger.info(query)
+        try:
+            self.cursor.execute(query)
+            results = self.cursor.fetchall()
+            if not results:
+                return None
+            return results[0][0]
+        except sqlite3.OperationalError as err:
+            print(str(err))
+            logger.error(str(err))
+            return None
+
+    def check_if_user_in_database(self, owner):
+        logger.info("Fetching info about {} user from licence_plates_database".format(owner))
+        query = "SELECT EXISTS(SELECT * FROM licence_plates where name = '{}')".format(owner)
+        logger.info(query)
+        try:
+            self.cursor.execute(query)
+            results = self.cursor.fetchall()
+            if results[0][0] == 1:
+                return True
+            else:
+                return False
+        except sqlite3.OperationalError as err:
+            print(str(err))
+            logger.error(str(err))
+            return None
 
     def close_connection_to_db(self):
         logger.info("closing connection to db")
         self.db.close()
 
-    def create_hash_before_add_to_db(self, input_str):
-        hash_object = hashlib.sha256(bytes(input_str, encoding='utf-8'))
-        output = hash_object.hexdigest()
-        return output
-
-
 if __name__ == "__main__":
-    sql_object = SQLiteManager("users.db")
-    sql_object.create_or_drop_table("CREATE TABLE users(id INTEGER PRIMARY KEY, name TEXT, password TEXT)")
+    sql_object = SQLiteManager()
+    # sql_object.create_or_drop_table("CREATE TABLE users(username TEXT, password TEXT)")
+    # sql_object.create_or_drop_table("CREATE TABLE licence_plates(name TEXT, licence_plate_number TEXT)")
+    # sql_object.insert_data('users', 'Kamil', "12345")
+    # print(sql_object.check_if_user_in_database('Kamil_Kryczka'))
     sql_object.close_connection_to_db()

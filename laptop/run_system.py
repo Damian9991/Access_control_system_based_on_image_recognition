@@ -17,6 +17,7 @@ import datetime
 import cv2
 from paramiko import SSHClient, AutoAddPolicy
 from utils import *
+from laptop.SQLite.SQLiteManager import SQLiteManager
 
 import logging
 logger = logging.getLogger("Access_control_system_based_on_image_recognition")
@@ -138,6 +139,7 @@ class RaspberryAdministrator(object):
         self.raspberries_connection = RaspberryConnection(self.raspberry_face_ip, self.raspberry_plate_ip)
         self.raspberries_connection.start_stream()
         self.face_recognition = FaceRecognition()
+        self.database = SQLiteManager()
 
         self.licence_plate = None
         self.owner = None
@@ -206,22 +208,20 @@ class RaspberryAdministrator(object):
         logger.info("{} written!".format(img_name))
         self.img_counter += 1
 
-    @staticmethod
-    def check_if_driver_has_access(licence_plate, owner):
+    def check_if_driver_has_access(self, licence_plate, owner):
         licence_plate_hash = create_hash(licence_plate)
         owner_hash = create_hash(owner)
-        with open('database.json', mode='r', encoding='utf-8') as json_file:
-            file_content = json.load(json_file)
-        for user_dict in file_content:
-            if licence_plate_hash in user_dict.keys():
-                if owner_hash in user_dict[licence_plate_hash]:
+        licence_plate_from_db = self.database.get_licence_plate_number_from_db(owner_hash)
+        if licence_plate_from_db is not None:
+            if licence_plate_from_db == licence_plate_hash:
                     logger.info(licence_plate)
                     logger.info(owner)
                     return True
-                else:
-                    logger.info('Licence plate number exists in database but does not belong to the driver')
+        else:
+            if self.database.check_if_user_in_database(owner_hash):
+                logger.info("User exists in database but is assigned to different licence plate number!")
             else:
-                logger.info('Licence plate number does not exists in database')
+                logger.info("User does not exist in database!")
         logger.info(licence_plate)
         logger.info(owner)
         return False

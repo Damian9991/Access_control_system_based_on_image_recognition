@@ -95,21 +95,3 @@ def create_hash(input_str):
     hash_object = hashlib.sha256(bytes(input_str, encoding='utf-8'))
     output = hash_object.hexdigest()
     return output
-
-
-def check_if_driver_has_access(licence_plate, name):
-    licence_plate_hash = create_hash(licence_plate)
-    name_hash = create_hash(name)
-    with open('database.json', mode='r', encoding='utf-8') as json_file:
-        file_content = json.load(json_file)
-    for user_dict in file_content:
-        if licence_plate_hash in user_dict.keys():
-            if name_hash in user_dict[licence_plate_hash]:
-                # print(licence_plate)
-                # print(name)
-                return True
-            else:
-                print('Licence plate number exists in database but does not belong to the driver')
-        else:
-            print('Licence plate number does not exists in database')
-    return False
