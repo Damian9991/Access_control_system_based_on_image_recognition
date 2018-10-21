@@ -8,18 +8,19 @@
 # Created: 13-10-2018
 #-----------------------------------------------------------
 
-import PIL.Image
-import tkinter.messagebox
+import logging
+import os
+import sqlite3
 import time
 import tkinter as tk
-import sqlite3
-import sys
-import os
+import tkinter.messagebox
 from tkinter import *
+
+import PIL.Image
 from PIL import ImageTk
+
 from SQLite import SQLiteManager
 
-import logging
 logger = logging.getLogger("gui.log")
 hdlr = logging.FileHandler(os.popen("pwd").read().replace('\n', '').replace(' ', '') + "/gui.log")
 formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')

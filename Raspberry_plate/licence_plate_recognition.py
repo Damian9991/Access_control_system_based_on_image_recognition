@@ -1,8 +1,19 @@
+#!/usr/bin/env python3
+
+#-----------------------------------------------------------
+# Name: Access_control_system_based_on_image_recognition
+# Authors: Kamil Kryczka, Damian Osinka
+# Thesis supervisor: dr hab. inz. Mikołaj Leszczuk
+# Purpose: Engineering Thesis
+# Created: 13-10-2018
+#-----------------------------------------------------------
+
 import boto3
 import datetime
 import re
 import picamera
-from utils import upload_image_to_s3_bucket
+from Database.Database import DatabaseManager
+from utils import upload_image_to_s3_bucket, create_hash
 
 
 class LicencePlateRecognition:
@@ -25,6 +36,11 @@ class LicencePlateRecognition:
                 return text_dict['DetectedText']
         return None
 
+    def take_picture(self):
+        with picamera.PiCamera() as camera:
+            camera.resolution = (640, 640)
+            camera.capture(self.image_path)
+
     @staticmethod
     def check_if_text_matches_to_licence_plate_regex(text):
         licence_plate_regex_list = [r'^[A-Z]{3}\ \w{4}$', r'^[A-Z]{2}\ \w{5}$', r'^[A-Z]\ \w{3}$']
@@ -33,10 +49,14 @@ class LicencePlateRecognition:
                 return True
         return False
 
-    def take_picture(self):
-        with picamera.PiCamera() as camera:
-            camera.resolution = (640, 640)
-            camera.capture(self.image_path)
+    @staticmethod
+    def add_licence_plate_number_to_database(licence_plate, name):
+        licence_plate_hash = create_hash(licence_plate)
+        name_hash = create_hash(name)
+        database_manager = DatabaseManager()
+        database_manager.insert_data('licence_plates', name_hash, licence_plate_hash)
+        database_manager.close_connection_to_db()
+
 
 if __name__ == "__main__":
     plate_recognition = LicencePlateRecognition()

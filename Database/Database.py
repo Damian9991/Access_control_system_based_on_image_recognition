@@ -10,18 +10,17 @@
 
 import sqlite3
 import os
-import hashlib
 
 import logging
-logger = logging.getLogger("sql.log")
-hdlr = logging.FileHandler(os.popen("pwd").read().replace('\n', '').replace(' ', '') + "/sql.log")
+logger = logging.getLogger("database_events.log")
+hdlr = logging.FileHandler(os.popen("pwd").read().replace('\n', '').replace(' ', '') + "/database_events.log")
 formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 hdlr.setFormatter(formatter)
 logger.addHandler(hdlr)
 logger.setLevel(logging.INFO)
 
 
-class SQLiteManager(object):
+class DatabaseManager(object):
     def __init__(self):
         logger.info("connecting to Access_control_system.db")
         self.db = sqlite3.connect('Access_control_system.db')
@@ -89,7 +88,7 @@ class SQLiteManager(object):
         self.db.close()
 
 if __name__ == "__main__":
-    sql_object = SQLiteManager()
+    sql_object = DatabaseManager()
     # sql_object.create_or_drop_table("CREATE TABLE users(username TEXT, password TEXT)")
     # sql_object.create_or_drop_table("CREATE TABLE licence_plates(name TEXT, licence_plate_number TEXT)")
     # sql_object.insert_data('users', 'Kamil', "12345")

@@ -9,17 +9,15 @@
 #-----------------------------------------------------------
 
 
+import argparse
+import logging
 import os
 import sys
-import argparse
-import boto3
-import datetime
 import cv2
 from paramiko import SSHClient, AutoAddPolicy
 from utils import *
-from laptop.SQLite.SQLiteManager import SQLiteManager
+from Raspberry_face.face_recognition import FaceRecognition
 
-import logging
 logger = logging.getLogger("Access_control_system_based_on_image_recognition")
 hdlr = logging.FileHandler(os.popen("pwd").read().replace('\n', '').replace(' ', '') + "/Access_control_system_based_on_image_recognition.log")
 formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
@@ -29,7 +27,7 @@ logger.setLevel(logging.INFO)
 
 
 ########################################################################################################################
-#----------------------------------------------SetUpConnections class -------------------------------------------------#
+#----------------------------------------------RaspberryConnection class ----------------------------------------------#
 ########################################################################################################################
 
 class RaspberryConnection(object):
@@ -82,42 +80,9 @@ class RaspberryConnection(object):
         except AttributeError as err:
             logger.warning(str(err))
 
-########################################################################################################################
-#----------------------------------------------FaceRecognition class -------------------------------------------------#
-########################################################################################################################
-
-class FaceRecognition(object):
-    """ The class is responsible for face recognition with the use of AWS rekognition cloud system
-        -- check whether the recognised face exists in collection; similarity should be above 80%
-    """
-
-    def __init__(self):
-        self.faces_bucket = 'access-control-system-based-on-image-recognition-faces-eu-west'
-        self.collection_id_faces = 'access-control-system-based-on-image-recognition-faces'
-        self.client = boto3.client('rekognition')
-
-    def search_for_face_in_collection(self, image_path):
-        image_name = datetime.datetime.now().strftime("face_%d%m%Y_%H%M%S.jpg")
-        upload_image_to_s3_bucket(image_path, self.faces_bucket, image_name)
-        threshold = 80
-        response_dict = self.client.search_faces_by_image(CollectionId=self.collection_id_faces,
-                                                          Image={'S3Object': {'Bucket': self.faces_bucket,
-                                                                              'Name': image_name}},
-                                                          FaceMatchThreshold=threshold)
-
-        face_matches = response_dict['FaceMatches']
-        if face_matches:
-            for match in face_matches:
-                logger.info(match)
-                logger.info('FaceId:' + match['Face']['FaceId'])
-                logger.info('Similarity: ' + "{:.2f}".format(match['Similarity']) + "%")
-                if match["Similarity"] > 80:
-                    return match['Face']['ExternalImageId']
-        else:
-            return None
 
 ########################################################################################################################
-#----------------------------------------------RaspberryObserver class ----------------------------------------------#
+#----------------------------------------------RaspberryAdministrator class -------------------------------------------#
 ########################################################################################################################
 
 class RaspberryAdministrator(object):
