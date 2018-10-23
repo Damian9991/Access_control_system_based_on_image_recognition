@@ -1,3 +1,13 @@
+#!/usr/bin/env python3
+
+# -----------------------------------------------------------
+# Name: Access_control_system_based_on_image_recognition
+# Authors: Kamil Kryczka, Damian Osinka
+# Thesis supervisor: dr hab. inz. Mikołaj Leszczuk
+# Purpose: Engineering Thesis
+# Created: 13-10-2018
+# -----------------------------------------------------------
+
 import boto3
 import hashlib
 
