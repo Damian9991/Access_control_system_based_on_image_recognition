@@ -13,7 +13,7 @@ import os
 
 import logging
 logger = logging.getLogger("database_events.log")
-hdlr = logging.FileHandler(os.popen("pwd").read().replace('\n', '').replace(' ', '') + "/database_events.log")
+hdlr = logging.FileHandler(os.popen("pwd").read().replace('\n', '') + "/database_events.log")
 formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 hdlr.setFormatter(formatter)
 logger.addHandler(hdlr)

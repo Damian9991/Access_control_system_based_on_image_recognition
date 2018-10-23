@@ -18,7 +18,7 @@ from Database.Database import DatabaseManager
 from utils import upload_image_to_s3_bucket, create_hash
 
 logger = logging.getLogger("Access_control_system_based_on_image_recognition")
-hdlr = logging.FileHandler(os.popen("pwd").read() + "/licence_plate_recognition.log")
+hdlr = logging.FileHandler(os.popen("pwd").read().replace('\n', '') + "/licence_plate_recognition.log")
 formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 hdlr.setFormatter(formatter)
 logger.addHandler(hdlr)
@@ -31,11 +31,13 @@ class LicencePlateRecognition:
         self.licence_plates_bucket = 'access-control-system-based-on-image-recognition-licence-plates'
         self.collection_id_licence_plates = ''
         self.client = boto3.client('rekognition')
-        self.image_path = '/tmp/licence_plate.jpg'
+        self.image_dir_path = '/tmp/licence_plates/'
+        self.image_path = None
 
     def recognise_licence_plate(self):
-        self.take_picture()
         image_name = datetime.datetime.now().strftime("licence_plate_%d%m%Y_%H%M%S.jpg")
+        self.image_path = self.image_dir_path + image_name
+        self.take_picture()
         upload_image_to_s3_bucket(self.image_path, self.licence_plates_bucket, image_name)
         response = self.client.detect_text(Image={'S3Object': {'Bucket': self.licence_plates_bucket, 'Name': image_name}})
 
