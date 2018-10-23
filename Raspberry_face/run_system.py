@@ -132,7 +132,7 @@ class RaspberryAdministrator(object):
                 break
 
     def recognise_licence_plate_number(self):
-        python_script = "python /home/pi/licence_plate_recognition.py"
+        python_script = "nohup python /home/pi/licence_plate_recognition.py"
         stdin, stdout, stderr = self.raspberry_connection.ssh_raspberry_plate_connection.exec_command(python_script)
         logger.info(str(stdout))
         logger.error(str(stderr))
@@ -167,9 +167,6 @@ class RaspberryAdministrator(object):
         logger.info(licence_plate)
         logger.info(owner)
         return False
-
-    def end_stream(self):
-        pass
 
 
 if __name__ == "__main__":
