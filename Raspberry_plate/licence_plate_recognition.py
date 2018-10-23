@@ -1,19 +1,28 @@
 #!/usr/bin/env python3
 
-#-----------------------------------------------------------
+# -----------------------------------------------------------
 # Name: Access_control_system_based_on_image_recognition
 # Authors: Kamil Kryczka, Damian Osinka
 # Thesis supervisor: dr hab. inz. Mikołaj Leszczuk
 # Purpose: Engineering Thesis
 # Created: 13-10-2018
-#-----------------------------------------------------------
+# -----------------------------------------------------------
 
 import boto3
 import datetime
 import re
+import logging
+import os
 import picamera
 from Database.Database import DatabaseManager
 from utils import upload_image_to_s3_bucket, create_hash
+
+logger = logging.getLogger("Access_control_system_based_on_image_recognition")
+hdlr = logging.FileHandler(os.popen("pwd").read() + "/licence_plate_recognition.log")
+formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+hdlr.setFormatter(formatter)
+logger.addHandler(hdlr)
+logger.setLevel(logging.INFO)
 
 
 class LicencePlateRecognition:
@@ -32,8 +41,13 @@ class LicencePlateRecognition:
 
         detected_texts_dict = response['TextDetections']
         for text_dict in detected_texts_dict:
-            if text_dict['Confidence'] > 80 and self.check_if_text_matches_to_licence_plate_regex(text_dict['DetectedText']):
-                return text_dict['DetectedText']
+            if text_dict['Confidence'] > 80:
+                    if self.check_if_text_matches_to_licence_plate_regex(text_dict['DetectedText']):
+                        logger.info('Verification successful, access granted for licence number: '.format(text_dict['DetectedText']))
+                        return text_dict['DetectedText']
+                    logger.info('Licence plate number not found id database, access denied for licence number: '.format(text_dict['DetectedText']))
+            else:
+                logger.info('Picture did not contain any clear text')
         return None
 
     def take_picture(self):
