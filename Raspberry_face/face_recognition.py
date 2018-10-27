@@ -12,7 +12,8 @@ import boto3
 import datetime
 import logging
 import os
-from utils import upload_image_to_s3_bucket
+from Access_control_system_based_on_image_recognition.utils import *
+
 
 logger = logging.getLogger("Access_control_system_based_on_image_recognition")
 hdlr = logging.FileHandler(os.popen("pwd").read().replace('\n', '') + "/Access_control_system_based_on_image_recognition.log")

@@ -10,7 +10,6 @@
 
 import PIL.Image
 import tkinter.messagebox
-import time
 import tkinter as tk
 from tkinter import *
 from PIL import ImageTk
@@ -18,6 +17,7 @@ from tkinter.filedialog import askopenfilename
 from Access_control_system_based_on_image_recognition.Database.Database import *
 from Access_control_system_based_on_image_recognition.GUI.gui_scripts import *
 from Access_control_system_based_on_image_recognition.utils import *
+from Access_control_system_based_on_image_recognition.Raspberry_face.face_recognition import *
 
 import logging
 logger = logging.getLogger("gui.log")
@@ -37,6 +37,7 @@ LARGE_FONT=("Verdana", 12)
 class Utilities(object):
     def __init__(self):
         self.db_manager = DatabaseManager()
+       # self.aws_communication_obj = FaceRecognition()
 
     def create_label(self, text, x_position, y_position, size):
         text_field = Label(self, text=text, font=("Helvetica bold", size), anchor= CENTER)
@@ -49,16 +50,20 @@ class Utilities(object):
         img.Image = render
         img.place(x=x_position, y=y_position)
 
-    def create_label_in_new_window(self, new_window_object, text, x_position, y_position):
+    def create_label_in_new_window(self, new_window_object, text, x_position=0, y_position=0):
         label = Label(new_window_object, text=text, font=("Helvetica bold", 10), bg ="grey", anchor= CENTER)
         label.pack()
+        if x_position != 0 or y_position != 0:
+            label.place(x=x_position, y=y_position)
 
-    def create_user_input_in_new_window(self, new_window_object, x_position, y_position, password=None):
+    def create_user_input_in_new_window(self, new_window_object, password=None, x_position=0, y_position=0):
         if not password:
             user_input = Entry(new_window_object)
         else:
             user_input = Entry(new_window_object, show = "*")
         user_input.pack()
+        if x_position != 0 or y_position != 0:
+            user_input.place(x=x_position, y=y_position)
         return user_input
 
 ########################################################################################################################
@@ -83,12 +88,6 @@ class GuiManager(tk.Tk, Utilities):
             frame.grid(row=0, column=0, sticky="nsew")
 
         self.show_frame(LoginPage)
-
-    def update_clock(self):
-        now = time.strftime("%H:%M:%S")
-        self.clock_label.configure(text=now)
-        self.clock_label.place(x=600, y=10)
-        self.after(1000, self.update_clock)
 
     def show_frame(self, cont):
         frame = self.frames[cont]
@@ -129,7 +128,7 @@ class LoginPage(Frame, Utilities):
     def check_user_login_password(self):
 
         username = self.name_entry.get()
-        password = self.db_manager.create_hash_before_add_to_db(self.password_entry.get())
+        password = create_hash(self.password_entry.get())
 
         if self.db_manager.check_login_and_password("users", username, password):
             tkinter.messagebox.showinfo('Information', 'You have been logged in!')
@@ -153,6 +152,7 @@ class MainMenuPage(Frame, Utilities):
         Utilities.__init__(self)
         self.controller = controller
         self.initialize_toolbar()
+        self.path_to_file = ""
 
     def on_enter_add_new_user(self, event):
         self.l2.configure(text="Add new person in charge")
@@ -258,91 +258,62 @@ class MainMenuPage(Frame, Utilities):
     def upload_window(self):
         self.create_new_window("", size_x=280, size_y=370)
 
-        self.file_face_label = Label(self.new_window, text="Upload face picture:", background="grey")
-        self.file_face_label.pack()
-        self.file_face_label.place(x=75, y=5)
+        self.create_label_in_new_window(self.new_window, text="Upload face picture:", x_position=72, y_position=5)
 
         self.upload2_img = tk.PhotoImage(file="upload2.png")
-        self.upload2_button = Button(self.new_window, image=self.upload2_img, command=self.Upload_file_path)
+        self.upload2_button = Button(self.new_window, image=self.upload2_img, command=self.type_photo_path)
         self.upload2_button.pack()
         self.upload2_button.place(x=95, y=25)
 
-        self.file_face_confirm_button = Button(self.new_window, text="Confirm")
-        self.file_face_confirm_button.pack()
-        self.file_face_confirm_button.place(x=100, y=160)
+        self.file_path_label_info = Label(self.new_window, text="selected file:", background="grey")
+        self.file_path_label_info.pack()
+        self.file_path_label_info.place(x=55, y=140)
 
-        self.file_plate_label = Label(self.new_window, text="Upload plate number:", background="grey")
-        self.file_plate_label.pack()
-        self.file_plate_label.place(x=70, y=200)
+        self.create_label_in_new_window(self.new_window, text="Type name and surname:\n for instance John_Smith:", x_position=55, y_position=165)
 
-        self.file_plate_input = self.create_user_input_in_new_window(self.new_window, x_position=0, y_position=0)
-        self.file_plate_input.place(x=53, y=220)
+        self.file_plate_input = self.create_user_input_in_new_window(self.new_window, x_position=56, y_position=200)
 
-        self.file_plate_button = Button(self.new_window, text="Confirm")
+        self.file_plate_button = Button(self.new_window, text="Confirm", command=self.send_photo_to_aws)
         self.file_plate_button.pack()
-        self.file_plate_button.place(x=100, y=240)
+        self.file_plate_button.place(x=100, y=220)
 
-        self.add_relation_label = Label(self.new_window, text="Add relation to db\nphoto face <-> plate number:", background="grey")
-        self.add_relation_label.pack()
-        self.add_relation_label.place(x=45, y=280)
+        self.create_label_in_new_window(self.new_window, text="Add relation to db\nphoto face - plate number:", x_position=48, y_position=280)
 
-        self.add_relation_input = self.create_user_input_in_new_window(self.new_window, x_position=0, y_position=0)
-        self.add_relation_input.place(x=53, y=315)
+        self.add_photo_face_input = Entry(self.new_window, width=10)
+        self.add_photo_face_input.pack()
+        self.add_photo_face_input.place(x=48, y=315)
 
-        self.add_relation_button = Button(self.new_window, text="Confirm")
+        self.add_plate_number_input = Entry(self.new_window, width=10)
+        self.add_plate_number_input.pack()
+        self.add_plate_number_input.place(x=139, y=315)
+
+        self.add_relation_button = Button(self.new_window, text="Confirm", command=self.add_relation_photo_plate)
         self.add_relation_button.pack()
         self.add_relation_button.place(x=100, y=335)
 
-    def Upload_file_path(self):
-
-        try:
-            self.file_path_label.destroy()
-        except:
-            pass
-
-        self.path_to_file = str(askopenfilename())
-        split_list = self.path_to_file.split('/')
-        file_name = split_list[(len(split_list) - 1)]
-
-        self.sel_img = Label(self.new_window, text = "Selected image:", background="grey")
-
-        self.file_path_label = Label(self.new_window, text = file_name, background="grey")
-        self.file_path_label.pack()
-        self.file_path_label.place(x=95, y=140)
-        print(self.path_to_file)
-
     def delete_window(self):
 
-        self.create_new_window("", size_x=220, size_y=220)
+        self.create_new_window("", size_x=220, size_y=170)
 
-        self.create_label_in_new_window(self.new_window, text="Delete plate number:", x_position=0, y_position=0)
-        self.del_plate_number_input = self.create_user_input_in_new_window(self.new_window, x_position=0, y_position=0)
-        self.del_plate_number_button = Button(self.new_window, text="Confirm", command=self.del_plate_number)
-        self.del_plate_number_button.pack()
+        self.create_label_in_new_window(self.new_window, text="Delete template photo face:", x_position=13, y_position=5)
+        self.del_face_photo_input = self.create_user_input_in_new_window(self.new_window, x_position=23, y_position=25)
 
-        self.create_label_in_new_window(self.new_window, text="Delete template photo face:", x_position=0, y_position=0)
-        self.del_face_photo_input = self.create_user_input_in_new_window(self.new_window, x_position=0, y_position=0)
         self.del_face_photo_button = Button(self.new_window, text="Confirm", command=self.del_face_photo)
         self.del_face_photo_button.pack()
+        self.del_face_photo_button.place(x=62, y=45)
 
-        self.create_label_in_new_window(self.new_window, text="Delete relation\n photo face <-> plate number:", x_position=0, y_position=0)
-        self.del_relation_input = self.create_user_input_in_new_window(self.new_window, x_position=0, y_position=0)
-        self.del_relation_button = Button(self.new_window, text="Confirm", command=self.del_relation)
-        self.del_relation_button.pack()
 
-    def del_plate_number(self):
-        pass
+        self.create_label_in_new_window(self.new_window, text="Delete user from db:", x_position=35, y_position=80)
+        self.del_owner_input = self.create_user_input_in_new_window(self.new_window, x_position=23, y_position=105)
 
-    def del_face_photo(self):
-        pass
-
-    def del_relation(self):
-        pass
+        self.del_owner_button = Button(self.new_window, text="Confirm", command=self.del_owner)
+        self.del_owner_button.pack()
+        self.del_owner_button.place(x=62, y=126)
 
     def search_window(self):
         self.create_new_window("", size_x=180, size_y=370)
 
-        self.create_label_in_new_window(self.new_window, text="Face patterns from AWS:", x_position=0, y_position=0)
+        self.create_label_in_new_window(self.new_window, text="Face patterns from AWS:")
 
         listFrame = Frame(self.new_window)
         listFrame.pack(side=TOP, padx=5, pady=5)
@@ -356,7 +327,7 @@ class MainMenuPage(Frame, Utilities):
         for item in ['1','1','1']:
             self.listBox.insert(END, item)
 
-        self.create_label_in_new_window(self.new_window, text="Plate numbers from db:", x_position=0, y_position=0)
+        self.create_label_in_new_window(self.new_window, text="Plate numbers from db:")
 
         listFrame2 = Frame(self.new_window)
         listFrame2.pack(side=TOP, padx=5, pady=5)
@@ -382,17 +353,59 @@ class MainMenuPage(Frame, Utilities):
     def add_new_user(self):
         self.create_new_window("Add user", size_x=180, size_y=150)
 
-        self.create_label_in_new_window(self.new_window, text="Enter your username", x_position=0, y_position=0)
-        self.username_input = self.create_user_input_in_new_window(self.new_window, x_position=0, y_position=0)
+        self.create_label_in_new_window(self.new_window, text="Enter your username")
+        self.username_input = self.create_user_input_in_new_window(self.new_window)
 
-        self.create_label_in_new_window(self.new_window, text="Enter your Password", x_position=0, y_position=0)
-        self.password_input = self.create_user_input_in_new_window(self.new_window, x_position=0, y_position=0, password=True)
+        self.create_label_in_new_window(self.new_window, text="Enter your Password")
+        self.password_input = self.create_user_input_in_new_window(self.new_window, password=True)
 
-        self.create_label_in_new_window(self.new_window, text="Confirm your Password", x_position=0, y_position=0)
-        self.password_confirm_input = self.create_user_input_in_new_window(self.new_window, x_position=0, y_position=0, password=True)
+        self.create_label_in_new_window(self.new_window, text="Confirm your Password")
+        self.password_confirm_input = self.create_user_input_in_new_window(self.new_window, password=True)
 
         self.add_user_button = Button(self.new_window, text="Confirm", command=self.add_user_to_db)
         self.add_user_button.pack()
+
+    def delete_user(self):
+        self.create_new_window("Delete user", size_x=180, size_y=70)
+
+        self.create_label_in_new_window(self.new_window, text="Enter username to delete")
+        self.username_to_delete = self.create_user_input_in_new_window(self.new_window)
+
+        self.del_user_button = Button(self.new_window, text="Confirm", command=self.del_user_from_db)
+        self.del_user_button.pack()
+
+    def start_system_window(self):
+        self.create_new_window("Start system", size_x=180, size_y=110)
+
+        self.create_label_in_new_window(self.new_window, text="Raspberry_face_ip")
+        self.rasp_1_start_input = self.create_user_input_in_new_window(self.new_window)
+
+        self.create_label_in_new_window(self.new_window, text="Raspberry_plate_ip")
+        self.rasp_2_start_input = self.create_user_input_in_new_window(self.new_window)
+
+        self.start_system_button = Button(self.new_window, text="Start", command=self.start_system_from_gui)
+        self.start_system_button.pack()
+
+    def stop_system_window(self):
+        self.create_new_window("Stop system", size_x=180, size_y=70)
+
+        self.create_label_in_new_window(self.new_window, text="Raspberry_face_ip")
+        self.rasp_1_stop_input = self.create_user_input_in_new_window(self.new_window)
+
+        self.stop_system_button = Button(self.new_window, text="Start", command=self.stop_system_from_gui)
+        self.stop_system_button.pack()
+
+    def check_system_window(self):
+        self.create_new_window("Check system", size_x=180, size_y=70)
+
+        self.create_label_in_new_window(self.new_window, text="Raspberry_face_ip")
+        self.rasp_1_check_input = self.create_user_input_in_new_window(self.new_window)
+
+        self.start_system_button = Button(self.new_window, text="Start", command=self.check_status_from_gui)
+        self.start_system_button.pack()
+
+# I RZĄD
+# _____________________________________________________________________________________
 
     def add_user_to_db(self):
         username = self.username_input.get()
@@ -414,16 +427,6 @@ class MainMenuPage(Frame, Utilities):
         else:
             tkinter.messagebox.showerror("Error", "There is a problem with the database connection")
 
-    def delete_user(self):
-        self.create_new_window("Delete user", size_x=180, size_y=70)
-
-        self.create_label_in_new_window(self.new_window, text="Enter username to delete", x_position=0, y_position=0)
-        self.username_to_delete = self.create_user_input_in_new_window(self.new_window, x_position=0, y_position=0)
-
-        self.del_user_button = Button(self.new_window, text="Confirm", command=self.del_user_from_db)
-        self.del_user_button.pack()
-
-
     def del_user_from_db(self):
         username = self.username_to_delete.get()
 
@@ -434,40 +437,10 @@ class MainMenuPage(Frame, Utilities):
                 tkinter.messagebox.showinfo('There is a problem with the database connection')
         else:
             tkinter.messagebox.showwarning('Warming', "user doesn't exist\nPlease try again!")
+# _____________________________________________________________________________________
 
-    def back_login_page(self):
-        self.controller.show_frame(LoginPage)
-
-    def start_system_window(self):
-        self.create_new_window("Start system", size_x=180, size_y=110)
-
-        self.create_label_in_new_window(self.new_window, text="Raspberry_face_ip", x_position=0, y_position=0)
-        self.rasp_1_start_input = self.create_user_input_in_new_window(self.new_window, x_position=0, y_position=0)
-
-        self.create_label_in_new_window(self.new_window, text="Raspberry_plate_ip", x_position=0, y_position=0)
-        self.rasp_2_start_input = self.create_user_input_in_new_window(self.new_window, x_position=0, y_position=0)
-
-        self.start_system_button = Button(self.new_window, text="Start", command=self.start_system_from_gui)
-        self.start_system_button.pack()
-
-    def stop_system_window(self):
-        self.create_new_window("Stop system", size_x=180, size_y=110)
-
-        self.create_label_in_new_window(self.new_window, text="Raspberry_face_ip", x_position=0, y_position=0)
-        self.rasp_1_stop_input = self.create_user_input_in_new_window(self.new_window, x_position=0, y_position=0)
-
-        self.stop_system_button = Button(self.new_window, text="Start", command=self.stop_system_from_gui)
-        self.stop_system_button.pack()
-
-    def check_system_window(self):
-        self.create_new_window("Check system", size_x=180, size_y=110)
-
-        self.create_label_in_new_window(self.new_window, text="Raspberry_face_ip", x_position=0, y_position=0)
-        self.rasp_1_check_input = self.create_user_input_in_new_window(self.new_window, x_position=0, y_position=0)
-
-        self.start_system_button = Button(self.new_window, text="Start", command=self.check_status_from_gui)
-        self.start_system_button.pack()
-
+# II RZĄD
+#_____________________________________________________________________________________
     def start_system_from_gui(self):
         if start_system(self.rasp_1_start_input , self.rasp_2_start_input):
             tkinter.messagebox.showinfo('Information', 'System has been started')
@@ -485,6 +458,72 @@ class MainMenuPage(Frame, Utilities):
             tkinter.messagebox.showinfo('Information', 'System has been stopped')
         else:
             tkinter.messagebox.showerror('Error', 'Check your connectivity')
+
+#_____________________________________________________________________________________
+
+# III RZĄD
+# _____________________________________________________________________________________
+
+    def type_photo_path(self):
+
+        try:
+            self.file_path_label.destroy()
+        except:
+            pass
+
+        self.path_to_file = str(askopenfilename())
+        split_list = self.path_to_file.split('/')
+        file_name = split_list[(len(split_list) - 1)]
+
+        if self.path_to_file != "":
+            self.sel_img = Label(self.new_window, text = "Selected image:", background="grey")
+
+            self.file_path_label = Label(self.new_window, text = file_name, background="grey")
+            self.file_path_label.pack()
+            self.file_path_label.place(x=138, y=140)
+
+
+    def send_photo_to_aws(self):
+        name_surname = self.file_plate_input.get()
+
+        if name_surname == "" or self.path_to_file == "":
+            tkinter.messagebox.showerror('Name and surname and photo', 'Please, type picture and name')
+        else:
+            pass
+            #self.aws_communication_obj.add_face_to_collection(self.path_to_file, name_surname)
+
+    def add_relation_photo_plate(self):
+        owner = self.add_photo_face_input.get()
+        plate_number = self.add_plate_number_input.get()
+        if owner == "" or plate_number == "":
+            tkinter.messagebox.showerror("Error", "Please, fill both fields")
+        else:
+            pass
+            #if self.aws_communication_obj.add_plate_and_owner_to_db(owner, plate_number)
+            #    tkinter.messagebox.showinfo("Info", "Relation has been added to db")
+            #else
+            #    tkinter.messagebox.showerror("Error", "Error")
+
+    def del_face_photo(self):
+        pass
+
+    def del_owner(self):
+        owner_to_delete = self.del_owner_input.get()
+        if owner_to_delete == "":
+            tkinter.messagebox.showerror("Error", "Please, type user")
+        else:
+            pass
+            #if self.aws_communication_obj.del_owner_from_database(owner_to_delete)
+            #    tkinter.messagebox.showinfo("Info", "info")
+            #else
+            #    tkinter.messagebox.showerror("Error", "Error")
+
+
+
+
+
+    def back_login_page(self):
+        self.controller.show_frame(LoginPage)
 
     def exit(self):
         sys.exit(0)

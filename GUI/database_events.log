@@ -128,3 +128,793 @@
 2018-10-27 19:34:57,055 - INFO - SELECT EXISTS(SELECT * FROM users where username = 'r')
 2018-10-27 19:35:02,351 - INFO - Fetching info about r user from users
 2018-10-27 19:35:02,351 - INFO - SELECT EXISTS(SELECT * FROM users where username = 'r')
+2018-10-27 19:40:03,037 - INFO - connecting to Access_control_system.db
+2018-10-27 19:40:03,037 - INFO - connecting to Access_control_system.db
+2018-10-27 19:40:03,070 - INFO - connecting to Access_control_system.db
+2018-10-27 19:40:05,903 - INFO - checking data in db: a ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb
+2018-10-27 19:40:08,430 - INFO - checking data in db: 1 6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b
+2018-10-27 19:40:14,199 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-27 19:40:18,814 - INFO - Fetching info about a user from users
+2018-10-27 19:40:18,815 - INFO - SELECT EXISTS(SELECT * FROM users where username = 'a')
+2018-10-27 19:40:22,823 - INFO - checking data in db: a ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb
+2018-10-27 19:44:35,263 - INFO - connecting to Access_control_system.db
+2018-10-27 19:44:35,264 - INFO - connecting to Access_control_system.db
+2018-10-27 19:44:35,311 - INFO - connecting to Access_control_system.db
+2018-10-27 19:44:36,231 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 19:44:38,703 - INFO - checking data in db: a ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb
+2018-10-27 19:51:37,580 - INFO - connecting to Access_control_system.db
+2018-10-27 19:51:37,581 - INFO - connecting to Access_control_system.db
+2018-10-27 19:51:37,614 - INFO - connecting to Access_control_system.db
+2018-10-27 19:51:38,633 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 19:51:42,096 - INFO - checking data in db: a ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb
+2018-10-27 19:56:40,644 - INFO - connecting to Access_control_system.db
+2018-10-27 19:56:40,645 - INFO - connecting to Access_control_system.db
+2018-10-27 19:56:40,685 - INFO - connecting to Access_control_system.db
+2018-10-27 19:57:46,019 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 19:57:48,202 - INFO - checking data in db: a ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb
+2018-10-27 19:58:13,802 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-27 19:58:15,931 - INFO - checking data in db: a ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb
+2018-10-27 20:00:00,856 - INFO - connecting to Access_control_system.db
+2018-10-27 20:00:00,857 - INFO - connecting to Access_control_system.db
+2018-10-27 20:00:00,888 - INFO - connecting to Access_control_system.db
+2018-10-27 20:00:05,939 - INFO - checking data in db: a ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb
+2018-10-27 20:00:48,818 - INFO - connecting to Access_control_system.db
+2018-10-27 20:00:48,818 - INFO - connecting to Access_control_system.db
+2018-10-27 20:00:48,850 - INFO - connecting to Access_control_system.db
+2018-10-27 20:00:52,803 - INFO - checking data in db: a ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb
+2018-10-27 20:05:57,293 - INFO - connecting to Access_control_system.db
+2018-10-27 20:05:57,293 - INFO - connecting to Access_control_system.db
+2018-10-27 20:05:57,327 - INFO - connecting to Access_control_system.db
+2018-10-27 20:05:58,381 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 20:06:00,730 - INFO - checking data in db: a ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb
+2018-10-27 20:06:17,382 - INFO - Fetching info about login user from users
+2018-10-27 20:06:17,382 - INFO - SELECT EXISTS(SELECT * FROM users where username = 'login')
+2018-10-27 20:06:21,463 - INFO - connecting to Access_control_system.db
+2018-10-27 20:06:21,464 - INFO - connecting to Access_control_system.db
+2018-10-27 20:06:21,495 - INFO - connecting to Access_control_system.db
+2018-10-27 20:06:22,454 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 20:18:20,155 - INFO - connecting to Access_control_system.db
+2018-10-27 20:18:20,155 - INFO - connecting to Access_control_system.db
+2018-10-27 20:18:20,186 - INFO - connecting to Access_control_system.db
+2018-10-27 20:18:21,636 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 20:25:18,974 - INFO - connecting to Access_control_system.db
+2018-10-27 20:25:56,407 - INFO - connecting to Access_control_system.db
+2018-10-27 20:26:08,345 - INFO - connecting to Access_control_system.db
+2018-10-27 20:26:21,208 - INFO - connecting to Access_control_system.db
+2018-10-27 20:26:21,208 - INFO - connecting to Access_control_system.db
+2018-10-27 20:26:21,245 - INFO - connecting to Access_control_system.db
+2018-10-27 20:31:52,361 - INFO - connecting to Access_control_system.db
+2018-10-27 20:31:52,362 - INFO - connecting to Access_control_system.db
+2018-10-27 20:31:52,393 - INFO - connecting to Access_control_system.db
+2018-10-27 20:31:53,551 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 20:32:06,838 - INFO - connecting to Access_control_system.db
+2018-10-27 20:37:17,555 - INFO - connecting to Access_control_system.db
+2018-10-27 20:37:21,261 - INFO - connecting to Access_control_system.db
+2018-10-27 20:37:29,182 - INFO - connecting to Access_control_system.db
+2018-10-27 20:37:29,183 - INFO - connecting to Access_control_system.db
+2018-10-27 20:37:29,225 - INFO - connecting to Access_control_system.db
+2018-10-27 20:55:14,608 - INFO - connecting to Access_control_system.db
+2018-10-27 20:55:14,609 - INFO - connecting to Access_control_system.db
+2018-10-27 20:55:14,639 - INFO - connecting to Access_control_system.db
+2018-10-27 20:55:15,840 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 20:58:47,857 - INFO - connecting to Access_control_system.db
+2018-10-27 20:58:47,858 - INFO - connecting to Access_control_system.db
+2018-10-27 20:58:47,896 - INFO - connecting to Access_control_system.db
+2018-10-27 20:58:48,792 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:02:53,966 - INFO - connecting to Access_control_system.db
+2018-10-27 21:02:53,967 - INFO - connecting to Access_control_system.db
+2018-10-27 21:02:54,004 - INFO - connecting to Access_control_system.db
+2018-10-27 21:02:54,976 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:04:35,148 - INFO - connecting to Access_control_system.db
+2018-10-27 21:04:35,148 - INFO - connecting to Access_control_system.db
+2018-10-27 21:04:35,181 - INFO - connecting to Access_control_system.db
+2018-10-27 21:04:35,960 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:04:57,671 - INFO - connecting to Access_control_system.db
+2018-10-27 21:04:57,671 - INFO - connecting to Access_control_system.db
+2018-10-27 21:04:57,704 - INFO - connecting to Access_control_system.db
+2018-10-27 21:04:58,456 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:06:46,063 - INFO - connecting to Access_control_system.db
+2018-10-27 21:06:46,064 - INFO - connecting to Access_control_system.db
+2018-10-27 21:06:46,108 - INFO - connecting to Access_control_system.db
+2018-10-27 21:06:47,105 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:07:00,200 - INFO - connecting to Access_control_system.db
+2018-10-27 21:07:00,201 - INFO - connecting to Access_control_system.db
+2018-10-27 21:07:00,233 - INFO - connecting to Access_control_system.db
+2018-10-27 21:07:03,681 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:07:34,651 - INFO - connecting to Access_control_system.db
+2018-10-27 21:07:34,652 - INFO - connecting to Access_control_system.db
+2018-10-27 21:07:34,685 - INFO - connecting to Access_control_system.db
+2018-10-27 21:07:44,953 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:08:23,974 - INFO - connecting to Access_control_system.db
+2018-10-27 21:08:23,975 - INFO - connecting to Access_control_system.db
+2018-10-27 21:08:24,009 - INFO - connecting to Access_control_system.db
+2018-10-27 21:08:25,016 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:09:55,139 - INFO - connecting to Access_control_system.db
+2018-10-27 21:09:55,140 - INFO - connecting to Access_control_system.db
+2018-10-27 21:09:55,172 - INFO - connecting to Access_control_system.db
+2018-10-27 21:09:56,024 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:11:25,517 - INFO - connecting to Access_control_system.db
+2018-10-27 21:11:25,518 - INFO - connecting to Access_control_system.db
+2018-10-27 21:11:25,570 - INFO - connecting to Access_control_system.db
+2018-10-27 21:11:26,881 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:12:19,242 - INFO - connecting to Access_control_system.db
+2018-10-27 21:12:19,242 - INFO - connecting to Access_control_system.db
+2018-10-27 21:12:19,282 - INFO - connecting to Access_control_system.db
+2018-10-27 21:12:20,337 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:12:33,474 - INFO - connecting to Access_control_system.db
+2018-10-27 21:12:33,474 - INFO - connecting to Access_control_system.db
+2018-10-27 21:12:33,516 - INFO - connecting to Access_control_system.db
+2018-10-27 21:12:34,513 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:12:46,852 - INFO - connecting to Access_control_system.db
+2018-10-27 21:12:46,852 - INFO - connecting to Access_control_system.db
+2018-10-27 21:12:46,883 - INFO - connecting to Access_control_system.db
+2018-10-27 21:12:47,961 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:13:02,562 - INFO - connecting to Access_control_system.db
+2018-10-27 21:13:02,562 - INFO - connecting to Access_control_system.db
+2018-10-27 21:13:02,596 - INFO - connecting to Access_control_system.db
+2018-10-27 21:13:03,513 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:13:24,590 - INFO - connecting to Access_control_system.db
+2018-10-27 21:13:24,590 - INFO - connecting to Access_control_system.db
+2018-10-27 21:13:24,622 - INFO - connecting to Access_control_system.db
+2018-10-27 21:13:25,521 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:14:55,095 - INFO - connecting to Access_control_system.db
+2018-10-27 21:14:55,095 - INFO - connecting to Access_control_system.db
+2018-10-27 21:14:55,132 - INFO - connecting to Access_control_system.db
+2018-10-27 21:14:56,057 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:17:48,312 - INFO - connecting to Access_control_system.db
+2018-10-27 21:17:48,313 - INFO - connecting to Access_control_system.db
+2018-10-27 21:17:48,352 - INFO - connecting to Access_control_system.db
+2018-10-27 21:17:49,306 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:18:22,127 - INFO - connecting to Access_control_system.db
+2018-10-27 21:18:22,128 - INFO - connecting to Access_control_system.db
+2018-10-27 21:18:22,162 - INFO - connecting to Access_control_system.db
+2018-10-27 21:18:23,025 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:19:00,509 - INFO - connecting to Access_control_system.db
+2018-10-27 21:19:00,510 - INFO - connecting to Access_control_system.db
+2018-10-27 21:19:00,542 - INFO - connecting to Access_control_system.db
+2018-10-27 21:19:01,299 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:19:40,951 - INFO - connecting to Access_control_system.db
+2018-10-27 21:19:40,951 - INFO - connecting to Access_control_system.db
+2018-10-27 21:19:40,984 - INFO - connecting to Access_control_system.db
+2018-10-27 21:19:41,847 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:20:44,822 - INFO - connecting to Access_control_system.db
+2018-10-27 21:20:44,822 - INFO - connecting to Access_control_system.db
+2018-10-27 21:20:44,855 - INFO - connecting to Access_control_system.db
+2018-10-27 21:20:46,057 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:21:38,275 - INFO - connecting to Access_control_system.db
+2018-10-27 21:21:38,276 - INFO - connecting to Access_control_system.db
+2018-10-27 21:21:38,309 - INFO - connecting to Access_control_system.db
+2018-10-27 21:21:40,045 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:21:57,485 - INFO - connecting to Access_control_system.db
+2018-10-27 21:21:57,485 - INFO - connecting to Access_control_system.db
+2018-10-27 21:21:57,519 - INFO - connecting to Access_control_system.db
+2018-10-27 21:21:58,333 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:23:10,671 - INFO - connecting to Access_control_system.db
+2018-10-27 21:23:10,671 - INFO - connecting to Access_control_system.db
+2018-10-27 21:23:10,706 - INFO - connecting to Access_control_system.db
+2018-10-27 21:23:11,633 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:23:25,313 - INFO - connecting to Access_control_system.db
+2018-10-27 21:23:25,313 - INFO - connecting to Access_control_system.db
+2018-10-27 21:23:25,346 - INFO - connecting to Access_control_system.db
+2018-10-27 21:23:26,481 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:23:40,734 - INFO - connecting to Access_control_system.db
+2018-10-27 21:23:40,735 - INFO - connecting to Access_control_system.db
+2018-10-27 21:23:40,815 - INFO - connecting to Access_control_system.db
+2018-10-27 21:23:41,818 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:23:56,659 - INFO - connecting to Access_control_system.db
+2018-10-27 21:23:56,659 - INFO - connecting to Access_control_system.db
+2018-10-27 21:23:56,693 - INFO - connecting to Access_control_system.db
+2018-10-27 21:23:57,827 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:24:09,784 - INFO - connecting to Access_control_system.db
+2018-10-27 21:24:09,784 - INFO - connecting to Access_control_system.db
+2018-10-27 21:24:09,820 - INFO - connecting to Access_control_system.db
+2018-10-27 21:24:10,819 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:24:22,617 - INFO - connecting to Access_control_system.db
+2018-10-27 21:24:22,617 - INFO - connecting to Access_control_system.db
+2018-10-27 21:24:22,652 - INFO - connecting to Access_control_system.db
+2018-10-27 21:24:23,388 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:24:30,402 - INFO - connecting to Access_control_system.db
+2018-10-27 21:24:30,403 - INFO - connecting to Access_control_system.db
+2018-10-27 21:24:30,435 - INFO - connecting to Access_control_system.db
+2018-10-27 21:24:31,196 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:24:37,794 - INFO - connecting to Access_control_system.db
+2018-10-27 21:24:37,794 - INFO - connecting to Access_control_system.db
+2018-10-27 21:24:37,830 - INFO - connecting to Access_control_system.db
+2018-10-27 21:24:38,356 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:24:50,961 - INFO - connecting to Access_control_system.db
+2018-10-27 21:24:50,962 - INFO - connecting to Access_control_system.db
+2018-10-27 21:24:50,997 - INFO - connecting to Access_control_system.db
+2018-10-27 21:24:51,910 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:25:28,326 - INFO - connecting to Access_control_system.db
+2018-10-27 21:25:28,327 - INFO - connecting to Access_control_system.db
+2018-10-27 21:25:28,371 - INFO - connecting to Access_control_system.db
+2018-10-27 21:25:29,054 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:25:57,966 - INFO - connecting to Access_control_system.db
+2018-10-27 21:25:57,966 - INFO - connecting to Access_control_system.db
+2018-10-27 21:25:58,002 - INFO - connecting to Access_control_system.db
+2018-10-27 21:25:58,791 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:26:41,859 - INFO - connecting to Access_control_system.db
+2018-10-27 21:26:41,860 - INFO - connecting to Access_control_system.db
+2018-10-27 21:26:41,896 - INFO - connecting to Access_control_system.db
+2018-10-27 21:26:42,713 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:26:50,153 - INFO - connecting to Access_control_system.db
+2018-10-27 21:26:50,153 - INFO - connecting to Access_control_system.db
+2018-10-27 21:26:50,188 - INFO - connecting to Access_control_system.db
+2018-10-27 21:26:51,273 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:26:59,843 - INFO - connecting to Access_control_system.db
+2018-10-27 21:26:59,844 - INFO - connecting to Access_control_system.db
+2018-10-27 21:26:59,912 - INFO - connecting to Access_control_system.db
+2018-10-27 21:27:00,785 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:27:08,984 - INFO - connecting to Access_control_system.db
+2018-10-27 21:27:08,984 - INFO - connecting to Access_control_system.db
+2018-10-27 21:27:09,022 - INFO - connecting to Access_control_system.db
+2018-10-27 21:27:10,018 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:27:19,809 - INFO - connecting to Access_control_system.db
+2018-10-27 21:27:19,810 - INFO - connecting to Access_control_system.db
+2018-10-27 21:27:19,864 - INFO - connecting to Access_control_system.db
+2018-10-27 21:27:21,026 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:31:42,547 - INFO - connecting to Access_control_system.db
+2018-10-27 21:31:42,548 - INFO - connecting to Access_control_system.db
+2018-10-27 21:31:42,583 - INFO - connecting to Access_control_system.db
+2018-10-27 21:31:43,313 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:32:07,467 - INFO - connecting to Access_control_system.db
+2018-10-27 21:32:07,468 - INFO - connecting to Access_control_system.db
+2018-10-27 21:32:07,500 - INFO - connecting to Access_control_system.db
+2018-10-27 21:32:08,226 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:34:15,122 - INFO - connecting to Access_control_system.db
+2018-10-27 21:34:15,123 - INFO - connecting to Access_control_system.db
+2018-10-27 21:34:15,157 - INFO - connecting to Access_control_system.db
+2018-10-27 21:34:17,748 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:35:13,727 - INFO - connecting to Access_control_system.db
+2018-10-27 21:35:13,727 - INFO - connecting to Access_control_system.db
+2018-10-27 21:35:13,764 - INFO - connecting to Access_control_system.db
+2018-10-27 21:35:15,358 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:36:31,706 - INFO - connecting to Access_control_system.db
+2018-10-27 21:36:31,706 - INFO - connecting to Access_control_system.db
+2018-10-27 21:36:31,739 - INFO - connecting to Access_control_system.db
+2018-10-27 21:36:32,726 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:36:44,145 - INFO - connecting to Access_control_system.db
+2018-10-27 21:36:44,145 - INFO - connecting to Access_control_system.db
+2018-10-27 21:36:44,179 - INFO - connecting to Access_control_system.db
+2018-10-27 21:36:45,143 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:39:19,163 - INFO - connecting to Access_control_system.db
+2018-10-27 21:39:19,163 - INFO - connecting to Access_control_system.db
+2018-10-27 21:39:19,200 - INFO - connecting to Access_control_system.db
+2018-10-27 21:39:20,009 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:40:41,936 - INFO - connecting to Access_control_system.db
+2018-10-27 21:40:41,937 - INFO - connecting to Access_control_system.db
+2018-10-27 21:40:41,970 - INFO - connecting to Access_control_system.db
+2018-10-27 21:40:43,403 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:40:58,980 - INFO - connecting to Access_control_system.db
+2018-10-27 21:40:58,980 - INFO - connecting to Access_control_system.db
+2018-10-27 21:40:59,016 - INFO - connecting to Access_control_system.db
+2018-10-27 21:40:59,914 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:42:05,989 - INFO - connecting to Access_control_system.db
+2018-10-27 21:42:05,990 - INFO - connecting to Access_control_system.db
+2018-10-27 21:42:06,048 - INFO - connecting to Access_control_system.db
+2018-10-27 21:42:07,164 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:42:43,163 - INFO - connecting to Access_control_system.db
+2018-10-27 21:42:43,163 - INFO - connecting to Access_control_system.db
+2018-10-27 21:42:43,196 - INFO - connecting to Access_control_system.db
+2018-10-27 21:42:44,012 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:43:47,713 - INFO - connecting to Access_control_system.db
+2018-10-27 21:43:47,713 - INFO - connecting to Access_control_system.db
+2018-10-27 21:43:47,750 - INFO - connecting to Access_control_system.db
+2018-10-27 21:43:48,549 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:45:01,891 - INFO - connecting to Access_control_system.db
+2018-10-27 21:45:01,891 - INFO - connecting to Access_control_system.db
+2018-10-27 21:45:01,924 - INFO - connecting to Access_control_system.db
+2018-10-27 21:45:02,798 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:46:19,335 - INFO - connecting to Access_control_system.db
+2018-10-27 21:46:19,336 - INFO - connecting to Access_control_system.db
+2018-10-27 21:46:19,370 - INFO - connecting to Access_control_system.db
+2018-10-27 21:46:20,695 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:47:05,178 - INFO - connecting to Access_control_system.db
+2018-10-27 21:47:05,178 - INFO - connecting to Access_control_system.db
+2018-10-27 21:47:05,214 - INFO - connecting to Access_control_system.db
+2018-10-27 21:47:06,215 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:47:31,180 - INFO - connecting to Access_control_system.db
+2018-10-27 21:47:31,180 - INFO - connecting to Access_control_system.db
+2018-10-27 21:47:31,213 - INFO - connecting to Access_control_system.db
+2018-10-27 21:47:32,032 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:47:51,261 - INFO - connecting to Access_control_system.db
+2018-10-27 21:47:51,261 - INFO - connecting to Access_control_system.db
+2018-10-27 21:48:35,663 - INFO - connecting to Access_control_system.db
+2018-10-27 21:48:35,663 - INFO - connecting to Access_control_system.db
+2018-10-27 21:48:35,698 - INFO - connecting to Access_control_system.db
+2018-10-27 21:48:36,481 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:51:11,820 - INFO - connecting to Access_control_system.db
+2018-10-27 21:51:11,820 - INFO - connecting to Access_control_system.db
+2018-10-27 21:51:11,853 - INFO - connecting to Access_control_system.db
+2018-10-27 21:51:12,899 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:51:38,240 - INFO - connecting to Access_control_system.db
+2018-10-27 21:51:38,241 - INFO - connecting to Access_control_system.db
+2018-10-27 21:51:38,274 - INFO - connecting to Access_control_system.db
+2018-10-27 21:51:39,339 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:52:23,417 - INFO - connecting to Access_control_system.db
+2018-10-27 21:52:23,417 - INFO - connecting to Access_control_system.db
+2018-10-27 21:52:23,449 - INFO - connecting to Access_control_system.db
+2018-10-27 21:52:24,275 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:53:29,442 - INFO - connecting to Access_control_system.db
+2018-10-27 21:53:29,443 - INFO - connecting to Access_control_system.db
+2018-10-27 21:53:29,476 - INFO - connecting to Access_control_system.db
+2018-10-27 21:53:30,826 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 21:56:04,659 - INFO - connecting to Access_control_system.db
+2018-10-27 21:56:04,659 - INFO - connecting to Access_control_system.db
+2018-10-27 21:56:04,690 - INFO - connecting to Access_control_system.db
+2018-10-27 21:56:05,513 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:01:50,643 - INFO - connecting to Access_control_system.db
+2018-10-27 22:01:50,644 - INFO - connecting to Access_control_system.db
+2018-10-27 22:01:50,677 - INFO - connecting to Access_control_system.db
+2018-10-27 22:01:58,640 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:03:24,086 - INFO - connecting to Access_control_system.db
+2018-10-27 22:03:24,087 - INFO - connecting to Access_control_system.db
+2018-10-27 22:03:24,142 - INFO - connecting to Access_control_system.db
+2018-10-27 22:03:24,983 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:04:15,257 - INFO - connecting to Access_control_system.db
+2018-10-27 22:04:15,257 - INFO - connecting to Access_control_system.db
+2018-10-27 22:04:15,312 - INFO - connecting to Access_control_system.db
+2018-10-27 22:04:16,296 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:06:03,511 - INFO - connecting to Access_control_system.db
+2018-10-27 22:06:03,512 - INFO - connecting to Access_control_system.db
+2018-10-27 22:06:03,565 - INFO - connecting to Access_control_system.db
+2018-10-27 22:06:04,520 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:06:48,728 - INFO - connecting to Access_control_system.db
+2018-10-27 22:06:48,728 - INFO - connecting to Access_control_system.db
+2018-10-27 22:06:48,783 - INFO - connecting to Access_control_system.db
+2018-10-27 22:06:49,752 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:07:33,277 - INFO - connecting to Access_control_system.db
+2018-10-27 22:07:33,277 - INFO - connecting to Access_control_system.db
+2018-10-27 22:07:33,333 - INFO - connecting to Access_control_system.db
+2018-10-27 22:07:34,603 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:07:54,172 - INFO - connecting to Access_control_system.db
+2018-10-27 22:07:54,173 - INFO - connecting to Access_control_system.db
+2018-10-27 22:07:54,205 - INFO - connecting to Access_control_system.db
+2018-10-27 22:07:55,000 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:08:27,433 - INFO - connecting to Access_control_system.db
+2018-10-27 22:08:27,434 - INFO - connecting to Access_control_system.db
+2018-10-27 22:08:27,476 - INFO - connecting to Access_control_system.db
+2018-10-27 22:08:28,400 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:12:31,775 - INFO - connecting to Access_control_system.db
+2018-10-27 22:12:31,776 - INFO - connecting to Access_control_system.db
+2018-10-27 22:12:31,865 - INFO - connecting to Access_control_system.db
+2018-10-27 22:12:32,801 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:13:24,024 - INFO - connecting to Access_control_system.db
+2018-10-27 22:13:24,025 - INFO - connecting to Access_control_system.db
+2018-10-27 22:13:24,077 - INFO - connecting to Access_control_system.db
+2018-10-27 22:13:24,945 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:13:47,741 - INFO - connecting to Access_control_system.db
+2018-10-27 22:13:47,741 - INFO - connecting to Access_control_system.db
+2018-10-27 22:13:47,790 - INFO - connecting to Access_control_system.db
+2018-10-27 22:13:48,762 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:15:22,852 - INFO - connecting to Access_control_system.db
+2018-10-27 22:15:22,852 - INFO - connecting to Access_control_system.db
+2018-10-27 22:15:22,924 - INFO - connecting to Access_control_system.db
+2018-10-27 22:15:23,794 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:16:00,660 - INFO - connecting to Access_control_system.db
+2018-10-27 22:16:00,661 - INFO - connecting to Access_control_system.db
+2018-10-27 22:16:00,697 - INFO - connecting to Access_control_system.db
+2018-10-27 22:16:01,522 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:16:39,739 - INFO - connecting to Access_control_system.db
+2018-10-27 22:16:39,739 - INFO - connecting to Access_control_system.db
+2018-10-27 22:16:39,774 - INFO - connecting to Access_control_system.db
+2018-10-27 22:16:40,970 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:17:45,585 - INFO - connecting to Access_control_system.db
+2018-10-27 22:17:45,585 - INFO - connecting to Access_control_system.db
+2018-10-27 22:17:45,669 - INFO - connecting to Access_control_system.db
+2018-10-27 22:17:48,043 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:18:08,755 - INFO - connecting to Access_control_system.db
+2018-10-27 22:18:08,756 - INFO - connecting to Access_control_system.db
+2018-10-27 22:18:08,792 - INFO - connecting to Access_control_system.db
+2018-10-27 22:18:09,795 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:18:30,678 - INFO - connecting to Access_control_system.db
+2018-10-27 22:18:30,679 - INFO - connecting to Access_control_system.db
+2018-10-27 22:18:30,736 - INFO - connecting to Access_control_system.db
+2018-10-27 22:18:33,196 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:20:24,980 - INFO - connecting to Access_control_system.db
+2018-10-27 22:20:24,981 - INFO - connecting to Access_control_system.db
+2018-10-27 22:20:25,012 - INFO - connecting to Access_control_system.db
+2018-10-27 22:20:25,980 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:20:51,062 - INFO - connecting to Access_control_system.db
+2018-10-27 22:20:51,062 - INFO - connecting to Access_control_system.db
+2018-10-27 22:20:51,096 - INFO - connecting to Access_control_system.db
+2018-10-27 22:20:51,796 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:21:07,733 - INFO - connecting to Access_control_system.db
+2018-10-27 22:21:07,734 - INFO - connecting to Access_control_system.db
+2018-10-27 22:21:07,768 - INFO - connecting to Access_control_system.db
+2018-10-27 22:21:08,836 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:21:35,286 - INFO - connecting to Access_control_system.db
+2018-10-27 22:21:35,286 - INFO - connecting to Access_control_system.db
+2018-10-27 22:21:35,319 - INFO - connecting to Access_control_system.db
+2018-10-27 22:21:36,390 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:22:14,559 - INFO - connecting to Access_control_system.db
+2018-10-27 22:22:14,559 - INFO - connecting to Access_control_system.db
+2018-10-27 22:22:14,592 - INFO - connecting to Access_control_system.db
+2018-10-27 22:22:15,333 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:22:35,536 - INFO - connecting to Access_control_system.db
+2018-10-27 22:22:35,536 - INFO - connecting to Access_control_system.db
+2018-10-27 22:22:35,576 - INFO - connecting to Access_control_system.db
+2018-10-27 22:22:36,261 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:23:05,999 - INFO - connecting to Access_control_system.db
+2018-10-27 22:23:05,999 - INFO - connecting to Access_control_system.db
+2018-10-27 22:23:06,033 - INFO - connecting to Access_control_system.db
+2018-10-27 22:23:07,125 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:23:21,494 - INFO - connecting to Access_control_system.db
+2018-10-27 22:23:21,495 - INFO - connecting to Access_control_system.db
+2018-10-27 22:23:21,528 - INFO - connecting to Access_control_system.db
+2018-10-27 22:23:22,397 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:23:32,678 - INFO - connecting to Access_control_system.db
+2018-10-27 22:23:32,679 - INFO - connecting to Access_control_system.db
+2018-10-27 22:23:32,738 - INFO - connecting to Access_control_system.db
+2018-10-27 22:23:33,645 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:23:43,046 - INFO - connecting to Access_control_system.db
+2018-10-27 22:23:43,046 - INFO - connecting to Access_control_system.db
+2018-10-27 22:23:43,085 - INFO - connecting to Access_control_system.db
+2018-10-27 22:23:44,109 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:24:09,927 - INFO - connecting to Access_control_system.db
+2018-10-27 22:24:09,927 - INFO - connecting to Access_control_system.db
+2018-10-27 22:24:09,959 - INFO - connecting to Access_control_system.db
+2018-10-27 22:24:10,957 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:24:25,537 - INFO - connecting to Access_control_system.db
+2018-10-27 22:24:25,537 - INFO - connecting to Access_control_system.db
+2018-10-27 22:24:25,570 - INFO - connecting to Access_control_system.db
+2018-10-27 22:24:26,445 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:24:37,655 - INFO - connecting to Access_control_system.db
+2018-10-27 22:24:37,656 - INFO - connecting to Access_control_system.db
+2018-10-27 22:24:37,693 - INFO - connecting to Access_control_system.db
+2018-10-27 22:24:38,998 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:25:04,291 - INFO - connecting to Access_control_system.db
+2018-10-27 22:25:04,292 - INFO - connecting to Access_control_system.db
+2018-10-27 22:25:04,324 - INFO - connecting to Access_control_system.db
+2018-10-27 22:25:05,446 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:25:37,805 - INFO - connecting to Access_control_system.db
+2018-10-27 22:25:37,805 - INFO - connecting to Access_control_system.db
+2018-10-27 22:25:37,842 - INFO - connecting to Access_control_system.db
+2018-10-27 22:26:58,721 - INFO - connecting to Access_control_system.db
+2018-10-27 22:26:58,722 - INFO - connecting to Access_control_system.db
+2018-10-27 22:26:58,755 - INFO - connecting to Access_control_system.db
+2018-10-27 22:27:00,799 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:27:18,233 - INFO - connecting to Access_control_system.db
+2018-10-27 22:27:18,233 - INFO - connecting to Access_control_system.db
+2018-10-27 22:27:18,268 - INFO - connecting to Access_control_system.db
+2018-10-27 22:27:19,255 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:28:01,005 - INFO - connecting to Access_control_system.db
+2018-10-27 22:28:01,005 - INFO - connecting to Access_control_system.db
+2018-10-27 22:28:01,037 - INFO - connecting to Access_control_system.db
+2018-10-27 22:28:02,008 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:28:19,296 - INFO - connecting to Access_control_system.db
+2018-10-27 22:28:19,297 - INFO - connecting to Access_control_system.db
+2018-10-27 22:28:19,330 - INFO - connecting to Access_control_system.db
+2018-10-27 22:28:20,209 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:28:39,524 - INFO - connecting to Access_control_system.db
+2018-10-27 22:28:39,524 - INFO - connecting to Access_control_system.db
+2018-10-27 22:28:39,557 - INFO - connecting to Access_control_system.db
+2018-10-27 22:28:40,442 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:29:12,698 - INFO - connecting to Access_control_system.db
+2018-10-27 22:29:12,698 - INFO - connecting to Access_control_system.db
+2018-10-27 22:29:12,734 - INFO - connecting to Access_control_system.db
+2018-10-27 22:29:13,609 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:29:27,903 - INFO - connecting to Access_control_system.db
+2018-10-27 22:29:27,904 - INFO - connecting to Access_control_system.db
+2018-10-27 22:29:27,943 - INFO - connecting to Access_control_system.db
+2018-10-27 22:29:28,762 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:29:39,452 - INFO - connecting to Access_control_system.db
+2018-10-27 22:29:39,452 - INFO - connecting to Access_control_system.db
+2018-10-27 22:29:39,486 - INFO - connecting to Access_control_system.db
+2018-10-27 22:29:40,234 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:29:50,918 - INFO - connecting to Access_control_system.db
+2018-10-27 22:29:50,919 - INFO - connecting to Access_control_system.db
+2018-10-27 22:29:50,956 - INFO - connecting to Access_control_system.db
+2018-10-27 22:29:51,730 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:30:04,157 - INFO - connecting to Access_control_system.db
+2018-10-27 22:30:04,158 - INFO - connecting to Access_control_system.db
+2018-10-27 22:30:04,192 - INFO - connecting to Access_control_system.db
+2018-10-27 22:30:04,947 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:30:24,564 - INFO - connecting to Access_control_system.db
+2018-10-27 22:30:24,565 - INFO - connecting to Access_control_system.db
+2018-10-27 22:30:24,598 - INFO - connecting to Access_control_system.db
+2018-10-27 22:30:25,283 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:31:41,286 - INFO - connecting to Access_control_system.db
+2018-10-27 22:31:41,287 - INFO - connecting to Access_control_system.db
+2018-10-27 22:31:41,320 - INFO - connecting to Access_control_system.db
+2018-10-27 22:31:42,213 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:31:53,768 - INFO - connecting to Access_control_system.db
+2018-10-27 22:31:53,769 - INFO - connecting to Access_control_system.db
+2018-10-27 22:31:53,802 - INFO - connecting to Access_control_system.db
+2018-10-27 22:31:54,589 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:32:22,865 - INFO - connecting to Access_control_system.db
+2018-10-27 22:32:22,865 - INFO - connecting to Access_control_system.db
+2018-10-27 22:32:22,898 - INFO - connecting to Access_control_system.db
+2018-10-27 22:32:23,629 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:33:05,561 - INFO - connecting to Access_control_system.db
+2018-10-27 22:33:05,562 - INFO - connecting to Access_control_system.db
+2018-10-27 22:33:05,596 - INFO - connecting to Access_control_system.db
+2018-10-27 22:33:06,606 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:33:23,766 - INFO - connecting to Access_control_system.db
+2018-10-27 22:33:23,766 - INFO - connecting to Access_control_system.db
+2018-10-27 22:33:23,797 - INFO - connecting to Access_control_system.db
+2018-10-27 22:33:25,286 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:33:38,478 - INFO - connecting to Access_control_system.db
+2018-10-27 22:33:38,478 - INFO - connecting to Access_control_system.db
+2018-10-27 22:33:38,564 - INFO - connecting to Access_control_system.db
+2018-10-27 22:33:39,334 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:34:21,119 - INFO - connecting to Access_control_system.db
+2018-10-27 22:34:21,120 - INFO - connecting to Access_control_system.db
+2018-10-27 22:34:21,168 - INFO - connecting to Access_control_system.db
+2018-10-27 22:34:22,103 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:35:04,768 - INFO - connecting to Access_control_system.db
+2018-10-27 22:35:04,768 - INFO - connecting to Access_control_system.db
+2018-10-27 22:35:04,800 - INFO - connecting to Access_control_system.db
+2018-10-27 22:35:06,072 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:35:51,728 - INFO - connecting to Access_control_system.db
+2018-10-27 22:35:51,729 - INFO - connecting to Access_control_system.db
+2018-10-27 22:35:51,761 - INFO - connecting to Access_control_system.db
+2018-10-27 22:36:00,400 - INFO - connecting to Access_control_system.db
+2018-10-27 22:36:00,400 - INFO - connecting to Access_control_system.db
+2018-10-27 22:36:00,432 - INFO - connecting to Access_control_system.db
+2018-10-27 22:36:01,368 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:37:32,440 - INFO - connecting to Access_control_system.db
+2018-10-27 22:37:32,441 - INFO - connecting to Access_control_system.db
+2018-10-27 22:37:32,472 - INFO - connecting to Access_control_system.db
+2018-10-27 22:37:33,490 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:39:55,466 - INFO - connecting to Access_control_system.db
+2018-10-27 22:39:55,466 - INFO - connecting to Access_control_system.db
+2018-10-27 22:39:55,517 - INFO - connecting to Access_control_system.db
+2018-10-27 22:39:56,651 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:44:33,485 - INFO - connecting to Access_control_system.db
+2018-10-27 22:44:33,486 - INFO - connecting to Access_control_system.db
+2018-10-27 22:44:33,540 - INFO - connecting to Access_control_system.db
+2018-10-27 22:44:34,611 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:45:36,337 - INFO - connecting to Access_control_system.db
+2018-10-27 22:45:36,337 - INFO - connecting to Access_control_system.db
+2018-10-27 22:45:36,456 - INFO - connecting to Access_control_system.db
+2018-10-27 22:45:37,759 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:46:27,524 - INFO - connecting to Access_control_system.db
+2018-10-27 22:46:27,525 - INFO - connecting to Access_control_system.db
+2018-10-27 22:46:27,560 - INFO - connecting to Access_control_system.db
+2018-10-27 22:46:28,488 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:49:20,800 - INFO - connecting to Access_control_system.db
+2018-10-27 22:49:20,800 - INFO - connecting to Access_control_system.db
+2018-10-27 22:49:20,841 - INFO - connecting to Access_control_system.db
+2018-10-27 22:49:21,666 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:51:08,500 - INFO - connecting to Access_control_system.db
+2018-10-27 22:51:08,501 - INFO - connecting to Access_control_system.db
+2018-10-27 22:51:08,531 - INFO - connecting to Access_control_system.db
+2018-10-27 22:51:09,418 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:52:48,499 - INFO - connecting to Access_control_system.db
+2018-10-27 22:52:48,500 - INFO - connecting to Access_control_system.db
+2018-10-27 22:52:48,531 - INFO - connecting to Access_control_system.db
+2018-10-27 22:52:50,532 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:53:17,387 - INFO - connecting to Access_control_system.db
+2018-10-27 22:53:17,387 - INFO - connecting to Access_control_system.db
+2018-10-27 22:53:17,419 - INFO - connecting to Access_control_system.db
+2018-10-27 22:53:18,268 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:53:46,154 - INFO - connecting to Access_control_system.db
+2018-10-27 22:53:46,154 - INFO - connecting to Access_control_system.db
+2018-10-27 22:53:46,190 - INFO - connecting to Access_control_system.db
+2018-10-27 22:53:47,252 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:54:05,873 - INFO - connecting to Access_control_system.db
+2018-10-27 22:54:05,874 - INFO - connecting to Access_control_system.db
+2018-10-27 22:54:05,906 - INFO - connecting to Access_control_system.db
+2018-10-27 22:54:06,732 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:55:59,467 - INFO - connecting to Access_control_system.db
+2018-10-27 22:55:59,467 - INFO - connecting to Access_control_system.db
+2018-10-27 22:55:59,501 - INFO - connecting to Access_control_system.db
+2018-10-27 22:56:00,541 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:56:19,375 - INFO - connecting to Access_control_system.db
+2018-10-27 22:56:19,375 - INFO - connecting to Access_control_system.db
+2018-10-27 22:56:19,408 - INFO - connecting to Access_control_system.db
+2018-10-27 22:56:20,189 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:57:26,693 - INFO - connecting to Access_control_system.db
+2018-10-27 22:57:26,693 - INFO - connecting to Access_control_system.db
+2018-10-27 22:57:26,723 - INFO - connecting to Access_control_system.db
+2018-10-27 22:57:27,726 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:57:54,017 - INFO - connecting to Access_control_system.db
+2018-10-27 22:57:54,017 - INFO - connecting to Access_control_system.db
+2018-10-27 22:57:54,060 - INFO - connecting to Access_control_system.db
+2018-10-27 22:58:08,185 - INFO - connecting to Access_control_system.db
+2018-10-27 22:58:08,186 - INFO - connecting to Access_control_system.db
+2018-10-27 22:58:08,218 - INFO - connecting to Access_control_system.db
+2018-10-27 22:58:09,295 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 22:59:24,140 - INFO - connecting to Access_control_system.db
+2018-10-27 22:59:24,140 - INFO - connecting to Access_control_system.db
+2018-10-27 22:59:24,174 - INFO - connecting to Access_control_system.db
+2018-10-27 22:59:24,959 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:01:31,791 - INFO - connecting to Access_control_system.db
+2018-10-27 23:01:31,792 - INFO - connecting to Access_control_system.db
+2018-10-27 23:01:31,822 - INFO - connecting to Access_control_system.db
+2018-10-27 23:01:34,085 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:01:47,290 - INFO - connecting to Access_control_system.db
+2018-10-27 23:01:47,291 - INFO - connecting to Access_control_system.db
+2018-10-27 23:01:47,340 - INFO - connecting to Access_control_system.db
+2018-10-27 23:01:48,381 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:02:12,800 - INFO - connecting to Access_control_system.db
+2018-10-27 23:02:12,801 - INFO - connecting to Access_control_system.db
+2018-10-27 23:02:12,835 - INFO - connecting to Access_control_system.db
+2018-10-27 23:02:14,051 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:02:40,489 - INFO - connecting to Access_control_system.db
+2018-10-27 23:02:40,489 - INFO - connecting to Access_control_system.db
+2018-10-27 23:02:40,519 - INFO - connecting to Access_control_system.db
+2018-10-27 23:02:41,521 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:05:21,244 - INFO - connecting to Access_control_system.db
+2018-10-27 23:05:21,244 - INFO - connecting to Access_control_system.db
+2018-10-27 23:05:21,305 - INFO - connecting to Access_control_system.db
+2018-10-27 23:05:22,216 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:05:53,566 - INFO - connecting to Access_control_system.db
+2018-10-27 23:05:53,566 - INFO - connecting to Access_control_system.db
+2018-10-27 23:05:53,601 - INFO - connecting to Access_control_system.db
+2018-10-27 23:05:54,567 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:06:29,870 - INFO - connecting to Access_control_system.db
+2018-10-27 23:06:29,871 - INFO - connecting to Access_control_system.db
+2018-10-27 23:06:29,906 - INFO - connecting to Access_control_system.db
+2018-10-27 23:06:30,917 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:06:55,727 - INFO - connecting to Access_control_system.db
+2018-10-27 23:06:55,727 - INFO - connecting to Access_control_system.db
+2018-10-27 23:06:55,766 - INFO - connecting to Access_control_system.db
+2018-10-27 23:06:57,005 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:07:13,053 - INFO - connecting to Access_control_system.db
+2018-10-27 23:07:13,054 - INFO - connecting to Access_control_system.db
+2018-10-27 23:07:13,087 - INFO - connecting to Access_control_system.db
+2018-10-27 23:07:13,964 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:07:51,950 - INFO - connecting to Access_control_system.db
+2018-10-27 23:07:51,951 - INFO - connecting to Access_control_system.db
+2018-10-27 23:07:51,983 - INFO - connecting to Access_control_system.db
+2018-10-27 23:07:53,115 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:08:33,741 - INFO - connecting to Access_control_system.db
+2018-10-27 23:08:33,742 - INFO - connecting to Access_control_system.db
+2018-10-27 23:08:33,773 - INFO - connecting to Access_control_system.db
+2018-10-27 23:08:34,769 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:08:53,978 - INFO - connecting to Access_control_system.db
+2018-10-27 23:08:53,979 - INFO - connecting to Access_control_system.db
+2018-10-27 23:08:54,012 - INFO - connecting to Access_control_system.db
+2018-10-27 23:08:55,137 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:09:13,693 - INFO - connecting to Access_control_system.db
+2018-10-27 23:09:13,693 - INFO - connecting to Access_control_system.db
+2018-10-27 23:09:13,726 - INFO - connecting to Access_control_system.db
+2018-10-27 23:09:14,640 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:09:17,519 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-27 23:09:19,624 - INFO - checking data in db: a ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb
+2018-10-27 23:09:40,750 - INFO - connecting to Access_control_system.db
+2018-10-27 23:09:40,751 - INFO - connecting to Access_control_system.db
+2018-10-27 23:09:40,784 - INFO - connecting to Access_control_system.db
+2018-10-27 23:09:42,063 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:10:17,074 - INFO - connecting to Access_control_system.db
+2018-10-27 23:10:17,074 - INFO - connecting to Access_control_system.db
+2018-10-27 23:10:17,106 - INFO - connecting to Access_control_system.db
+2018-10-27 23:10:18,014 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:12:00,529 - INFO - connecting to Access_control_system.db
+2018-10-27 23:12:00,530 - INFO - connecting to Access_control_system.db
+2018-10-27 23:12:00,562 - INFO - connecting to Access_control_system.db
+2018-10-27 23:12:01,604 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:13:02,970 - INFO - connecting to Access_control_system.db
+2018-10-27 23:13:02,971 - INFO - connecting to Access_control_system.db
+2018-10-27 23:13:03,008 - INFO - connecting to Access_control_system.db
+2018-10-27 23:13:03,850 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:13:18,976 - INFO - connecting to Access_control_system.db
+2018-10-27 23:13:18,976 - INFO - connecting to Access_control_system.db
+2018-10-27 23:13:19,009 - INFO - connecting to Access_control_system.db
+2018-10-27 23:13:19,850 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:13:29,190 - INFO - connecting to Access_control_system.db
+2018-10-27 23:13:29,191 - INFO - connecting to Access_control_system.db
+2018-10-27 23:13:29,224 - INFO - connecting to Access_control_system.db
+2018-10-27 23:13:30,338 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:13:39,421 - INFO - connecting to Access_control_system.db
+2018-10-27 23:13:39,422 - INFO - connecting to Access_control_system.db
+2018-10-27 23:13:39,459 - INFO - connecting to Access_control_system.db
+2018-10-27 23:13:40,649 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:19:32,325 - INFO - connecting to Access_control_system.db
+2018-10-27 23:19:32,326 - INFO - connecting to Access_control_system.db
+2018-10-27 23:19:32,362 - INFO - connecting to Access_control_system.db
+2018-10-27 23:19:33,380 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:24:08,871 - INFO - connecting to Access_control_system.db
+2018-10-27 23:24:08,872 - INFO - connecting to Access_control_system.db
+2018-10-27 23:24:08,955 - INFO - connecting to Access_control_system.db
+2018-10-27 23:24:10,306 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:24:34,775 - INFO - connecting to Access_control_system.db
+2018-10-27 23:24:34,775 - INFO - connecting to Access_control_system.db
+2018-10-27 23:24:34,825 - INFO - connecting to Access_control_system.db
+2018-10-27 23:24:35,745 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:25:41,508 - INFO - connecting to Access_control_system.db
+2018-10-27 23:25:41,509 - INFO - connecting to Access_control_system.db
+2018-10-27 23:25:41,544 - INFO - connecting to Access_control_system.db
+2018-10-27 23:25:42,504 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:26:03,238 - INFO - connecting to Access_control_system.db
+2018-10-27 23:26:03,239 - INFO - connecting to Access_control_system.db
+2018-10-27 23:26:03,276 - INFO - connecting to Access_control_system.db
+2018-10-27 23:26:04,721 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:26:54,703 - INFO - connecting to Access_control_system.db
+2018-10-27 23:26:54,704 - INFO - connecting to Access_control_system.db
+2018-10-27 23:26:54,738 - INFO - connecting to Access_control_system.db
+2018-10-27 23:26:55,880 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:27:52,226 - INFO - connecting to Access_control_system.db
+2018-10-27 23:27:52,226 - INFO - connecting to Access_control_system.db
+2018-10-27 23:27:52,257 - INFO - connecting to Access_control_system.db
+2018-10-27 23:27:53,168 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:29:53,378 - INFO - connecting to Access_control_system.db
+2018-10-27 23:29:53,379 - INFO - connecting to Access_control_system.db
+2018-10-27 23:29:53,430 - INFO - connecting to Access_control_system.db
+2018-10-27 23:29:54,503 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:30:13,258 - INFO - connecting to Access_control_system.db
+2018-10-27 23:30:13,258 - INFO - connecting to Access_control_system.db
+2018-10-27 23:30:13,290 - INFO - connecting to Access_control_system.db
+2018-10-27 23:30:14,247 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:30:24,440 - INFO - connecting to Access_control_system.db
+2018-10-27 23:30:24,440 - INFO - connecting to Access_control_system.db
+2018-10-27 23:30:24,481 - INFO - connecting to Access_control_system.db
+2018-10-27 23:30:25,358 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:30:34,027 - INFO - connecting to Access_control_system.db
+2018-10-27 23:30:34,027 - INFO - connecting to Access_control_system.db
+2018-10-27 23:30:34,065 - INFO - connecting to Access_control_system.db
+2018-10-27 23:30:34,934 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:31:41,019 - INFO - connecting to Access_control_system.db
+2018-10-27 23:31:41,019 - INFO - connecting to Access_control_system.db
+2018-10-27 23:31:41,056 - INFO - connecting to Access_control_system.db
+2018-10-27 23:31:42,438 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:31:54,217 - INFO - connecting to Access_control_system.db
+2018-10-27 23:31:54,217 - INFO - connecting to Access_control_system.db
+2018-10-27 23:31:54,256 - INFO - connecting to Access_control_system.db
+2018-10-27 23:31:55,598 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:32:05,008 - INFO - connecting to Access_control_system.db
+2018-10-27 23:32:05,009 - INFO - connecting to Access_control_system.db
+2018-10-27 23:32:05,041 - INFO - connecting to Access_control_system.db
+2018-10-27 23:32:06,310 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:32:26,154 - INFO - connecting to Access_control_system.db
+2018-10-27 23:32:26,155 - INFO - connecting to Access_control_system.db
+2018-10-27 23:32:26,186 - INFO - connecting to Access_control_system.db
+2018-10-27 23:32:27,422 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:34:47,294 - INFO - connecting to Access_control_system.db
+2018-10-27 23:34:47,295 - INFO - connecting to Access_control_system.db
+2018-10-27 23:34:47,330 - INFO - connecting to Access_control_system.db
+2018-10-27 23:34:48,365 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:40:58,256 - INFO - connecting to Access_control_system.db
+2018-10-27 23:40:58,257 - INFO - connecting to Access_control_system.db
+2018-10-27 23:40:58,301 - INFO - connecting to Access_control_system.db
+2018-10-27 23:40:59,837 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:47:08,774 - INFO - connecting to Access_control_system.db
+2018-10-27 23:47:08,775 - INFO - connecting to Access_control_system.db
+2018-10-27 23:47:08,807 - INFO - connecting to Access_control_system.db
+2018-10-27 23:47:10,594 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:47:35,590 - INFO - connecting to Access_control_system.db
+2018-10-27 23:47:35,591 - INFO - connecting to Access_control_system.db
+2018-10-27 23:47:35,633 - INFO - connecting to Access_control_system.db
+2018-10-27 23:47:36,674 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:49:29,313 - INFO - connecting to Access_control_system.db
+2018-10-27 23:49:29,314 - INFO - connecting to Access_control_system.db
+2018-10-27 23:49:29,367 - INFO - connecting to Access_control_system.db
+2018-10-27 23:49:30,705 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 23:55:52,053 - INFO - connecting to Access_control_system.db
+2018-10-27 23:55:52,054 - INFO - connecting to Access_control_system.db
+2018-10-27 23:55:52,140 - INFO - connecting to Access_control_system.db
+2018-10-27 23:55:53,127 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-28 00:01:07,602 - INFO - connecting to Access_control_system.db
+2018-10-28 00:01:07,603 - INFO - connecting to Access_control_system.db
+2018-10-28 00:01:07,635 - INFO - connecting to Access_control_system.db
+2018-10-28 00:01:08,679 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-28 00:01:34,984 - INFO - connecting to Access_control_system.db
+2018-10-28 00:01:34,984 - INFO - connecting to Access_control_system.db
+2018-10-28 00:01:35,017 - INFO - connecting to Access_control_system.db
+2018-10-28 00:01:35,982 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-28 00:01:50,842 - INFO - connecting to Access_control_system.db
+2018-10-28 00:01:50,843 - INFO - connecting to Access_control_system.db
+2018-10-28 00:01:50,876 - INFO - connecting to Access_control_system.db
+2018-10-28 00:01:51,798 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-28 00:02:01,580 - INFO - connecting to Access_control_system.db
+2018-10-28 00:02:01,581 - INFO - connecting to Access_control_system.db
+2018-10-28 00:02:01,613 - INFO - connecting to Access_control_system.db
+2018-10-28 00:02:02,750 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-28 00:02:15,263 - INFO - connecting to Access_control_system.db
+2018-10-28 00:02:15,263 - INFO - connecting to Access_control_system.db
+2018-10-28 00:02:15,344 - INFO - connecting to Access_control_system.db
+2018-10-28 00:02:16,390 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-28 00:02:24,279 - INFO - connecting to Access_control_system.db
+2018-10-28 00:02:24,279 - INFO - connecting to Access_control_system.db
+2018-10-28 00:02:24,314 - INFO - connecting to Access_control_system.db
+2018-10-28 00:02:25,654 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-28 00:02:35,479 - INFO - connecting to Access_control_system.db
+2018-10-28 00:02:35,480 - INFO - connecting to Access_control_system.db
+2018-10-28 00:02:35,513 - INFO - connecting to Access_control_system.db
+2018-10-28 00:02:37,622 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-28 00:09:22,505 - INFO - connecting to Access_control_system.db
+2018-10-28 00:09:22,506 - INFO - connecting to Access_control_system.db
+2018-10-28 00:09:22,538 - INFO - connecting to Access_control_system.db
+2018-10-28 00:09:23,766 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8

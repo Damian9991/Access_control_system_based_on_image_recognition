@@ -10,7 +10,6 @@
 
 import sqlite3
 import os
-import hashlib
 
 import logging
 logger = logging.getLogger("database_events.log")
@@ -83,6 +82,21 @@ class DatabaseManager(object):
             print(str(err))
             logger.error(str(err))
 
+    def del_owner_from_database(self, owner):
+
+        query = "DELETE FROM licence_plates WHERE owner = '{}')".format(owner)
+        logger.info(query)
+        try:
+            self.cursor.execute(query)
+            results = self.cursor.fetchall()
+            if results[0][0] == 1:
+                return True
+            else:
+                return False
+        except sqlite3.OperationalError as err:
+            print(str(err))
+            logger.error(str(err))
+
     def check_login_and_password(self, table_name, login, password):
         logger.info("checking data in db: " + login + " " + password)
         query = "SELECT * FROM {} WHERE username = ? AND password =?".format(table_name)
@@ -92,6 +106,16 @@ class DatabaseManager(object):
             return results
         except sqlite3.OperationalError as err:
             print(str(err))
+            logger.error(str(err))
+
+    def add_plate_and_owner_to_db(self, owner, plate):
+        table = "license_plates"
+        try:
+            insert_data = "INSERT INTO {}(owner, plate) VALUES(?,?)".format(table, owner,plate)
+            self.cursor.execute(insert_data, [(owner), (plate)])
+            self.db.commit()
+            return True
+        except Exception as err:
             logger.error(str(err))
 
     def add_user_to_db(self, username, password_hash):
@@ -132,12 +156,6 @@ class DatabaseManager(object):
     def close_connection_to_db(self):
         logger.info("closing connection to db")
         self.db.close()
-
-    def create_hash_before_add_to_db(self, input_str):
-        hash_object = hashlib.sha256(bytes(input_str, encoding='utf-8'))
-        output = hash_object.hexdigest()
-        return output
-
 
 if __name__ == "__main__":
     sql_object = DatabaseManager()
