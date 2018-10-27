@@ -918,3 +918,7 @@
 2018-10-28 00:09:22,506 - INFO - connecting to Access_control_system.db
 2018-10-28 00:09:22,538 - INFO - connecting to Access_control_system.db
 2018-10-28 00:09:23,766 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-28 00:13:51,359 - INFO - connecting to Access_control_system.db
+2018-10-28 00:13:51,360 - INFO - connecting to Access_control_system.db
+2018-10-28 00:13:51,478 - INFO - connecting to Access_control_system.db
+2018-10-28 00:13:52,933 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
