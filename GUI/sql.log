@@ -1,0 +1,1440 @@
+2018-10-15 16:57:01,132 - INFO - connecting to db: aws_system.db
+2018-10-15 16:57:01,132 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-15 16:57:01,133 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-15 16:57:04,771 - INFO - connecting to db: aws_system.db
+2018-10-15 16:57:04,772 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-15 16:57:04,773 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-15 17:02:30,288 - INFO - connecting to db: aws_system.db
+2018-10-15 17:02:30,289 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-15 17:02:30,289 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-15 17:02:52,146 - INFO - connecting to db: aws_system.db
+2018-10-15 17:02:52,147 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-15 17:02:52,147 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-15 17:08:15,662 - INFO - connecting to db: aws_system.db
+2018-10-15 17:08:15,662 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-15 17:08:15,663 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-17 23:28:44,016 - INFO - connecting to db: aws_system.db
+2018-10-17 23:28:44,049 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-17 23:28:44,050 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-17 23:36:59,079 - INFO - connecting to db: aws_system.db
+2018-10-17 23:36:59,079 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-17 23:36:59,080 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-18 15:54:40,312 - INFO - connecting to db: aws_system.db
+2018-10-18 15:54:40,356 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-18 15:54:40,356 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 17:30:17,655 - INFO - connecting to db: aws_system.db
+2018-10-20 17:30:17,682 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 17:30:17,682 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 18:01:34,970 - INFO - connecting to db: aws_system.db
+2018-10-20 18:01:34,971 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 18:01:34,971 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 18:01:37,322 - INFO - connecting to db: aws_system.db
+2018-10-20 18:01:37,322 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 18:01:37,323 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 18:02:10,538 - INFO - connecting to db: aws_system.db
+2018-10-20 18:02:10,539 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 18:02:10,539 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 18:02:16,914 - INFO - connecting to db: aws_system.db
+2018-10-20 18:02:16,915 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 18:02:16,916 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 18:02:20,762 - INFO - connecting to db: aws_system.db
+2018-10-20 18:02:20,762 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 18:02:20,763 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 18:02:23,994 - INFO - connecting to db: aws_system.db
+2018-10-20 18:02:23,995 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 18:02:23,995 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 18:05:18,251 - INFO - connecting to db: aws_system.db
+2018-10-20 18:05:18,252 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 18:05:18,253 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 18:05:54,980 - INFO - connecting to db: aws_system.db
+2018-10-20 18:05:54,980 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 18:05:54,981 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 18:07:10,308 - INFO - connecting to db: aws_system.db
+2018-10-20 18:07:10,308 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 18:07:10,308 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 18:08:13,492 - INFO - connecting to db: aws_system.db
+2018-10-20 18:08:13,492 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 18:08:13,493 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 18:12:21,654 - INFO - connecting to db: aws_system.db
+2018-10-20 18:12:21,654 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 18:12:21,655 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 18:12:35,438 - INFO - connecting to db: aws_system.db
+2018-10-20 18:12:35,438 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 18:12:35,438 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 18:14:42,814 - INFO - connecting to db: aws_system.db
+2018-10-20 18:14:42,815 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 18:14:42,815 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 18:17:27,135 - INFO - connecting to db: aws_system.db
+2018-10-20 18:17:27,136 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 18:17:27,136 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 18:22:26,712 - INFO - connecting to db: aws_system.db
+2018-10-20 18:22:26,713 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 18:22:26,713 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 18:23:11,760 - INFO - connecting to db: aws_system.db
+2018-10-20 18:23:11,760 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 18:23:11,761 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 18:25:46,402 - INFO - connecting to db: aws_system.db
+2018-10-20 18:25:46,402 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 18:25:46,402 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 18:26:22,897 - INFO - connecting to db: aws_system.db
+2018-10-20 18:26:22,898 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 18:26:22,898 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 18:28:17,526 - INFO - connecting to db: aws_system.db
+2018-10-20 18:28:17,527 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 18:28:17,528 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 18:40:44,964 - INFO - connecting to db: aws_system.db
+2018-10-20 18:40:44,964 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 18:40:44,965 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 18:41:51,643 - INFO - connecting to db: aws_system.db
+2018-10-20 18:41:51,644 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 18:41:51,644 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 18:42:29,043 - INFO - connecting to db: aws_system.db
+2018-10-20 18:42:29,044 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 18:42:29,044 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 18:48:24,721 - INFO - connecting to db: aws_system.db
+2018-10-20 18:48:24,722 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 18:48:24,723 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 18:54:52,772 - INFO - connecting to db: aws_system.db
+2018-10-20 18:54:52,772 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 18:54:52,773 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 20:02:54,972 - INFO - connecting to db: aws_system.db
+2018-10-20 20:02:54,972 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 20:02:54,973 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 20:07:03,638 - INFO - connecting to db: aws_system.db
+2018-10-20 20:07:03,638 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 20:07:03,638 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 20:26:59,743 - INFO - connecting to db: aws_system.db
+2018-10-20 20:26:59,743 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 20:26:59,744 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 20:32:06,289 - INFO - connecting to db: aws_system.db
+2018-10-20 20:32:06,290 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 20:32:06,290 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 20:33:22,362 - INFO - connecting to db: aws_system.db
+2018-10-20 20:33:22,362 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 20:33:22,363 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 20:43:11,610 - INFO - connecting to db: aws_system.db
+2018-10-20 20:43:11,611 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 20:43:11,611 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 21:16:23,071 - INFO - connecting to db: aws_system.db
+2018-10-20 21:16:23,071 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 21:16:23,072 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 21:24:17,761 - INFO - connecting to db: aws_system.db
+2018-10-20 21:24:17,761 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 21:24:17,762 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 21:28:12,792 - INFO - connecting to db: aws_system.db
+2018-10-20 21:28:12,792 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 21:28:12,793 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 21:28:21,647 - INFO - connecting to db: aws_system.db
+2018-10-20 21:28:21,648 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 21:28:21,648 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 21:29:37,199 - INFO - connecting to db: aws_system.db
+2018-10-20 21:29:37,199 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 21:29:37,200 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 21:38:16,686 - INFO - connecting to db: aws_system.db
+2018-10-20 21:38:16,686 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 21:38:16,687 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 21:41:41,989 - INFO - connecting to db: aws_system.db
+2018-10-20 21:41:41,989 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 21:41:41,990 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 21:41:44,637 - INFO - connecting to db: aws_system.db
+2018-10-20 21:41:44,638 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 21:41:44,638 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 21:42:47,078 - INFO - connecting to db: aws_system.db
+2018-10-20 21:42:47,079 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 21:42:47,080 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 21:44:43,221 - INFO - connecting to db: aws_system.db
+2018-10-20 21:44:43,222 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 21:44:43,222 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 21:45:45,850 - INFO - connecting to db: aws_system.db
+2018-10-20 21:45:45,851 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 21:45:45,852 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 21:49:12,981 - INFO - connecting to db: aws_system.db
+2018-10-20 21:49:12,982 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 21:49:12,982 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 21:50:47,394 - INFO - connecting to db: aws_system.db
+2018-10-20 21:50:47,394 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 21:50:47,395 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 21:51:48,780 - INFO - connecting to db: aws_system.db
+2018-10-20 21:51:48,780 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 21:51:48,781 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 21:52:29,982 - INFO - connecting to db: aws_system.db
+2018-10-20 21:52:29,982 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 21:52:29,983 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 21:53:31,200 - INFO - connecting to db: aws_system.db
+2018-10-20 21:53:31,200 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 21:53:31,201 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 21:54:32,210 - INFO - connecting to db: aws_system.db
+2018-10-20 21:54:32,210 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 21:54:32,211 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 21:56:56,717 - INFO - connecting to db: aws_system.db
+2018-10-20 21:56:56,718 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 21:56:56,719 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 21:57:45,423 - INFO - connecting to db: aws_system.db
+2018-10-20 21:57:45,424 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 21:57:45,424 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:01:39,587 - INFO - connecting to db: aws_system.db
+2018-10-20 22:01:39,588 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:01:39,589 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:06:15,527 - INFO - connecting to db: aws_system.db
+2018-10-20 22:06:15,527 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:06:15,528 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:06:33,344 - INFO - connecting to db: aws_system.db
+2018-10-20 22:06:33,344 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:06:33,345 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:06:41,919 - INFO - connecting to db: aws_system.db
+2018-10-20 22:06:41,920 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:06:41,920 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:06:51,296 - INFO - connecting to db: aws_system.db
+2018-10-20 22:06:51,296 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:06:51,296 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:06:58,688 - INFO - connecting to db: aws_system.db
+2018-10-20 22:06:58,688 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:06:58,688 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:07:28,080 - INFO - connecting to db: aws_system.db
+2018-10-20 22:07:28,080 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:07:28,081 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:07:38,368 - INFO - connecting to db: aws_system.db
+2018-10-20 22:07:38,368 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:07:38,369 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:10:45,339 - INFO - connecting to db: aws_system.db
+2018-10-20 22:10:45,339 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:10:45,340 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:11:01,387 - INFO - connecting to db: aws_system.db
+2018-10-20 22:11:01,387 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:11:01,387 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:14:11,293 - INFO - connecting to db: aws_system.db
+2018-10-20 22:14:11,293 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:14:11,293 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:15:16,613 - INFO - connecting to db: aws_system.db
+2018-10-20 22:15:16,614 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:15:16,614 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:20:56,172 - INFO - connecting to db: aws_system.db
+2018-10-20 22:20:56,172 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:20:56,173 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:21:51,546 - INFO - connecting to db: aws_system.db
+2018-10-20 22:21:51,547 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:21:51,547 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:24:14,775 - INFO - connecting to db: aws_system.db
+2018-10-20 22:24:14,776 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:24:14,777 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:26:09,005 - INFO - connecting to db: aws_system.db
+2018-10-20 22:26:09,006 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:26:09,007 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:27:33,444 - INFO - connecting to db: aws_system.db
+2018-10-20 22:27:33,445 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:27:33,445 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:30:11,867 - INFO - connecting to db: aws_system.db
+2018-10-20 22:30:11,867 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:30:11,868 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:34:18,698 - INFO - connecting to db: aws_system.db
+2018-10-20 22:34:18,698 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:34:18,698 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:35:19,154 - INFO - connecting to db: aws_system.db
+2018-10-20 22:35:19,154 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:35:19,155 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:35:24,146 - INFO - connecting to db: aws_system.db
+2018-10-20 22:35:24,146 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:35:24,147 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:38:10,481 - INFO - connecting to db: aws_system.db
+2018-10-20 22:38:10,482 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:38:10,482 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:42:23,537 - INFO - connecting to db: aws_system.db
+2018-10-20 22:42:23,538 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:42:23,538 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:42:31,545 - INFO - connecting to db: aws_system.db
+2018-10-20 22:42:31,546 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:42:31,546 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:44:24,762 - INFO - connecting to db: aws_system.db
+2018-10-20 22:44:24,762 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:44:24,763 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:45:12,842 - INFO - connecting to db: aws_system.db
+2018-10-20 22:45:12,843 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:45:12,843 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:46:36,010 - INFO - connecting to db: aws_system.db
+2018-10-20 22:46:36,011 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:46:36,011 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:46:48,298 - INFO - connecting to db: aws_system.db
+2018-10-20 22:46:48,299 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:46:48,300 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:47:39,090 - INFO - connecting to db: aws_system.db
+2018-10-20 22:47:39,090 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:47:39,091 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:49:16,658 - INFO - connecting to db: aws_system.db
+2018-10-20 22:49:16,659 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:49:16,659 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:52:18,387 - INFO - connecting to db: aws_system.db
+2018-10-20 22:52:18,388 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:52:18,388 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:54:19,789 - INFO - connecting to db: aws_system.db
+2018-10-20 22:54:19,789 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:54:19,790 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:56:27,102 - INFO - connecting to db: aws_system.db
+2018-10-20 22:56:27,103 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:56:27,103 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:57:08,471 - INFO - connecting to db: aws_system.db
+2018-10-20 22:57:08,472 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:57:08,473 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:57:27,616 - INFO - connecting to db: aws_system.db
+2018-10-20 22:57:27,616 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:57:27,617 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:57:29,432 - INFO - connecting to db: aws_system.db
+2018-10-20 22:57:29,432 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:57:29,433 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:58:03,240 - INFO - connecting to db: aws_system.db
+2018-10-20 22:58:03,241 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:58:03,242 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:58:23,993 - INFO - connecting to db: aws_system.db
+2018-10-20 22:58:23,993 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:58:23,994 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:58:43,145 - INFO - connecting to db: aws_system.db
+2018-10-20 22:58:43,146 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:58:43,147 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:58:59,993 - INFO - connecting to db: aws_system.db
+2018-10-20 22:58:59,993 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:58:59,993 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:59:13,353 - INFO - connecting to db: aws_system.db
+2018-10-20 22:59:13,354 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:59:13,354 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 22:59:31,361 - INFO - connecting to db: aws_system.db
+2018-10-20 22:59:31,362 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 22:59:31,362 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:00:33,002 - INFO - connecting to db: aws_system.db
+2018-10-20 23:00:33,003 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:00:33,003 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:06:22,205 - INFO - connecting to db: aws_system.db
+2018-10-20 23:06:22,206 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:06:22,206 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:07:02,718 - INFO - connecting to db: aws_system.db
+2018-10-20 23:07:02,718 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:07:02,718 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:11:27,712 - INFO - connecting to db: aws_system.db
+2018-10-20 23:11:27,712 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:11:27,712 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:13:02,601 - INFO - connecting to db: aws_system.db
+2018-10-20 23:13:02,602 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:13:02,602 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:13:50,769 - INFO - connecting to db: aws_system.db
+2018-10-20 23:13:50,770 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:13:50,770 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:13:56,105 - INFO - connecting to db: aws_system.db
+2018-10-20 23:13:56,106 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:13:56,106 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:14:06,233 - INFO - connecting to db: aws_system.db
+2018-10-20 23:14:06,234 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:14:06,234 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:15:38,962 - INFO - connecting to db: aws_system.db
+2018-10-20 23:15:38,962 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:15:38,962 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:16:53,674 - INFO - connecting to db: aws_system.db
+2018-10-20 23:16:53,675 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:16:53,676 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:17:03,459 - INFO - connecting to db: aws_system.db
+2018-10-20 23:17:03,459 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:17:03,460 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:17:13,842 - INFO - connecting to db: aws_system.db
+2018-10-20 23:17:13,843 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:17:13,843 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:17:34,530 - INFO - connecting to db: aws_system.db
+2018-10-20 23:17:34,531 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:17:34,531 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:17:55,203 - INFO - connecting to db: aws_system.db
+2018-10-20 23:17:55,203 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:17:55,203 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:18:23,963 - INFO - connecting to db: aws_system.db
+2018-10-20 23:18:23,963 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:18:23,963 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:18:38,323 - INFO - connecting to db: aws_system.db
+2018-10-20 23:18:38,323 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:18:38,324 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:19:08,387 - INFO - connecting to db: aws_system.db
+2018-10-20 23:19:08,388 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:19:08,389 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:24:24,981 - INFO - connecting to db: aws_system.db
+2018-10-20 23:24:24,982 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:24:24,982 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:25:29,990 - INFO - connecting to db: aws_system.db
+2018-10-20 23:25:29,990 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:25:29,991 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:25:55,046 - INFO - connecting to db: aws_system.db
+2018-10-20 23:25:55,046 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:25:55,046 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:29:19,918 - INFO - connecting to db: aws_system.db
+2018-10-20 23:29:19,919 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:29:19,919 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:30:24,311 - INFO - connecting to db: aws_system.db
+2018-10-20 23:30:24,311 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:30:24,312 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:30:43,654 - INFO - connecting to db: aws_system.db
+2018-10-20 23:30:43,655 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:30:43,656 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:33:21,623 - INFO - connecting to db: aws_system.db
+2018-10-20 23:33:21,623 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:33:21,623 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:34:41,191 - INFO - connecting to db: aws_system.db
+2018-10-20 23:34:41,191 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:34:41,192 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:35:47,120 - INFO - connecting to db: aws_system.db
+2018-10-20 23:35:47,120 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:35:47,121 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:39:40,528 - INFO - connecting to db: aws_system.db
+2018-10-20 23:39:40,528 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:39:40,529 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:40:07,017 - INFO - connecting to db: aws_system.db
+2018-10-20 23:40:07,017 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:40:07,018 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:40:39,512 - INFO - connecting to db: aws_system.db
+2018-10-20 23:40:39,513 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:40:39,513 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:41:11,961 - INFO - connecting to db: aws_system.db
+2018-10-20 23:41:11,961 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:41:11,961 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:42:05,953 - INFO - connecting to db: aws_system.db
+2018-10-20 23:42:05,953 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:42:05,954 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:46:47,906 - INFO - connecting to db: aws_system.db
+2018-10-20 23:46:47,907 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:46:47,908 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:47:02,899 - INFO - connecting to db: aws_system.db
+2018-10-20 23:47:02,900 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:47:02,900 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:47:17,890 - INFO - connecting to db: aws_system.db
+2018-10-20 23:47:17,891 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:47:17,891 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:54:25,997 - INFO - connecting to db: aws_system.db
+2018-10-20 23:54:25,997 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:54:25,997 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-20 23:56:51,718 - INFO - connecting to db: aws_system.db
+2018-10-20 23:56:51,718 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-20 23:56:51,719 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 00:00:22,967 - INFO - connecting to db: aws_system.db
+2018-10-21 00:00:22,968 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 00:00:22,968 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 00:10:19,713 - INFO - connecting to db: aws_system.db
+2018-10-21 00:10:19,714 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 00:10:19,714 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 00:18:10,978 - INFO - connecting to db: aws_system.db
+2018-10-21 00:18:10,979 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 00:18:10,979 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 00:22:05,174 - INFO - connecting to db: aws_system.db
+2018-10-21 00:22:05,174 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 00:22:05,175 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 00:44:13,183 - INFO - connecting to db: aws_system.db
+2018-10-21 00:44:13,184 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 00:44:13,185 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 00:48:38,124 - INFO - connecting to db: aws_system.db
+2018-10-21 00:48:38,125 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 00:48:38,126 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 00:57:41,372 - INFO - connecting to db: aws_system.db
+2018-10-21 00:57:41,373 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 00:57:41,374 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 00:58:51,980 - INFO - connecting to db: aws_system.db
+2018-10-21 00:58:51,980 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 00:58:51,980 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 00:58:58,045 - INFO - connecting to db: aws_system.db
+2018-10-21 00:58:58,046 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 00:58:58,047 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 01:02:20,064 - INFO - connecting to db: aws_system.db
+2018-10-21 01:02:20,065 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 01:02:20,066 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 01:05:21,684 - INFO - connecting to db: aws_system.db
+2018-10-21 01:05:21,684 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 01:05:21,685 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 01:19:49,231 - INFO - connecting to db: aws_system.db
+2018-10-21 01:19:49,275 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 01:19:49,275 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 01:19:58,334 - INFO - connecting to db: aws_system.db
+2018-10-21 01:19:58,335 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 01:19:58,336 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 01:25:44,760 - INFO - connecting to db: aws_system.db
+2018-10-21 01:25:44,761 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 01:25:44,761 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 01:26:53,428 - INFO - connecting to db: aws_system.db
+2018-10-21 01:26:53,428 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 01:26:53,429 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 01:42:48,734 - INFO - connecting to db: aws_system.db
+2018-10-21 01:42:48,734 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 01:42:48,735 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 13:10:27,520 - INFO - connecting to db: aws_system.db
+2018-10-21 13:10:27,531 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 13:10:27,531 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 13:11:13,001 - INFO - connecting to db: aws_system.db
+2018-10-21 13:11:13,001 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 13:11:13,002 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:18:38,677 - INFO - connecting to db: aws_system.db
+2018-10-21 15:18:38,677 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:18:38,678 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:18:58,093 - INFO - connecting to db: aws_system.db
+2018-10-21 15:18:58,094 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:18:58,094 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:19:14,061 - INFO - connecting to db: aws_system.db
+2018-10-21 15:19:14,062 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:19:14,062 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:20:28,718 - INFO - connecting to db: aws_system.db
+2018-10-21 15:20:28,721 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:20:28,721 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:22:06,247 - INFO - connecting to db: aws_system.db
+2018-10-21 15:22:06,247 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:22:06,248 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:23:08,991 - INFO - connecting to db: aws_system.db
+2018-10-21 15:23:08,992 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:23:08,993 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:23:51,231 - INFO - connecting to db: aws_system.db
+2018-10-21 15:23:51,231 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:23:51,232 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:24:34,694 - INFO - connecting to db: aws_system.db
+2018-10-21 15:24:34,695 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:24:34,695 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:29:42,509 - INFO - connecting to db: aws_system.db
+2018-10-21 15:29:42,510 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:29:42,510 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:31:08,563 - INFO - connecting to db: aws_system.db
+2018-10-21 15:31:08,564 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:31:08,565 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:32:11,865 - INFO - connecting to db: aws_system.db
+2018-10-21 15:32:11,866 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:32:11,866 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:32:47,841 - INFO - connecting to db: aws_system.db
+2018-10-21 15:32:47,841 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:32:47,841 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:34:12,032 - INFO - connecting to db: aws_system.db
+2018-10-21 15:34:12,033 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:34:12,034 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:34:36,696 - INFO - connecting to db: aws_system.db
+2018-10-21 15:34:36,696 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:34:36,696 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:34:51,127 - INFO - connecting to db: aws_system.db
+2018-10-21 15:34:51,128 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:34:51,128 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:34:59,831 - INFO - connecting to db: aws_system.db
+2018-10-21 15:34:59,832 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:34:59,832 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:35:09,047 - INFO - connecting to db: aws_system.db
+2018-10-21 15:35:09,048 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:35:09,048 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:35:16,439 - INFO - connecting to db: aws_system.db
+2018-10-21 15:35:16,440 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:35:16,440 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:35:24,031 - INFO - connecting to db: aws_system.db
+2018-10-21 15:35:24,031 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:35:24,032 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:37:16,558 - INFO - connecting to db: aws_system.db
+2018-10-21 15:37:16,559 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:37:16,559 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:38:05,173 - INFO - connecting to db: aws_system.db
+2018-10-21 15:38:05,174 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:38:05,174 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:38:29,613 - INFO - connecting to db: aws_system.db
+2018-10-21 15:38:29,614 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:38:29,614 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:38:51,861 - INFO - connecting to db: aws_system.db
+2018-10-21 15:38:51,862 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:38:51,862 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:39:00,229 - INFO - connecting to db: aws_system.db
+2018-10-21 15:39:00,230 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:39:00,230 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:41:46,661 - INFO - connecting to db: aws_system.db
+2018-10-21 15:41:46,661 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:41:46,662 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:44:23,876 - INFO - connecting to db: aws_system.db
+2018-10-21 15:44:23,877 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:44:23,877 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:49:07,171 - INFO - connecting to db: aws_system.db
+2018-10-21 15:49:07,172 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:49:07,173 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:49:21,899 - INFO - connecting to db: aws_system.db
+2018-10-21 15:49:21,900 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:49:21,901 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:50:02,587 - INFO - connecting to db: aws_system.db
+2018-10-21 15:50:02,587 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:50:02,588 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:51:59,403 - INFO - connecting to db: aws_system.db
+2018-10-21 15:51:59,403 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:51:59,404 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:52:19,891 - INFO - connecting to db: aws_system.db
+2018-10-21 15:52:19,892 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:52:19,892 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:52:40,555 - INFO - connecting to db: aws_system.db
+2018-10-21 15:52:40,556 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:52:40,556 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:52:49,443 - INFO - connecting to db: aws_system.db
+2018-10-21 15:52:49,443 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:52:49,444 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:53:00,219 - INFO - connecting to db: aws_system.db
+2018-10-21 15:53:00,220 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:53:00,221 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:53:09,491 - INFO - connecting to db: aws_system.db
+2018-10-21 15:53:09,491 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:53:09,492 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:54:17,859 - INFO - connecting to db: aws_system.db
+2018-10-21 15:54:17,859 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:54:17,860 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:54:44,867 - INFO - connecting to db: aws_system.db
+2018-10-21 15:54:44,867 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:54:44,868 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 15:55:05,491 - INFO - connecting to db: aws_system.db
+2018-10-21 15:55:05,492 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 15:55:05,492 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 16:00:20,140 - INFO - connecting to db: aws_system.db
+2018-10-21 16:00:20,140 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 16:00:20,141 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 16:00:30,789 - INFO - connecting to db: aws_system.db
+2018-10-21 16:00:30,790 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 16:00:30,790 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 16:00:37,733 - INFO - connecting to db: aws_system.db
+2018-10-21 16:00:37,734 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 16:00:37,734 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 16:00:51,879 - INFO - connecting to db: aws_system.db
+2018-10-21 16:00:51,880 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 16:00:51,880 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 16:01:45,057 - INFO - connecting to db: aws_system.db
+2018-10-21 16:01:45,057 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 16:01:45,058 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 16:02:50,892 - INFO - connecting to db: aws_system.db
+2018-10-21 16:02:50,893 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 16:02:50,894 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 16:04:02,847 - INFO - connecting to db: aws_system.db
+2018-10-21 16:04:02,848 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 16:04:02,849 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 16:36:54,857 - INFO - connecting to db: aws_system.db
+2018-10-21 16:36:54,858 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 16:36:54,858 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 16:37:12,409 - INFO - connecting to db: aws_system.db
+2018-10-21 16:37:12,473 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 16:37:12,473 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 16:37:28,154 - INFO - connecting to db: aws_system.db
+2018-10-21 16:37:28,154 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 16:37:28,155 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 16:37:33,649 - INFO - connecting to db: aws_system.db
+2018-10-21 16:37:33,650 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 16:37:33,650 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 16:39:11,665 - INFO - connecting to db: aws_system.db
+2018-10-21 16:39:11,666 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 16:39:11,666 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 16:41:54,490 - INFO - connecting to db: aws_system.db
+2018-10-21 16:41:54,491 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 16:41:54,491 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 16:46:44,092 - INFO - connecting to db: aws_system.db
+2018-10-21 16:46:44,092 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 16:46:44,092 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 16:46:52,300 - INFO - connecting to db: aws_system.db
+2018-10-21 16:46:52,301 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 16:46:52,301 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 16:50:16,294 - INFO - connecting to db: aws_system.db
+2018-10-21 16:50:16,294 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 16:50:16,295 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 16:51:01,678 - INFO - connecting to db: aws_system.db
+2018-10-21 16:51:01,678 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 16:51:01,679 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 16:51:24,766 - INFO - connecting to db: aws_system.db
+2018-10-21 16:51:24,766 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 16:51:24,767 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 16:51:38,726 - INFO - connecting to db: aws_system.db
+2018-10-21 16:51:38,727 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 16:51:38,728 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 16:57:49,065 - INFO - connecting to db: aws_system.db
+2018-10-21 16:57:49,066 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 16:57:49,066 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 16:58:18,529 - INFO - connecting to db: aws_system.db
+2018-10-21 16:58:18,530 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 16:58:18,530 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 17:14:00,506 - INFO - connecting to db: aws_system.db
+2018-10-21 17:14:00,507 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 17:14:00,507 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 17:17:03,202 - INFO - connecting to db: aws_system.db
+2018-10-21 17:17:03,202 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 17:17:03,203 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 17:20:05,106 - INFO - connecting to db: aws_system.db
+2018-10-21 17:20:05,106 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 17:20:05,107 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 17:21:25,818 - INFO - connecting to db: aws_system.db
+2018-10-21 17:21:25,818 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 17:21:25,818 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 17:21:54,754 - INFO - connecting to db: aws_system.db
+2018-10-21 17:21:54,754 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 17:21:54,755 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 17:22:08,234 - INFO - connecting to db: aws_system.db
+2018-10-21 17:22:08,235 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 17:22:08,235 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 18:58:18,383 - INFO - connecting to db: aws_system.db
+2018-10-21 18:58:18,383 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 18:58:18,384 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 18:59:26,728 - INFO - connecting to db: aws_system.db
+2018-10-21 18:59:26,729 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 18:59:26,729 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 19:01:53,609 - INFO - connecting to db: aws_system.db
+2018-10-21 19:01:53,609 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:01:53,610 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 19:09:14,149 - INFO - connecting to db: aws_system.db
+2018-10-21 19:09:14,150 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:09:14,151 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 19:20:01,266 - INFO - connecting to db: aws_system.db
+2018-10-21 19:20:01,267 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:20:01,268 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 19:20:14,210 - INFO - connecting to db: aws_system.db
+2018-10-21 19:20:14,211 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:20:14,211 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-21 19:20:41,370 - INFO - connecting to db: aws_system.db
+2018-10-21 19:20:41,371 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:20:41,371 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 19:21:26,811 - INFO - connecting to db: aws_system.db
+2018-10-21 19:21:26,811 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:21:26,812 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-21 19:22:18,875 - INFO - connecting to db: aws_system.db
+2018-10-21 19:22:18,876 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:22:18,877 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-21 19:22:28,843 - INFO - connecting to db: aws_system.db
+2018-10-21 19:22:28,844 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:22:28,845 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 19:22:35,787 - INFO - connecting to db: aws_system.db
+2018-10-21 19:22:35,787 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:22:35,788 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-21 19:22:39,523 - INFO - connecting to db: aws_system.db
+2018-10-21 19:22:39,524 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:22:39,525 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-21 19:22:52,803 - INFO - connecting to db: aws_system.db
+2018-10-21 19:22:52,804 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:22:52,805 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-21 19:22:54,987 - INFO - connecting to db: aws_system.db
+2018-10-21 19:22:54,988 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:22:54,988 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 19:24:45,202 - INFO - connecting to db: aws_system.db
+2018-10-21 19:24:45,202 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:24:45,203 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 19:24:47,210 - INFO - connecting to db: aws_system.db
+2018-10-21 19:24:47,210 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:24:47,211 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 19:24:53,866 - INFO - connecting to db: aws_system.db
+2018-10-21 19:24:53,866 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:24:53,867 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-21 19:26:44,057 - INFO - connecting to db: aws_system.db
+2018-10-21 19:26:44,057 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:26:44,058 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 19:26:48,825 - INFO - connecting to db: aws_system.db
+2018-10-21 19:26:48,825 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:26:48,826 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-21 19:33:25,280 - INFO - connecting to db: aws_system.db
+2018-10-21 19:33:25,280 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:33:25,281 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 19:33:29,447 - INFO - connecting to db: aws_system.db
+2018-10-21 19:33:29,447 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:33:29,448 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-21 19:34:43,327 - INFO - connecting to db: aws_system.db
+2018-10-21 19:34:43,328 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:34:43,328 - INFO - checking data in db: admin2 1c142b2d01aa34e9a36bde480645a57fd69e14155dacfab5a3f9257b77fdc8d8
+2018-10-21 19:35:06,911 - INFO - connecting to db: aws_system.db
+2018-10-21 19:35:06,912 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:35:06,912 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-21 19:35:09,839 - INFO - connecting to db: aws_system.db
+2018-10-21 19:35:09,839 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:35:09,840 - INFO - checking data in db: admin2 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 19:35:13,232 - INFO - connecting to db: aws_system.db
+2018-10-21 19:35:13,232 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:35:13,233 - INFO - checking data in db: admin2 1c142b2d01aa34e9a36bde480645a57fd69e14155dacfab5a3f9257b77fdc8d8
+2018-10-21 19:44:07,736 - INFO - connecting to db: aws_system.db
+2018-10-21 19:44:07,736 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:44:07,737 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 19:44:09,368 - INFO - connecting to db: aws_system.db
+2018-10-21 19:44:09,369 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:44:09,370 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 19:44:14,000 - INFO - connecting to db: aws_system.db
+2018-10-21 19:44:14,001 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:44:14,002 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-21 19:44:26,552 - INFO - connecting to db: aws_system.db
+2018-10-21 19:44:26,553 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:44:26,554 - INFO - checking data in db: d 18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4
+2018-10-21 19:44:32,344 - INFO - connecting to db: aws_system.db
+2018-10-21 19:44:32,344 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:44:32,345 - INFO - checking data in db: d 18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4
+2018-10-21 19:44:37,352 - INFO - connecting to db: aws_system.db
+2018-10-21 19:44:37,353 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:44:37,354 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-21 19:44:48,976 - INFO - connecting to db: aws_system.db
+2018-10-21 19:44:48,977 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:44:48,978 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-21 19:51:04,562 - INFO - connecting to db: aws_system.db
+2018-10-21 19:51:04,562 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:51:04,562 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 19:51:09,610 - INFO - connecting to db: aws_system.db
+2018-10-21 19:51:09,611 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 19:51:09,612 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-21 20:06:38,138 - INFO - connecting to db: aws_system.db
+2018-10-21 20:06:38,139 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 20:06:38,139 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 20:11:02,461 - INFO - connecting to db: aws_system.db
+2018-10-21 20:11:02,462 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 20:11:02,463 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 20:11:07,949 - INFO - connecting to db: aws_system.db
+2018-10-21 20:11:07,949 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 20:11:07,950 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-21 20:14:02,967 - INFO - connecting to db: aws_system.db
+2018-10-21 20:14:02,967 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 20:14:02,968 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 20:14:08,158 - INFO - connecting to db: aws_system.db
+2018-10-21 20:14:08,159 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 20:14:08,159 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-21 20:14:59,574 - INFO - connecting to db: aws_system.db
+2018-10-21 20:14:59,575 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 20:14:59,575 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 20:25:54,635 - INFO - connecting to db: aws_system.db
+2018-10-21 20:25:54,636 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 20:25:54,637 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 20:28:01,100 - INFO - connecting to db: aws_system.db
+2018-10-21 20:28:01,101 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 20:28:01,102 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-21 20:32:24,558 - INFO - connecting to db: aws_system.db
+2018-10-21 20:32:24,559 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 20:32:24,559 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-21 20:33:18,511 - INFO - connecting to db: aws_system.db
+2018-10-21 20:33:18,512 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 20:33:18,513 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 20:33:24,550 - INFO - connecting to db: aws_system.db
+2018-10-21 20:33:24,551 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 20:33:24,551 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-21 20:35:15,408 - INFO - connecting to db: aws_system.db
+2018-10-21 20:35:15,409 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 20:35:15,410 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-21 20:40:36,611 - INFO - connecting to db: aws_system.db
+2018-10-21 20:40:36,611 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 20:40:36,611 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-21 20:40:42,779 - INFO - connecting to db: aws_system.db
+2018-10-21 20:40:42,779 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 20:40:42,780 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-21 20:41:22,787 - INFO - connecting to db: aws_system.db
+2018-10-21 20:41:22,788 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 20:41:22,789 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-21 20:44:20,285 - INFO - connecting to db: aws_system.db
+2018-10-21 20:44:20,286 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 20:44:20,286 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-21 20:44:45,845 - INFO - connecting to db: aws_system.db
+2018-10-21 20:44:45,846 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 20:44:45,846 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-21 20:46:05,062 - INFO - connecting to db: aws_system.db
+2018-10-21 20:46:05,062 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 20:46:49,806 - INFO - connecting to db: aws_system.db
+2018-10-21 20:46:49,807 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 20:47:02,670 - INFO - connecting to db: aws_system.db
+2018-10-21 20:47:02,670 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 20:52:58,825 - INFO - connecting to db: aws_system.db
+2018-10-21 20:52:58,825 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 20:53:56,281 - INFO - connecting to db: aws_system.db
+2018-10-21 20:53:56,282 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 20:57:13,035 - INFO - connecting to db: aws_system.db
+2018-10-21 20:57:13,036 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 21:17:52,714 - INFO - connecting to db: aws_system.db
+2018-10-21 21:17:52,715 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 21:34:46,669 - INFO - connecting to db: aws_system.db
+2018-10-21 21:34:46,669 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 21:34:51,373 - INFO - connecting to db: aws_system.db
+2018-10-21 21:34:51,373 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 21:35:01,828 - INFO - connecting to db: aws_system.db
+2018-10-21 21:35:01,829 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 21:35:55,389 - INFO - connecting to db: aws_system.db
+2018-10-21 21:35:55,390 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 21:44:51,064 - INFO - connecting to db: aws_system.db
+2018-10-21 21:44:51,065 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 21:59:34,221 - INFO - connecting to db: aws_system.db
+2018-10-21 21:59:34,222 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:01:36,917 - INFO - connecting to db: aws_system.db
+2018-10-21 22:01:36,917 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:14:22,783 - INFO - connecting to db: aws_system.db
+2018-10-21 22:14:22,783 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:14:53,897 - INFO - connecting to db: aws_system.db
+2018-10-21 22:14:53,897 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:15:12,610 - INFO - connecting to db: aws_system.db
+2018-10-21 22:15:12,610 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:15:49,299 - INFO - connecting to db: aws_system.db
+2018-10-21 22:15:49,299 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:16:12,308 - INFO - connecting to db: aws_system.db
+2018-10-21 22:16:12,308 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:17:12,661 - INFO - connecting to db: aws_system.db
+2018-10-21 22:17:12,662 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:19:33,601 - INFO - connecting to db: aws_system.db
+2018-10-21 22:19:33,602 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:19:48,529 - INFO - connecting to db: aws_system.db
+2018-10-21 22:19:48,530 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:21:24,635 - INFO - connecting to db: aws_system.db
+2018-10-21 22:21:24,636 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:23:09,789 - INFO - connecting to db: aws_system.db
+2018-10-21 22:23:09,790 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:26:10,649 - INFO - connecting to db: aws_system.db
+2018-10-21 22:26:10,649 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:26:47,257 - INFO - connecting to db: aws_system.db
+2018-10-21 22:26:47,257 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:28:01,626 - INFO - connecting to db: aws_system.db
+2018-10-21 22:28:01,626 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:28:33,227 - INFO - connecting to db: aws_system.db
+2018-10-21 22:28:33,227 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:31:05,484 - INFO - connecting to db: aws_system.db
+2018-10-21 22:31:05,485 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:31:24,764 - INFO - connecting to db: aws_system.db
+2018-10-21 22:31:24,765 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:32:23,581 - INFO - connecting to db: aws_system.db
+2018-10-21 22:32:23,581 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:37:51,304 - INFO - connecting to db: aws_system.db
+2018-10-21 22:37:51,304 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:38:23,160 - INFO - connecting to db: aws_system.db
+2018-10-21 22:38:23,160 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:38:53,041 - INFO - connecting to db: aws_system.db
+2018-10-21 22:38:53,042 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:39:06,104 - INFO - connecting to db: aws_system.db
+2018-10-21 22:39:06,105 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:39:21,705 - INFO - connecting to db: aws_system.db
+2018-10-21 22:39:21,705 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:39:37,033 - INFO - connecting to db: aws_system.db
+2018-10-21 22:39:37,034 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:41:06,842 - INFO - connecting to db: aws_system.db
+2018-10-21 22:41:06,842 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:41:24,330 - INFO - connecting to db: aws_system.db
+2018-10-21 22:41:24,330 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:42:22,234 - INFO - connecting to db: aws_system.db
+2018-10-21 22:42:22,235 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:42:35,075 - INFO - connecting to db: aws_system.db
+2018-10-21 22:42:35,075 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:43:15,635 - INFO - connecting to db: aws_system.db
+2018-10-21 22:43:15,636 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:47:08,981 - INFO - connecting to db: aws_system.db
+2018-10-21 22:47:08,982 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:47:32,444 - INFO - connecting to db: aws_system.db
+2018-10-21 22:47:32,445 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:48:09,515 - INFO - connecting to db: aws_system.db
+2018-10-21 22:48:09,516 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:48:44,866 - INFO - connecting to db: aws_system.db
+2018-10-21 22:48:44,867 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:49:52,363 - INFO - connecting to db: aws_system.db
+2018-10-21 22:49:52,363 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:50:09,840 - INFO - connecting to db: aws_system.db
+2018-10-21 22:50:09,841 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:50:26,960 - INFO - connecting to db: aws_system.db
+2018-10-21 22:50:26,960 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:50:40,663 - INFO - connecting to db: aws_system.db
+2018-10-21 22:50:40,664 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:50:48,943 - INFO - connecting to db: aws_system.db
+2018-10-21 22:50:48,943 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:50:57,583 - INFO - connecting to db: aws_system.db
+2018-10-21 22:50:57,584 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:51:12,263 - INFO - connecting to db: aws_system.db
+2018-10-21 22:51:12,264 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:51:22,175 - INFO - connecting to db: aws_system.db
+2018-10-21 22:51:22,175 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:51:28,022 - INFO - connecting to db: aws_system.db
+2018-10-21 22:51:28,023 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:51:44,390 - INFO - connecting to db: aws_system.db
+2018-10-21 22:51:44,390 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:52:03,446 - INFO - connecting to db: aws_system.db
+2018-10-21 22:52:03,447 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:52:21,054 - INFO - connecting to db: aws_system.db
+2018-10-21 22:52:21,054 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:55:12,211 - INFO - connecting to db: aws_system.db
+2018-10-21 22:55:12,211 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:56:57,410 - INFO - connecting to db: aws_system.db
+2018-10-21 22:56:57,410 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:57:17,265 - INFO - connecting to db: aws_system.db
+2018-10-21 22:57:17,265 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:57:26,962 - INFO - connecting to db: aws_system.db
+2018-10-21 22:57:26,962 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:57:46,353 - INFO - connecting to db: aws_system.db
+2018-10-21 22:57:46,354 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:59:05,961 - INFO - connecting to db: aws_system.db
+2018-10-21 22:59:05,961 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 22:59:36,744 - INFO - connecting to db: aws_system.db
+2018-10-21 22:59:36,744 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:04:29,582 - INFO - connecting to db: aws_system.db
+2018-10-21 23:04:29,583 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:08:07,037 - INFO - connecting to db: aws_system.db
+2018-10-21 23:08:07,038 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:13:49,324 - INFO - connecting to db: aws_system.db
+2018-10-21 23:13:49,325 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:14:33,661 - INFO - connecting to db: aws_system.db
+2018-10-21 23:14:33,662 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:14:45,141 - INFO - connecting to db: aws_system.db
+2018-10-21 23:14:45,145 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:15:53,821 - INFO - connecting to db: aws_system.db
+2018-10-21 23:15:53,821 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:16:04,532 - INFO - connecting to db: aws_system.db
+2018-10-21 23:16:04,533 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:17:39,964 - INFO - connecting to db: aws_system.db
+2018-10-21 23:17:39,965 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:17:56,077 - INFO - connecting to db: aws_system.db
+2018-10-21 23:17:56,077 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:18:25,940 - INFO - connecting to db: aws_system.db
+2018-10-21 23:18:25,940 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:22:26,430 - INFO - connecting to db: aws_system.db
+2018-10-21 23:22:26,431 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:22:43,991 - INFO - connecting to db: aws_system.db
+2018-10-21 23:22:43,992 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:23:10,384 - INFO - connecting to db: aws_system.db
+2018-10-21 23:23:10,385 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:23:44,466 - INFO - connecting to db: aws_system.db
+2018-10-21 23:23:44,466 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:23:59,114 - INFO - connecting to db: aws_system.db
+2018-10-21 23:23:59,114 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:24:50,820 - INFO - connecting to db: aws_system.db
+2018-10-21 23:24:50,821 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:25:10,462 - INFO - connecting to db: aws_system.db
+2018-10-21 23:25:10,462 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:25:35,518 - INFO - connecting to db: aws_system.db
+2018-10-21 23:25:35,518 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:25:54,559 - INFO - connecting to db: aws_system.db
+2018-10-21 23:25:54,560 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:26:45,617 - INFO - connecting to db: aws_system.db
+2018-10-21 23:26:45,617 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:28:26,043 - INFO - connecting to db: aws_system.db
+2018-10-21 23:28:26,043 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:28:46,212 - INFO - connecting to db: aws_system.db
+2018-10-21 23:28:46,213 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:31:57,048 - INFO - connecting to db: aws_system.db
+2018-10-21 23:31:57,048 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:32:09,880 - INFO - connecting to db: aws_system.db
+2018-10-21 23:32:09,880 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:32:29,817 - INFO - connecting to db: aws_system.db
+2018-10-21 23:32:29,818 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:33:10,946 - INFO - connecting to db: aws_system.db
+2018-10-21 23:33:10,946 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:33:21,242 - INFO - connecting to db: aws_system.db
+2018-10-21 23:33:21,242 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:35:31,996 - INFO - connecting to db: aws_system.db
+2018-10-21 23:35:31,997 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:35:51,420 - INFO - connecting to db: aws_system.db
+2018-10-21 23:35:51,420 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:36:04,116 - INFO - connecting to db: aws_system.db
+2018-10-21 23:36:04,116 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:36:11,764 - INFO - connecting to db: aws_system.db
+2018-10-21 23:36:11,765 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:36:25,981 - INFO - connecting to db: aws_system.db
+2018-10-21 23:36:25,981 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:36:41,109 - INFO - connecting to db: aws_system.db
+2018-10-21 23:36:41,109 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:37:06,501 - INFO - connecting to db: aws_system.db
+2018-10-21 23:37:06,502 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:37:20,982 - INFO - connecting to db: aws_system.db
+2018-10-21 23:37:20,983 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:37:34,533 - INFO - connecting to db: aws_system.db
+2018-10-21 23:37:34,534 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:38:01,862 - INFO - connecting to db: aws_system.db
+2018-10-21 23:38:01,863 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:38:10,630 - INFO - connecting to db: aws_system.db
+2018-10-21 23:38:10,631 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:38:29,070 - INFO - connecting to db: aws_system.db
+2018-10-21 23:38:29,071 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:38:48,014 - INFO - connecting to db: aws_system.db
+2018-10-21 23:38:48,015 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:38:57,303 - INFO - connecting to db: aws_system.db
+2018-10-21 23:38:57,304 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:39:35,599 - INFO - connecting to db: aws_system.db
+2018-10-21 23:39:35,600 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:39:58,743 - INFO - connecting to db: aws_system.db
+2018-10-21 23:39:58,743 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:40:07,839 - INFO - connecting to db: aws_system.db
+2018-10-21 23:40:07,839 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:40:18,568 - INFO - connecting to db: aws_system.db
+2018-10-21 23:40:18,569 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:40:39,401 - INFO - connecting to db: aws_system.db
+2018-10-21 23:40:39,402 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:40:49,704 - INFO - connecting to db: aws_system.db
+2018-10-21 23:40:49,705 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:41:17,080 - INFO - connecting to db: aws_system.db
+2018-10-21 23:41:17,080 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:41:30,969 - INFO - connecting to db: aws_system.db
+2018-10-21 23:41:30,969 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:41:42,657 - INFO - connecting to db: aws_system.db
+2018-10-21 23:41:42,657 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:45:33,274 - INFO - connecting to db: aws_system.db
+2018-10-21 23:45:33,275 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:45:41,819 - INFO - connecting to db: aws_system.db
+2018-10-21 23:45:41,819 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:45:47,371 - INFO - connecting to db: aws_system.db
+2018-10-21 23:45:47,372 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:46:15,627 - INFO - connecting to db: aws_system.db
+2018-10-21 23:46:15,628 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:49:01,140 - INFO - connecting to db: aws_system.db
+2018-10-21 23:49:01,141 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:54:43,095 - INFO - connecting to db: aws_system.db
+2018-10-21 23:54:43,096 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-21 23:55:02,095 - INFO - connecting to db: aws_system.db
+2018-10-21 23:55:02,095 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 00:12:06,111 - INFO - connecting to db: aws_system.db
+2018-10-22 00:12:06,143 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 00:41:36,693 - INFO - connecting to db: aws_system.db
+2018-10-22 00:41:36,715 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 00:50:22,321 - INFO - connecting to db: aws_system.db
+2018-10-22 00:50:22,322 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 01:02:01,627 - INFO - connecting to db: aws_system.db
+2018-10-22 01:02:01,628 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 01:02:16,172 - INFO - connecting to db: aws_system.db
+2018-10-22 01:02:16,172 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 01:06:01,208 - INFO - connecting to db: aws_system.db
+2018-10-22 01:06:01,209 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 01:06:14,952 - INFO - connecting to db: aws_system.db
+2018-10-22 01:06:14,952 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 01:07:06,465 - INFO - connecting to db: aws_system.db
+2018-10-22 01:07:06,466 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 19:57:55,161 - INFO - connecting to db: aws_system.db
+2018-10-22 19:57:55,161 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 19:58:13,292 - INFO - connecting to db: aws_system.db
+2018-10-22 19:58:13,293 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 20:03:58,295 - INFO - connecting to db: aws_system.db
+2018-10-22 20:03:58,296 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 20:09:16,549 - INFO - connecting to db: aws_system.db
+2018-10-22 20:09:16,549 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 20:10:49,845 - INFO - connecting to db: aws_system.db
+2018-10-22 20:10:49,846 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 21:14:10,327 - INFO - connecting to db: aws_system.db
+2018-10-22 21:14:10,363 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 21:26:23,379 - INFO - connecting to db: aws_system.db
+2018-10-22 21:26:23,379 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 21:26:28,371 - INFO - connecting to db: aws_system.db
+2018-10-22 21:26:28,371 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 21:28:16,642 - INFO - connecting to db: aws_system.db
+2018-10-22 21:28:16,643 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 21:31:06,251 - INFO - connecting to db: aws_system.db
+2018-10-22 21:31:06,252 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 21:34:01,704 - INFO - connecting to db: aws_system.db
+2018-10-22 21:34:01,705 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 21:36:16,277 - INFO - connecting to db: aws_system.db
+2018-10-22 21:36:16,278 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 21:37:17,809 - INFO - connecting to db: aws_system.db
+2018-10-22 21:37:17,810 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 21:37:31,736 - INFO - connecting to db: aws_system.db
+2018-10-22 21:37:31,737 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 21:41:47,469 - INFO - connecting to db: aws_system.db
+2018-10-22 21:41:47,469 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 21:48:29,899 - INFO - connecting to db: aws_system.db
+2018-10-22 21:48:29,900 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 21:53:05,955 - INFO - connecting to db: aws_system.db
+2018-10-22 21:53:05,956 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 21:59:16,714 - INFO - connecting to db: aws_system.db
+2018-10-22 21:59:16,714 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 22:01:55,151 - INFO - connecting to db: aws_system.db
+2018-10-22 22:01:55,151 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 22:08:07,809 - INFO - connecting to db: aws_system.db
+2018-10-22 22:08:07,810 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 22:10:46,137 - INFO - connecting to db: aws_system.db
+2018-10-22 22:10:46,137 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 22:11:23,218 - INFO - connecting to db: aws_system.db
+2018-10-22 22:11:23,218 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 22:12:36,792 - INFO - connecting to db: aws_system.db
+2018-10-22 22:12:36,793 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 22:13:11,480 - INFO - connecting to db: aws_system.db
+2018-10-22 22:13:11,481 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 22:22:37,555 - INFO - connecting to db: aws_system.db
+2018-10-22 22:22:37,555 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 22:24:44,069 - INFO - connecting to db: aws_system.db
+2018-10-22 22:24:44,070 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 22:25:58,167 - INFO - connecting to db: aws_system.db
+2018-10-22 22:25:58,167 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-22 22:26:03,232 - INFO - connecting to db: aws_system.db
+2018-10-22 22:26:03,232 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-23 19:58:28,399 - INFO - connecting to db: aws_system.db
+2018-10-23 19:58:28,399 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-23 19:58:40,543 - INFO - connecting to db: aws_system.db
+2018-10-23 19:58:40,544 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-23 20:14:19,508 - INFO - connecting to db: aws_system.db
+2018-10-23 20:14:19,508 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-23 20:14:58,660 - INFO - connecting to db: aws_system.db
+2018-10-23 20:14:58,661 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-23 22:40:11,955 - INFO - connecting to db: aws_system.db
+2018-10-23 22:40:11,956 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-23 22:43:04,253 - INFO - connecting to db: aws_system.db
+2018-10-23 22:43:04,253 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-23 23:26:43,963 - INFO - connecting to db: aws_system.db
+2018-10-23 23:26:43,964 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-23 23:27:01,344 - INFO - connecting to db: aws_system.db
+2018-10-23 23:27:01,345 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-23 23:28:53,364 - INFO - connecting to db: aws_system.db
+2018-10-23 23:28:53,365 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-23 23:32:07,766 - INFO - connecting to db: aws_system.db
+2018-10-23 23:32:07,767 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-23 23:34:32,984 - INFO - connecting to db: aws_system.db
+2018-10-23 23:34:32,985 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-23 23:35:08,557 - INFO - connecting to db: aws_system.db
+2018-10-23 23:35:08,557 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-23 23:36:00,188 - INFO - connecting to db: aws_system.db
+2018-10-23 23:36:00,189 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-23 23:43:54,592 - INFO - connecting to db: aws_system.db
+2018-10-23 23:43:54,593 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-23 23:49:12,227 - INFO - connecting to db: aws_system.db
+2018-10-23 23:49:12,228 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:05:10,504 - INFO - connecting to db: aws_system.db
+2018-10-24 00:05:10,504 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:13:18,637 - INFO - connecting to db: aws_system.db
+2018-10-24 00:13:18,638 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:18:18,123 - INFO - connecting to db: aws_system.db
+2018-10-24 00:18:18,124 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:18:47,950 - INFO - connecting to db: aws_system.db
+2018-10-24 00:18:47,951 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:19:18,444 - INFO - connecting to db: aws_system.db
+2018-10-24 00:19:18,445 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:20:05,662 - INFO - connecting to db: aws_system.db
+2018-10-24 00:20:05,662 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:20:36,676 - INFO - connecting to db: aws_system.db
+2018-10-24 00:20:36,677 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:20:58,816 - INFO - connecting to db: aws_system.db
+2018-10-24 00:20:58,817 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:21:30,597 - INFO - connecting to db: aws_system.db
+2018-10-24 00:21:30,597 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:21:44,546 - INFO - connecting to db: aws_system.db
+2018-10-24 00:21:44,547 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:22:12,954 - INFO - connecting to db: aws_system.db
+2018-10-24 00:22:12,955 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:22:32,736 - INFO - connecting to db: aws_system.db
+2018-10-24 00:22:32,737 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:25:30,935 - INFO - connecting to db: aws_system.db
+2018-10-24 00:25:30,935 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:25:52,267 - INFO - connecting to db: aws_system.db
+2018-10-24 00:25:52,268 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:32:22,941 - INFO - connecting to db: aws_system.db
+2018-10-24 00:32:22,941 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:33:24,702 - INFO - connecting to db: aws_system.db
+2018-10-24 00:33:24,703 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:33:55,924 - INFO - connecting to db: aws_system.db
+2018-10-24 00:33:55,925 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:36:14,965 - INFO - connecting to db: aws_system.db
+2018-10-24 00:36:14,966 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:36:50,845 - INFO - connecting to db: aws_system.db
+2018-10-24 00:36:50,846 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:37:17,347 - INFO - connecting to db: aws_system.db
+2018-10-24 00:37:17,347 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:39:50,410 - INFO - connecting to db: aws_system.db
+2018-10-24 00:39:50,410 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:42:41,853 - INFO - connecting to db: aws_system.db
+2018-10-24 00:42:41,854 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:45:07,863 - INFO - connecting to db: aws_system.db
+2018-10-24 00:45:07,863 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:47:37,372 - INFO - connecting to db: aws_system.db
+2018-10-24 00:47:37,373 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:48:45,749 - INFO - connecting to db: aws_system.db
+2018-10-24 00:48:45,750 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:49:10,530 - INFO - connecting to db: aws_system.db
+2018-10-24 00:49:10,531 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:49:54,873 - INFO - connecting to db: aws_system.db
+2018-10-24 00:49:54,873 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:50:20,185 - INFO - connecting to db: aws_system.db
+2018-10-24 00:50:20,186 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:51:09,563 - INFO - connecting to db: aws_system.db
+2018-10-24 00:51:09,564 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:51:29,441 - INFO - connecting to db: aws_system.db
+2018-10-24 00:51:29,442 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:51:44,331 - INFO - connecting to db: aws_system.db
+2018-10-24 00:51:44,332 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:52:04,531 - INFO - connecting to db: aws_system.db
+2018-10-24 00:52:04,532 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:55:16,098 - INFO - connecting to db: aws_system.db
+2018-10-24 00:55:16,099 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:56:16,133 - INFO - connecting to db: aws_system.db
+2018-10-24 00:56:16,134 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:56:50,774 - INFO - connecting to db: aws_system.db
+2018-10-24 00:56:50,775 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:57:50,199 - INFO - connecting to db: aws_system.db
+2018-10-24 00:57:50,200 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:59:04,008 - INFO - connecting to db: aws_system.db
+2018-10-24 00:59:04,009 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 00:59:25,950 - INFO - connecting to db: aws_system.db
+2018-10-24 00:59:25,951 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-24 01:00:11,253 - INFO - connecting to db: aws_system.db
+2018-10-24 01:00:11,254 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 00:18:02,067 - INFO - connecting to db: aws_system.db
+2018-10-25 00:18:02,067 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 00:31:18,331 - INFO - connecting to db: aws_system.db
+2018-10-25 00:31:18,332 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 00:33:05,407 - INFO - connecting to db: aws_system.db
+2018-10-25 00:33:05,407 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 00:33:28,582 - INFO - connecting to db: aws_system.db
+2018-10-25 00:33:28,583 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 00:38:57,902 - INFO - connecting to db: aws_system.db
+2018-10-25 00:38:57,903 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 00:40:39,341 - INFO - connecting to db: aws_system.db
+2018-10-25 00:40:39,341 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 00:44:12,294 - INFO - connecting to db: aws_system.db
+2018-10-25 00:44:12,294 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 00:46:16,345 - INFO - connecting to db: aws_system.db
+2018-10-25 00:46:16,346 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 00:47:25,176 - INFO - connecting to db: aws_system.db
+2018-10-25 00:47:25,176 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:20:11,672 - INFO - connecting to db: aws_system.db
+2018-10-25 01:20:11,673 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:27:16,935 - INFO - connecting to db: aws_system.db
+2018-10-25 01:27:16,936 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:28:18,555 - INFO - connecting to db: aws_system.db
+2018-10-25 01:28:18,556 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:29:59,527 - INFO - connecting to db: aws_system.db
+2018-10-25 01:29:59,528 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:30:25,334 - INFO - connecting to db: aws_system.db
+2018-10-25 01:30:25,335 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:31:14,072 - INFO - connecting to db: aws_system.db
+2018-10-25 01:31:14,073 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:32:46,356 - INFO - connecting to db: aws_system.db
+2018-10-25 01:32:46,356 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:33:07,619 - INFO - connecting to db: aws_system.db
+2018-10-25 01:33:07,620 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:33:51,838 - INFO - connecting to db: aws_system.db
+2018-10-25 01:33:51,838 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:34:16,942 - INFO - connecting to db: aws_system.db
+2018-10-25 01:34:16,942 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:34:39,497 - INFO - connecting to db: aws_system.db
+2018-10-25 01:34:39,497 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:37:11,217 - INFO - connecting to db: aws_system.db
+2018-10-25 01:37:11,217 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:37:51,602 - INFO - connecting to db: aws_system.db
+2018-10-25 01:37:51,602 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:38:17,446 - INFO - connecting to db: aws_system.db
+2018-10-25 01:38:17,447 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:38:39,343 - INFO - connecting to db: aws_system.db
+2018-10-25 01:38:39,344 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:38:56,804 - INFO - connecting to db: aws_system.db
+2018-10-25 01:38:56,804 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:39:14,489 - INFO - connecting to db: aws_system.db
+2018-10-25 01:39:14,490 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:39:41,902 - INFO - connecting to db: aws_system.db
+2018-10-25 01:39:41,903 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:40:00,430 - INFO - connecting to db: aws_system.db
+2018-10-25 01:40:00,431 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:40:46,583 - INFO - connecting to db: aws_system.db
+2018-10-25 01:40:46,583 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:42:05,859 - INFO - connecting to db: aws_system.db
+2018-10-25 01:42:05,859 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:43:00,630 - INFO - connecting to db: aws_system.db
+2018-10-25 01:43:00,631 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:44:09,199 - INFO - connecting to db: aws_system.db
+2018-10-25 01:44:09,199 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:44:44,600 - INFO - connecting to db: aws_system.db
+2018-10-25 01:44:44,601 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:45:05,733 - INFO - connecting to db: aws_system.db
+2018-10-25 01:45:05,734 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:45:31,028 - INFO - connecting to db: aws_system.db
+2018-10-25 01:45:31,028 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:45:54,900 - INFO - connecting to db: aws_system.db
+2018-10-25 01:45:54,901 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:46:31,329 - INFO - connecting to db: aws_system.db
+2018-10-25 01:46:31,329 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:46:48,101 - INFO - connecting to db: aws_system.db
+2018-10-25 01:46:48,101 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:47:08,190 - INFO - connecting to db: aws_system.db
+2018-10-25 01:47:08,191 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:47:54,892 - INFO - connecting to db: aws_system.db
+2018-10-25 01:47:54,893 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:48:09,498 - INFO - connecting to db: aws_system.db
+2018-10-25 01:48:09,498 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:48:22,705 - INFO - connecting to db: aws_system.db
+2018-10-25 01:48:22,706 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:48:50,329 - INFO - connecting to db: aws_system.db
+2018-10-25 01:48:50,330 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:49:19,080 - INFO - connecting to db: aws_system.db
+2018-10-25 01:49:19,081 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:49:36,189 - INFO - connecting to db: aws_system.db
+2018-10-25 01:49:36,190 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:49:50,729 - INFO - connecting to db: aws_system.db
+2018-10-25 01:49:50,730 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:50:15,379 - INFO - connecting to db: aws_system.db
+2018-10-25 01:50:15,380 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:50:33,031 - INFO - connecting to db: aws_system.db
+2018-10-25 01:50:33,032 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:51:17,777 - INFO - connecting to db: aws_system.db
+2018-10-25 01:51:17,777 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:51:51,690 - INFO - connecting to db: aws_system.db
+2018-10-25 01:51:51,691 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:52:24,963 - INFO - connecting to db: aws_system.db
+2018-10-25 01:52:24,963 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:52:46,316 - INFO - connecting to db: aws_system.db
+2018-10-25 01:52:46,317 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:53:13,257 - INFO - connecting to db: aws_system.db
+2018-10-25 01:53:13,258 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:53:47,739 - INFO - connecting to db: aws_system.db
+2018-10-25 01:53:47,739 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:54:13,272 - INFO - connecting to db: aws_system.db
+2018-10-25 01:54:13,272 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:54:59,303 - INFO - connecting to db: aws_system.db
+2018-10-25 01:54:59,303 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:55:12,246 - INFO - connecting to db: aws_system.db
+2018-10-25 01:55:12,247 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:55:44,681 - INFO - connecting to db: aws_system.db
+2018-10-25 01:55:44,682 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:56:34,262 - INFO - connecting to db: aws_system.db
+2018-10-25 01:56:34,263 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:56:54,358 - INFO - connecting to db: aws_system.db
+2018-10-25 01:56:54,359 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:57:24,059 - INFO - connecting to db: aws_system.db
+2018-10-25 01:57:24,060 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 01:58:55,675 - INFO - connecting to db: aws_system.db
+2018-10-25 01:58:55,676 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 02:00:00,075 - INFO - connecting to db: aws_system.db
+2018-10-25 02:00:00,076 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 02:00:41,149 - INFO - connecting to db: aws_system.db
+2018-10-25 02:00:41,150 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 16:22:34,627 - INFO - connecting to db: aws_system.db
+2018-10-25 16:22:34,656 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 16:22:34,656 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-25 16:22:58,299 - INFO - connecting to db: aws_system.db
+2018-10-25 16:22:58,300 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 16:22:58,300 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-25 16:27:31,203 - INFO - connecting to db: aws_system.db
+2018-10-25 16:27:31,203 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 16:27:31,204 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-25 16:29:42,404 - INFO - connecting to db: aws_system.db
+2018-10-25 16:29:42,404 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 16:29:42,404 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-25 16:29:47,634 - INFO - connecting to db: aws_system.db
+2018-10-25 16:29:47,634 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 16:29:47,635 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-25 16:30:29,000 - INFO - connecting to db: aws_system.db
+2018-10-25 16:30:29,001 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 16:30:29,002 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-25 16:31:39,765 - INFO - connecting to db: aws_system.db
+2018-10-25 16:31:39,766 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 16:31:39,766 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-25 16:31:44,538 - INFO - connecting to db: aws_system.db
+2018-10-25 16:31:44,539 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 16:31:44,540 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-25 16:31:51,030 - INFO - connecting to db: aws_system.db
+2018-10-25 16:31:51,030 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 16:31:51,031 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-25 16:32:56,474 - INFO - connecting to db: aws_system.db
+2018-10-25 16:32:56,474 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 16:32:56,475 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-25 16:39:04,249 - INFO - connecting to db: aws_system.db
+2018-10-25 16:39:04,250 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 16:39:04,251 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-25 16:39:06,222 - INFO - connecting to db: aws_system.db
+2018-10-25 16:39:06,223 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 16:39:06,223 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-25 16:39:10,857 - INFO - connecting to db: aws_system.db
+2018-10-25 16:39:10,858 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 16:39:10,858 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-25 16:39:12,376 - INFO - connecting to db: aws_system.db
+2018-10-25 16:39:12,377 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 16:39:12,377 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-25 16:39:13,276 - INFO - connecting to db: aws_system.db
+2018-10-25 16:39:13,276 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 16:39:13,277 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-25 16:40:08,286 - INFO - connecting to db: aws_system.db
+2018-10-25 16:40:08,287 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 16:40:08,287 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-25 16:41:06,429 - INFO - connecting to db: aws_system.db
+2018-10-25 16:41:06,430 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-25 16:41:06,430 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-27 14:12:43,002 - INFO - connecting to db: aws_system.db
+2018-10-27 14:12:43,150 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-27 14:12:43,150 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 14:12:44,650 - INFO - connecting to db: aws_system.db
+2018-10-27 14:12:44,650 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-27 14:12:44,651 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 14:12:49,130 - INFO - connecting to db: aws_system.db
+2018-10-27 14:12:49,131 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-27 14:12:49,131 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-27 14:43:01,182 - INFO - connecting to db: aws_system.db
+2018-10-27 14:43:01,183 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-27 14:43:01,306 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 14:43:02,350 - INFO - connecting to db: aws_system.db
+2018-10-27 14:43:02,351 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-27 14:43:02,351 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 14:43:06,631 - INFO - connecting to db: aws_system.db
+2018-10-27 14:43:06,631 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-27 14:43:06,632 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-27 14:49:57,484 - INFO - connecting to db: aws_system.db
+2018-10-27 14:49:57,485 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-27 14:49:57,486 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-27 14:52:32,948 - INFO - connecting to db: aws_system.db
+2018-10-27 14:52:32,948 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-27 14:52:32,949 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-27 14:54:40,395 - INFO - connecting to db: aws_system.db
+2018-10-27 14:54:40,396 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-27 14:54:40,397 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
