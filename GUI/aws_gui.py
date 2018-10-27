@@ -144,8 +144,7 @@ class LoginPage(Frame, Utilities):
         username = self.name_entry.get()
         password = sqlite3_object.create_hash_before_add_to_db(self.password_entry.get())
 
-        if 1:
- #       if sqlite3_object.select_data("users", username, password):
+        if sqlite3_object.select_data("users", username, password):
             tkinter.messagebox.showinfo('Information', 'You have been logged in!')
             self.controller.show_frame(MainMenuPage)
             self.name_entry.delete(0, 'end')
@@ -196,7 +195,7 @@ class MainMenuPage(Frame, Utilities):
         self.l2.configure(text="Search face picture, plate number or relation")
 
     def on_leave(self, enter):
-        self.l2.configure(text="")
+        self.l2.configure(text="Access control system")
 
     def initialize_toolbar(self):
         self.l2 = tk.Label(self, text="",height=1, width=50)
@@ -265,8 +264,8 @@ class MainMenuPage(Frame, Utilities):
         self.search_button.bind("<Enter>", self.on_enter_search_data)
         self.search_button.bind("<Leave>", self.on_leave)
 
-        self.back_home_img = tk.PhotoImage(file="arrow.png")
-        self.back_home_button = Button(self, image=self.back_home_img, width="370", height="20", command=self.back_login_page)
+        self.back_home_img = tk.PhotoImage(file="logout.png")
+        self.back_home_button = Button(self, image=self.back_home_img, width="370", height="30", command=self.back_login_page)
         self.back_home_button.place(x=0, y=392)
 
     def upload_window(self):
@@ -519,6 +518,6 @@ class MainMenuPage(Frame, Utilities):
 
 if __name__ == "__main__":
     app = GuiManager()
-    app.geometry("%dx%d%+d%+d" % (375, 420, 400, 125))
-    #app.resizable(False, False)
+    app.geometry("%dx%d%+d%+d" % (375, 430, 400, 125))
+    app.resizable(False, False)
     app.mainloop()
