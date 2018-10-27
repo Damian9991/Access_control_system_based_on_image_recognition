@@ -10,6 +10,7 @@
 
 import sqlite3
 import os
+import hashlib
 
 import logging
 logger = logging.getLogger("database_events.log")
@@ -23,7 +24,7 @@ logger.setLevel(logging.INFO)
 class DatabaseManager(object):
     def __init__(self):
         logger.info("connecting to Access_control_system.db")
-        self.db = sqlite3.connect('Access_control_system.db')
+        self.db = sqlite3.connect('../Database/Access_control_system.db')
         self.cursor = self.db.cursor()
 
     def create_or_drop_table(self, command):
@@ -67,9 +68,54 @@ class DatabaseManager(object):
             logger.error(str(err))
             return None
 
-    def check_if_user_in_database(self, owner):
+    def check_if_licence_plates_in_database(self, owner):
         logger.info("Fetching info about {} user from licence_plates_database".format(owner))
         query = "SELECT EXISTS(SELECT * FROM licence_plates where name = '{}')".format(owner)
+        logger.info(query)
+        try:
+            self.cursor.execute(query)
+            results = self.cursor.fetchall()
+            if results[0][0] == 1:
+                return True
+            else:
+                return False
+        except sqlite3.OperationalError as err:
+            print(str(err))
+            logger.error(str(err))
+
+    def check_login_and_password(self, table_name, login, password):
+        logger.info("checking data in db: " + login + " " + password)
+        query = "SELECT * FROM {} WHERE username = ? AND password =?".format(table_name)
+        try:
+            self.cursor.execute(query, [ (login), (password)])
+            results = self.cursor.fetchall()
+            return results
+        except sqlite3.OperationalError as err:
+            print(str(err))
+            logger.error(str(err))
+
+    def add_user_to_db(self, username, password_hash):
+        try:
+            insert_data = "INSERT INTO users(username, password) VALUES(?,?)"
+            self.cursor.execute(insert_data, [(username), (password_hash)])
+            self.db.commit()
+            return True
+        except Exception as err:
+            logger.error(str(err))
+
+    def del_user_from_db(self, username):
+        try:
+            delete_data = "DELETE FROM users WHERE username=?"
+            self.cursor.execute(delete_data, [(username)])
+            self.db.commit()
+            return True
+        except Exception as err:
+            logger.error(str(err))
+
+    def check_if_user_in_database(self, owner):
+        table = "users"
+        logger.info("Fetching info about {} user from {}".format(owner, table))
+        query = "SELECT EXISTS(SELECT * FROM {} where username = '{}')".format(table, owner)
         logger.info(query)
         try:
             self.cursor.execute(query)
@@ -86,6 +132,12 @@ class DatabaseManager(object):
     def close_connection_to_db(self):
         logger.info("closing connection to db")
         self.db.close()
+
+    def create_hash_before_add_to_db(self, input_str):
+        hash_object = hashlib.sha256(bytes(input_str, encoding='utf-8'))
+        output = hash_object.hexdigest()
+        return output
+
 
 if __name__ == "__main__":
     sql_object = DatabaseManager()

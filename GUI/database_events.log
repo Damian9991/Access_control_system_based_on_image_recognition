@@ -1,0 +1,130 @@
+2018-10-27 18:58:09,776 - INFO - connecting to Access_control_system.db
+2018-10-27 18:58:09,777 - INFO - connecting to Access_control_system.db
+2018-10-27 18:58:09,809 - INFO - connecting to Access_control_system.db
+2018-10-27 18:58:10,722 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 18:58:10,722 - ERROR - no such table: users
+2018-10-27 18:58:24,722 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-27 18:58:24,722 - ERROR - no such table: users
+2018-10-27 18:59:16,522 - INFO - connecting to Access_control_system.db
+2018-10-27 18:59:16,523 - INFO - connecting to Access_control_system.db
+2018-10-27 18:59:16,567 - INFO - connecting to Access_control_system.db
+2018-10-27 18:59:17,962 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 18:59:17,963 - ERROR - no such table: users
+2018-10-27 18:59:22,242 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-27 18:59:22,242 - ERROR - no such table: users
+2018-10-27 18:59:37,181 - INFO - connecting to Access_control_system.db
+2018-10-27 18:59:37,181 - INFO - connecting to Access_control_system.db
+2018-10-27 18:59:37,225 - INFO - connecting to Access_control_system.db
+2018-10-27 19:15:10,387 - INFO - connecting to Access_control_system.db
+2018-10-27 19:15:10,388 - INFO - connecting to Access_control_system.db
+2018-10-27 19:15:10,418 - INFO - connecting to Access_control_system.db
+2018-10-27 19:15:11,525 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 19:15:11,526 - ERROR - no such table: users
+2018-10-27 19:16:59,828 - INFO - connecting to Access_control_system.db
+2018-10-27 19:16:59,829 - INFO - connecting to Access_control_system.db
+2018-10-27 19:16:59,860 - INFO - connecting to Access_control_system.db
+2018-10-27 19:17:00,814 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 19:17:00,814 - ERROR - no such table: users
+2018-10-27 19:17:04,902 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-27 19:17:04,902 - ERROR - no such table: users
+2018-10-27 19:17:29,204 - INFO - connecting to Access_control_system.db
+2018-10-27 19:17:29,205 - INFO - connecting to Access_control_system.db
+2018-10-27 19:17:29,241 - INFO - connecting to Access_control_system.db
+2018-10-27 19:17:36,174 - INFO - Fetching info about admin user from licence_plates_database
+2018-10-27 19:17:36,175 - INFO - SELECT EXISTS(SELECT * FROM licence_plates where name = 'admin')
+2018-10-27 19:17:36,175 - ERROR - no such table: licence_plates
+2018-10-27 19:17:36,175 - ERROR - no such table: users
+2018-10-27 19:18:43,653 - INFO - connecting to Access_control_system.db
+2018-10-27 19:18:43,654 - INFO - connecting to Access_control_system.db
+2018-10-27 19:18:43,686 - INFO - connecting to Access_control_system.db
+2018-10-27 19:18:51,247 - INFO - Fetching info about admin user from licence_plates_database
+2018-10-27 19:18:51,247 - INFO - SELECT EXISTS(SELECT * FROM licence_plates where name = 'admin')
+2018-10-27 19:18:51,248 - ERROR - no such table: licence_plates
+2018-10-27 19:18:51,248 - ERROR - no such table: users
+2018-10-27 19:21:58,976 - INFO - connecting to Access_control_system.db
+2018-10-27 19:21:58,976 - INFO - connecting to Access_control_system.db
+2018-10-27 19:21:59,011 - INFO - connecting to Access_control_system.db
+2018-10-27 19:22:19,512 - INFO - connecting to Access_control_system.db
+2018-10-27 19:22:19,513 - INFO - connecting to Access_control_system.db
+2018-10-27 19:22:19,546 - INFO - connecting to Access_control_system.db
+2018-10-27 19:22:26,209 - INFO - Fetching info about admin user from users
+2018-10-27 19:22:26,209 - INFO - SELECT EXISTS(SELECT * FROM users where name = 'admin')
+2018-10-27 19:22:26,210 - ERROR - no such table: users
+2018-10-27 19:22:26,210 - ERROR - no such table: users
+2018-10-27 19:24:48,574 - INFO - connecting to Access_control_system.db
+2018-10-27 19:24:48,575 - INFO - connecting to Access_control_system.db
+2018-10-27 19:24:48,611 - INFO - connecting to Access_control_system.db
+2018-10-27 19:24:53,546 - INFO - Fetching info about 1 user from users
+2018-10-27 19:24:53,546 - INFO - SELECT EXISTS(SELECT * FROM users where name = '1')
+2018-10-27 19:24:53,546 - ERROR - no such table: users
+2018-10-27 19:24:53,546 - ERROR - no such table: users
+2018-10-27 19:27:47,915 - INFO - connecting to Access_control_system.db
+2018-10-27 19:27:47,916 - INFO - connecting to Access_control_system.db
+2018-10-27 19:27:47,946 - INFO - connecting to Access_control_system.db
+2018-10-27 19:27:52,147 - INFO - Fetching info about 1 user from users
+2018-10-27 19:27:52,148 - INFO - SELECT EXISTS(SELECT * FROM users where name = '1')
+2018-10-27 19:27:52,148 - ERROR - no such column: name
+2018-10-27 19:28:57,193 - INFO - connecting to Access_control_system.db
+2018-10-27 19:28:57,194 - INFO - connecting to Access_control_system.db
+2018-10-27 19:28:57,227 - INFO - connecting to Access_control_system.db
+2018-10-27 19:28:59,708 - INFO - checking data in db: 1 6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b
+2018-10-27 19:29:03,076 - INFO - checking data in db:  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2018-10-27 19:29:04,932 - INFO - checking data in db: d 18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4
+2018-10-27 19:29:07,180 - INFO - checking data in db: 1 6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b
+2018-10-27 19:29:19,860 - INFO - Fetching info about a user from users
+2018-10-27 19:29:19,860 - INFO - SELECT EXISTS(SELECT * FROM users where name = 'a')
+2018-10-27 19:29:19,861 - ERROR - no such column: name
+2018-10-27 19:29:26,748 - INFO - Fetching info about a user from users
+2018-10-27 19:29:26,749 - INFO - SELECT EXISTS(SELECT * FROM users where name = 'a')
+2018-10-27 19:29:26,749 - ERROR - no such column: name
+2018-10-27 19:30:12,261 - INFO - connecting to Access_control_system.db
+2018-10-27 19:30:12,262 - INFO - connecting to Access_control_system.db
+2018-10-27 19:30:12,313 - INFO - connecting to Access_control_system.db
+2018-10-27 19:30:13,548 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 19:30:15,684 - INFO - checking data in db: 1 6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b
+2018-10-27 19:30:19,061 - INFO - Fetching info about 1 user from users
+2018-10-27 19:30:19,061 - INFO - SELECT EXISTS(SELECT * FROM users where username = '1')
+2018-10-27 19:30:23,165 - INFO - Fetching info about a user from users
+2018-10-27 19:30:23,165 - INFO - SELECT EXISTS(SELECT * FROM users where username = 'a')
+2018-10-27 19:30:27,260 - INFO - Fetching info about s user from users
+2018-10-27 19:30:27,260 - INFO - SELECT EXISTS(SELECT * FROM users where username = 's')
+2018-10-27 19:32:52,209 - INFO - connecting to Access_control_system.db
+2018-10-27 19:32:52,209 - INFO - connecting to Access_control_system.db
+2018-10-27 19:32:52,245 - INFO - connecting to Access_control_system.db
+2018-10-27 19:32:53,502 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 19:32:57,742 - INFO - checking data in db: 1 6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b
+2018-10-27 19:33:46,713 - INFO - connecting to Access_control_system.db
+2018-10-27 19:33:46,714 - INFO - connecting to Access_control_system.db
+2018-10-27 19:33:46,746 - INFO - connecting to Access_control_system.db
+2018-10-27 19:33:47,646 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 19:33:50,566 - INFO - checking data in db: a ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb
+2018-10-27 19:33:52,846 - INFO - Fetching info about  user from users
+2018-10-27 19:33:52,846 - INFO - SELECT EXISTS(SELECT * FROM users where username = '')
+2018-10-27 19:33:55,166 - INFO - Fetching info about  user from users
+2018-10-27 19:33:55,166 - INFO - SELECT EXISTS(SELECT * FROM users where username = '')
+2018-10-27 19:33:57,526 - INFO - Fetching info about 1 user from users
+2018-10-27 19:33:57,526 - INFO - SELECT EXISTS(SELECT * FROM users where username = '1')
+2018-10-27 19:34:00,366 - INFO - Fetching info about 1 user from users
+2018-10-27 19:34:00,366 - INFO - SELECT EXISTS(SELECT * FROM users where username = '1')
+2018-10-27 19:34:05,486 - INFO - Fetching info about z user from users
+2018-10-27 19:34:05,487 - INFO - SELECT EXISTS(SELECT * FROM users where username = 'z')
+2018-10-27 19:34:07,830 - INFO - Fetching info about a user from users
+2018-10-27 19:34:07,831 - INFO - SELECT EXISTS(SELECT * FROM users where username = 'a')
+2018-10-27 19:34:29,533 - INFO - connecting to Access_control_system.db
+2018-10-27 19:34:29,534 - INFO - connecting to Access_control_system.db
+2018-10-27 19:34:29,565 - INFO - connecting to Access_control_system.db
+2018-10-27 19:34:32,199 - INFO - checking data in db: 1 6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b
+2018-10-27 19:34:35,407 - INFO - checking data in db: a ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb
+2018-10-27 19:34:40,655 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-27 19:34:44,927 - INFO - Fetching info about r user from users
+2018-10-27 19:34:44,927 - INFO - SELECT EXISTS(SELECT * FROM users where username = 'r')
+2018-10-27 19:34:48,407 - INFO - Fetching info about r user from users
+2018-10-27 19:34:48,407 - INFO - SELECT EXISTS(SELECT * FROM users where username = 'r')
+2018-10-27 19:34:50,415 - INFO - Fetching info about  user from users
+2018-10-27 19:34:50,415 - INFO - SELECT EXISTS(SELECT * FROM users where username = '')
+2018-10-27 19:34:53,759 - INFO - Fetching info about r user from users
+2018-10-27 19:34:53,759 - INFO - SELECT EXISTS(SELECT * FROM users where username = 'r')
+2018-10-27 19:34:57,055 - INFO - Fetching info about r user from users
+2018-10-27 19:34:57,055 - INFO - SELECT EXISTS(SELECT * FROM users where username = 'r')
+2018-10-27 19:35:02,351 - INFO - Fetching info about r user from users
+2018-10-27 19:35:02,351 - INFO - SELECT EXISTS(SELECT * FROM users where username = 'r')

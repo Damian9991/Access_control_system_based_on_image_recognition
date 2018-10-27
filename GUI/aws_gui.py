@@ -12,14 +12,11 @@ import PIL.Image
 import tkinter.messagebox
 import time
 import tkinter as tk
-import sqlite3
-import sys
-import os
 from tkinter import *
 from PIL import ImageTk
 from tkinter.filedialog import askopenfilename
+from Access_control_system_based_on_image_recognition.Database.Database import *
 from Access_control_system_based_on_image_recognition.GUI.gui_scripts import *
-from Access_control_system_based_on_image_recognition.GUI.SQLiteManager import SQLiteManager
 from Access_control_system_based_on_image_recognition.utils import *
 
 import logging
@@ -39,7 +36,7 @@ LARGE_FONT=("Verdana", 12)
 
 class Utilities(object):
     def __init__(self):
-        self.db_name = "../Database/Access_control_system.db"
+        self.db_manager = DatabaseManager()
 
     def create_label(self, text, x_position, y_position, size):
         text_field = Label(self, text=text, font=("Helvetica bold", size), anchor= CENTER)
@@ -78,10 +75,6 @@ class GuiManager(tk.Tk, Utilities):
         container.grid_columnconfigure(0, weight=1)
 
         self.title("Access control system")
-
-        #self.clock_label = tk.Label(text="", bg="grey", font=("Helvetica ", 14))
-        #self.clock_label.place(x=660, y =0)
-
         self.frames = {}
 
         for page in (LoginPage, MainMenuPage):
@@ -89,7 +82,6 @@ class GuiManager(tk.Tk, Utilities):
             self.frames[page]= frame
             frame.grid(row=0, column=0, sticky="nsew")
 
-        #self.update_clock()
         self.show_frame(LoginPage)
 
     def update_clock(self):
@@ -135,16 +127,11 @@ class LoginPage(Frame, Utilities):
         quit_button.place(x=200, y=260)
 
     def check_user_login_password(self):
-        sqlite3_object = SQLiteManager(self.db_name)
-        try:
-            sqlite3_object.create_or_drop_table("CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)")
-        except sqlite3.OperationalError:
-            pass
 
         username = self.name_entry.get()
-        password = sqlite3_object.create_hash_before_add_to_db(self.password_entry.get())
+        password = self.db_manager.create_hash_before_add_to_db(self.password_entry.get())
 
-        if sqlite3_object.select_data("users", username, password):
+        if self.db_manager.check_login_and_password("users", username, password):
             tkinter.messagebox.showinfo('Information', 'You have been logged in!')
             self.controller.show_frame(MainMenuPage)
             self.name_entry.delete(0, 'end')
@@ -265,8 +252,8 @@ class MainMenuPage(Frame, Utilities):
         self.search_button.bind("<Leave>", self.on_leave)
 
         self.back_home_img = tk.PhotoImage(file="logout.png")
-        self.back_home_button = Button(self, image=self.back_home_img, width="370", height="30", command=self.back_login_page)
-        self.back_home_button.place(x=0, y=392)
+        self.back_home_button = Button(self, image=self.back_home_img, width="150", height="47", command=self.back_login_page)
+        self.back_home_button.place(x=110, y=392)
 
     def upload_window(self):
         self.create_new_window("", size_x=280, size_y=370)
@@ -318,7 +305,6 @@ class MainMenuPage(Frame, Utilities):
         file_name = split_list[(len(split_list) - 1)]
 
         self.sel_img = Label(self.new_window, text = "Selected image:", background="grey")
-        #self.sel_img.place(x = 0, y=150)
 
         self.file_path_label = Label(self.new_window, text = file_name, background="grey")
         self.file_path_label.pack()
@@ -419,20 +405,14 @@ class MainMenuPage(Frame, Utilities):
         elif password_hash != password_confirm_hash:
             tkinter.messagebox.showerror('Error', 'Password does not match the confirm password')
 
+        elif self.db_manager.check_if_user_in_database(username):
+            tkinter.messagebox.showerror("Error", "User already exists!")
+
+        elif self.db_manager.add_user_to_db(username, password_hash):
+            tkinter.messagebox.showinfo("Error", "User has been added!")
+
         else:
-            with sqlite3.connect(self.db_name) as db:
-                cursor = db.cursor()
-            find_user = "SELECT * FROM users WHERE username = ?"
-            cursor.execute(find_user, [(username)])
-
-            if cursor.fetchall():
-                tkinter.messagebox.showwarning('Warming', 'Username taken, please try again!')
-
-            else:
-                insertData = "INSERT INTO users(username, password) VALUES(?,?)"
-                cursor.execute(insertData, [(username), (password_hash)])
-                tkinter.messagebox.showinfo('Add User', 'User has been added!')
-                db.commit()
+            tkinter.messagebox.showerror("Error", "There is a problem with the database connection")
 
     def delete_user(self):
         self.create_new_window("Delete user", size_x=180, size_y=70)
@@ -447,17 +427,11 @@ class MainMenuPage(Frame, Utilities):
     def del_user_from_db(self):
         username = self.username_to_delete.get()
 
-        with sqlite3.connect(self.db_name) as db:
-            cursor = db.cursor()
-            find_user = "SELECT * FROM users WHERE username = ? "
-            cursor.execute(find_user, [(username)])
-
-        if cursor.fetchall():
-            delrecord = "DELETE FROM users WHERE username=?"
-            cursor.execute(delrecord, [(username)])
-            db.commit()
-            tkinter.messagebox.showinfo('Information', 'User has been deleted!')
-
+        if self.db_manager.check_if_user_in_database(username):
+            if self.db_manager.del_user_from_db(username):
+                tkinter.messagebox.showinfo('Information', 'User has been deleted!')
+            else:
+                tkinter.messagebox.showinfo('There is a problem with the database connection')
         else:
             tkinter.messagebox.showwarning('Warming', "user doesn't exist\nPlease try again!")
 
@@ -518,6 +492,6 @@ class MainMenuPage(Frame, Utilities):
 
 if __name__ == "__main__":
     app = GuiManager()
-    app.geometry("%dx%d%+d%+d" % (375, 430, 400, 125))
+    app.geometry("%dx%d%+d%+d" % (375, 445, 400, 125))
     app.resizable(False, False)
     app.mainloop()
