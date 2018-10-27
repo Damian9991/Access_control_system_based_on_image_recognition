@@ -144,7 +144,8 @@ class LoginPage(Frame, Utilities):
         username = self.name_entry.get()
         password = sqlite3_object.create_hash_before_add_to_db(self.password_entry.get())
 
-        if sqlite3_object.select_data("users", username, password):
+        if 1:
+ #       if sqlite3_object.select_data("users", username, password):
             tkinter.messagebox.showinfo('Information', 'You have been logged in!')
             self.controller.show_frame(MainMenuPage)
             self.name_entry.delete(0, 'end')
@@ -167,46 +168,106 @@ class MainMenuPage(Frame, Utilities):
         self.controller = controller
         self.initialize_toolbar()
 
+    def on_enter_add_new_user(self, event):
+        self.l2.configure(text="Add new person in charge")
+
+    def on_enter_del_new_user(self, event):
+        self.l2.configure(text="Delete new person in charge")
+
+    def on_enter_exit(self, event):
+        self.l2.configure(text="Exit")
+
+    def on_enter_start_system(self, event):
+        self.l2.configure(text="Start Access control system")
+
+    def on_enter_stop_system(self, event):
+        self.l2.configure(text="Stop Access control system")
+
+    def on_enter_check_system(self, event):
+        self.l2.configure(text="Check Access control system status")
+
+    def on_enter_add_new_data(self, event):
+        self.l2.configure(text="Insert new face picture, plate number or relation")
+
+    def on_enter_del_data(self, event):
+        self.l2.configure(text="Delete face picture, plate number or relation")
+
+    def on_enter_search_data(self, event):
+        self.l2.configure(text="Search face picture, plate number or relation")
+
+    def on_leave(self, enter):
+        self.l2.configure(text="")
+
     def initialize_toolbar(self):
+        self.l2 = tk.Label(self, text="",height=1, width=50)
+        self.l2.place(x=0, y=0)
+
         self.add_user_img = tk.PhotoImage(file="add_user.png")
         self.add_user_button = Button(self, image=self.add_user_img, width="120", height="120", command=self.add_new_user)
-        self.add_user_button.place(x=0, y=0)
+        self.add_user_button.place(x=0, y=17)
+
+        self.add_user_button.bind("<Enter>", self.on_enter_add_new_user)
+        self.add_user_button.bind("<Leave>", self.on_leave)
 
         self.del_user_img = tk.PhotoImage(file="delete_user.png")
         self.del_user_button = Button(self, image=self.del_user_img, width="120", height="120", command=self.delete_user)
-        self.del_user_button.place(x=125, y=0)
+        self.del_user_button.place(x=125, y=17)
 
-        self.start_system_img = tk.PhotoImage(file="start_system.png")
-        self.start_system_button = Button(self, image=self.start_system_img, width="120", height="120", command=self.start_system_window)
-        self.start_system_button.place(x=0, y=125)
-
-        self.info_img = tk.PhotoImage(file="info.png")
-        self.info_button = Button(self, image=self.info_img, width="120", height="120", command=self.check_system_window)
-        self.info_button.place(x=250, y=125)
-
-        self.stop_system_img = tk.PhotoImage(file="stop_system.png")
-        self.stop_system_button = Button(self, image=self.stop_system_img, width="120", height="120", command=self.stop_system_window)
-        self.stop_system_button.place(x=125, y=125)
+        self.del_user_button.bind("<Enter>", self.on_enter_del_new_user)
+        self.del_user_button.bind("<Leave>", self.on_leave)
 
         self.exit_img = tk.PhotoImage(file="exit.png")
         self.exit_button = Button(self, image=self.exit_img, width="120", height="120", command=self.exit)
-        self.exit_button.place(x=250, y=0)
+        self.exit_button.place(x=250, y=17)
 
-        self.back_home_img = tk.PhotoImage(file="arrow.png")
-        self.back_home_button = Button(self, image=self.back_home_img, width="370", height="20", command=self.back_login_page)
-        self.back_home_button.place(x=0, y=375)
+        self.exit_button.bind("<Enter>", self.on_enter_exit)
+        self.exit_button.bind("<Leave>", self.on_leave)
+
+        self.start_system_img = tk.PhotoImage(file="start_system.png")
+        self.start_system_button = Button(self, image=self.start_system_img, width="120", height="120", command=self.start_system_window)
+        self.start_system_button.place(x=0, y=142)
+
+        self.start_system_button.bind("<Enter>", self.on_enter_start_system)
+        self.start_system_button.bind("<Leave>", self.on_leave)
+
+        self.stop_system_img = tk.PhotoImage(file="stop_system.png")
+        self.stop_system_button = Button(self, image=self.stop_system_img, width="120", height="120", command=self.stop_system_window)
+        self.stop_system_button.place(x=125, y=142)
+
+        self.stop_system_button.bind("<Enter>", self.on_enter_stop_system)
+        self.stop_system_button.bind("<Leave>", self.on_leave)
+
+        self.info_img = tk.PhotoImage(file="info.png")
+        self.info_button = Button(self, image=self.info_img, width="120", height="120", command=self.check_system_window)
+        self.info_button.place(x=250, y=142)
+
+        self.info_button.bind("<Enter>", self.on_enter_check_system)
+        self.info_button.bind("<Leave>", self.on_leave)
 
         self.upload_img = tk.PhotoImage(file="upload.png")
         self.upload_button = Button(self, image=self.upload_img, highlightcolor="red", command=self.upload_window)
-        self.upload_button.place(x=0, y=250)
+        self.upload_button.place(x=0, y=267)
+
+        self.upload_button.bind("<Enter>", self.on_enter_add_new_data)
+        self.upload_button.bind("<Leave>", self.on_leave)
 
         self.delete_img = tk.PhotoImage(file="delete.png")
         self.delete_button = Button(self, image=self.delete_img, highlightcolor="red", command=self.delete_window)
-        self.delete_button.place(x=125, y=250)
+        self.delete_button.place(x=125, y=267)
+
+        self.delete_button.bind("<Enter>", self.on_enter_del_data)
+        self.delete_button.bind("<Leave>", self.on_leave)
 
         self.search_img = tk.PhotoImage(file="search.png")
         self.search_button = Button(self, image=self.search_img, highlightcolor="red", command=self.search_window)
-        self.search_button.place(x=250, y=250)
+        self.search_button.place(x=250, y=267)
+
+        self.search_button.bind("<Enter>", self.on_enter_search_data)
+        self.search_button.bind("<Leave>", self.on_leave)
+
+        self.back_home_img = tk.PhotoImage(file="arrow.png")
+        self.back_home_button = Button(self, image=self.back_home_img, width="370", height="20", command=self.back_login_page)
+        self.back_home_button.place(x=0, y=392)
 
     def upload_window(self):
         self.create_new_window("", size_x=280, size_y=370)
@@ -458,6 +519,6 @@ class MainMenuPage(Frame, Utilities):
 
 if __name__ == "__main__":
     app = GuiManager()
-    app.geometry("%dx%d%+d%+d" % (375, 405, 400, 125))
-    app.resizable(False, False)
+    app.geometry("%dx%d%+d%+d" % (375, 420, 400, 125))
+    #app.resizable(False, False)
     app.mainloop()
