@@ -1438,3 +1438,35 @@
 2018-10-27 14:54:40,395 - INFO - connecting to db: aws_system.db
 2018-10-27 14:54:40,396 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
 2018-10-27 14:54:40,397 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-27 15:01:57,835 - INFO - connecting to db: Access_control_system_based_on_image_recognition/Database/Access_control_system.db
+2018-10-27 15:02:35,083 - INFO - connecting to db: Database/Access_control_system.db
+2018-10-27 15:03:01,843 - INFO - connecting to db: Database/Access_control_system.db
+2018-10-27 15:03:48,291 - INFO - connecting to db: /home/damian/Pulpit/repo_inz/Access_control_system_based_on_image_recognition/Database/Access_control_system.db
+2018-10-27 15:03:48,291 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-27 15:03:48,292 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 15:05:25,573 - INFO - connecting to db: ../Database/Access_control_system.db
+2018-10-27 15:05:25,573 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-27 15:05:25,574 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 15:05:27,332 - INFO - connecting to db: ../Database/Access_control_system.db
+2018-10-27 15:05:27,333 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-27 15:05:27,333 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 15:14:32,840 - INFO - connecting to db: ../Database/Access_control_system.db
+2018-10-27 15:14:32,841 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-27 15:14:40,984 - INFO - connecting to db: ../Database/Access_control_system.db
+2018-10-27 15:14:40,985 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-27 15:14:50,560 - INFO - connecting to db: ../Database/Access_control_system.db
+2018-10-27 15:14:50,561 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-27 15:15:06,568 - INFO - connecting to db: ../Database/Access_control_system.db
+2018-10-27 15:15:06,569 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-27 15:15:06,570 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 15:15:13,472 - INFO - connecting to db: ../Database/Access_control_system.db
+2018-10-27 15:15:13,473 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-27 15:15:13,473 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+2018-10-27 15:15:28,369 - INFO - connecting to db: ../Database/Access_control_system.db
+2018-10-27 15:15:28,370 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-27 15:15:48,848 - INFO - connecting to db: ../Database/Access_control_system.db
+2018-10-27 15:15:48,849 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-27 15:15:48,849 - INFO - checking data in db: login 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+2018-10-27 15:15:53,920 - INFO - connecting to db: ../Database/Access_control_system.db
+2018-10-27 15:15:53,921 - INFO - creating or droping table: CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+2018-10-27 15:15:53,922 - INFO - checking data in db: admin 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918

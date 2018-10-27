@@ -38,6 +38,8 @@ LARGE_FONT=("Verdana", 12)
 
 
 class Utilities(object):
+    def __init__(self):
+        self.db_name = "../Database/Access_control_system.db"
 
     def create_label(self, text, x_position, y_position, size):
         text_field = Label(self, text=text, font=("Helvetica bold", size), anchor= CENTER)
@@ -69,6 +71,7 @@ class Utilities(object):
 class GuiManager(tk.Tk, Utilities):
     def __init__(self, *args, **kwargs):
         tk.Tk.__init__(self, *args, **kwargs)
+        Utilities.__init__(self)
         container = Frame(self)
         container.pack(side="top", fill="both", expand=True)
         container.grid_rowconfigure(0, weight =1)
@@ -107,7 +110,7 @@ class LoginPage(Frame, Utilities):
     def __init__(self, parent, controller):
         self.controller = controller
         Frame.__init__(self, parent)
-        self.db_name = "aws_system.db"
+        Utilities.__init__(self)
         self.init_window()
         self.create_label("Access control system \n based on image recognition", x_position=30, y_position=0, size=16)
 
@@ -160,6 +163,7 @@ class LoginPage(Frame, Utilities):
 class MainMenuPage(Frame, Utilities):
     def __init__(self, parent, controller):
         Frame.__init__(self, parent)
+        Utilities.__init__(self)
         self.controller = controller
         self.initialize_toolbar()
 
@@ -356,7 +360,7 @@ class MainMenuPage(Frame, Utilities):
             tkinter.messagebox.showerror('Error', 'Password does not match the confirm password')
 
         else:
-            with sqlite3.connect("aws_system.db") as db:
+            with sqlite3.connect(self.db_name) as db:
                 cursor = db.cursor()
             find_user = "SELECT * FROM users WHERE username = ?"
             cursor.execute(find_user, [(username)])
@@ -383,7 +387,7 @@ class MainMenuPage(Frame, Utilities):
     def del_user_from_db(self):
         username = self.username_to_delete.get()
 
-        with sqlite3.connect("aws_system.db") as db:
+        with sqlite3.connect(self.db_name) as db:
             cursor = db.cursor()
             find_user = "SELECT * FROM users WHERE username = ? "
             cursor.execute(find_user, [(username)])
