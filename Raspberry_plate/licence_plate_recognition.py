@@ -40,7 +40,8 @@ class LicencePlateRecognition:
         self.take_picture()
         upload_image_to_s3_bucket(self.image_path, self.licence_plates_bucket, image_name)
         response = self.client.detect_text(Image={'S3Object': {'Bucket': self.licence_plates_bucket, 'Name': image_name}})
-
+        delete_image_from_s3_bucket(self.licence_plates_bucket, image_name)
+        
         detected_texts_dict = response['TextDetections']
         for text_dict in detected_texts_dict:
             if text_dict['Confidence'] > 80:

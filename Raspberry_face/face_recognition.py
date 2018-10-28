@@ -130,6 +130,7 @@ class FaceRecognition:
                                                                               'Name': image_name}},
                                                           FaceMatchThreshold=threshold)
 
+        delete_image_from_s3_bucket(self.faces_bucket, image_name)
         face_matches = response_dict['FaceMatches']
         if face_matches:
             for match in face_matches:
