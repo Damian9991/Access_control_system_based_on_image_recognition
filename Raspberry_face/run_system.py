@@ -41,14 +41,14 @@ class RaspberryConnection(object):
     def __init__(self, second_raspberry_ip):
         self.ssh_raspberry_plate_connection = None
         self.second_raspberry = second_raspberry_ip
-        self.create_ssh_connection_to_second_raspberry(self.second_raspberry, 22, "pi", "pi")
+        self.create_ssh_connection_to_second_raspberry(self.second_raspberry, 22, "pi")
 
-    def create_ssh_connection_to_second_raspberry(self, address, port, user, password, timeout=10):
+    def create_ssh_connection_to_second_raspberry(self, address, port, user, timeout=10):
         try:
             ssh_client = SSHClient()
             ssh_client.load_system_host_keys()
             ssh_client.set_missing_host_key_policy(AutoAddPolicy())
-            ssh_client.connect(address, port, user, password, timeout=timeout)
+            ssh_client.connect(hostname=address, port=port, username=user, timeout=timeout, allow_agent=False, look_for_keys=True)
             self.ssh_raspberry_plate_connection = ssh_client
             logger.info("ssh connection to icence plate Raspberry has been created successfully")
         except Exception as err:
