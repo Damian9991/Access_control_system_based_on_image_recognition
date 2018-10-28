@@ -83,7 +83,6 @@ class DatabaseManager(object):
             logger.error(str(err))
 
     def del_owner_from_database(self, owner):
-
         query = "DELETE FROM licence_plates WHERE owner = '{}')".format(owner)
         logger.info(query)
         try:
@@ -162,5 +161,5 @@ if __name__ == "__main__":
     # sql_object.create_or_drop_table("CREATE TABLE users(username TEXT, password TEXT)")
     # sql_object.create_or_drop_table("CREATE TABLE licence_plates(name TEXT, licence_plate_number TEXT)")
     # sql_object.insert_data('users', 'Kamil', "12345")
-    # print(sql_object.check_if_user_in_database('Kamil_Kryczka'))
+    # print(sql_object.check_if_user_in_database('Kamil Kryczka'))
     sql_object.close_connection_to_db()

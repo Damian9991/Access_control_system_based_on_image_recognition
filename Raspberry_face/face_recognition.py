@@ -34,6 +34,9 @@ class CollectionNotDeletedException(Exception):
 class FaceNotAddedToCollectionException(Exception):
     pass
 
+class FaceNotDeletedFromCollectionException(Exception):
+    pass
+
 
 class FaceRecognition:
     """ The class is responsible for face recognition with the use of AWS rekognition cloud system
@@ -71,22 +74,27 @@ class FaceRecognition:
     def list_faces_in_collection(self):
         tokens = True
         response_dict = self.client.list_faces(CollectionId=self.collection_id_faces)
-        print('Faces in collection ' + self.collection_id_faces)
+        names = []
+        print('Faces in collection ' + self.collection_id_faces + ':')
 
         while tokens:
             faces_list = response_dict['Faces']
             for face in faces_list:
-                print(face)
+                print(face['ExternalImageId'].replace('_', ' '))
+                names.append(face['ExternalImageId'].replace('_', ' '))
             if 'NextToken' in response_dict:
                 next_token = response_dict['NextToken']
                 response_dict = self.client.list_faces(CollectionId=self.collection_id_faces, NextToken=next_token)
             else:
                 tokens = False
+        return names
 
-    def add_face_to_collection(self, image_name):
+    def add_face_to_collection(self, image_path, name):
+        name = name.replace(' ', '_')
+        upload_image_to_s3_bucket(image_path, self.faces_bucket, name)
         response = self.client.index_faces(CollectionId=self.collection_id_faces,
-                                           Image={'S3Object': {'Bucket': self.faces_bucket, 'Name': image_name}},
-                                           ExternalImageId=image_name,
+                                           Image={'S3Object': {'Bucket': self.faces_bucket, 'Name': name}},
+                                           ExternalImageId=name,
                                            MaxFaces=1,
                                            QualityFilter="AUTO",
                                            DetectionAttributes=['ALL'])
@@ -94,8 +102,24 @@ class FaceRecognition:
         if 'FaceRecords' not in response:
             raise FaceNotAddedToCollectionException('An error occured. Face has not been added to collection!')
 
-    def remove_face_from_collection(self, face_id):
-        self.client.delete_faces(CollectionId=self.collection_id_faces, FaceIds=[face_id])
+    def remove_face_from_collection(self, name):
+        tokens = True
+        response_dict = self.client.list_faces(CollectionId=self.collection_id_faces)
+
+        while tokens:
+            faces_list = response_dict['Faces']
+            for face in faces_list:
+                if face['ExternalImageId'] == name.replace(' ', '_'):
+                    face_id = face['FaceId']
+            if 'NextToken' in response_dict:
+                next_token = response_dict['NextToken']
+                response_dict = self.client.list_faces(CollectionId=self.collection_id_faces, NextToken=next_token)
+            else:
+                tokens = False
+        try:
+            self.client.delete_faces(CollectionId=self.collection_id_faces, FaceIds=[face_id])
+        except UnboundLocalError:
+            raise FaceNotDeletedFromCollectionException('Face does not exist in collection!')
 
     def search_for_face_in_collection(self, image_path):
         image_name = datetime.datetime.now().strftime("face_%d%m%Y_%H%M%S.jpg")
