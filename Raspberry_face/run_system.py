@@ -14,6 +14,7 @@ import os
 import sys
 import datetime
 import cv2
+import time
 from threading import Thread
 from paramiko import SSHClient, AutoAddPolicy
 from Access_control_system_based_on_image_recognition.utils import *
@@ -111,6 +112,7 @@ class RaspberryAdministrator(object):
             )
 
             if len(faces) > 0:
+                start_time = time.time()
                 self.licence_plate = None
                 self.owner = None
                 recognise_licence_plate_thread = Thread(target=self.recognise_licence_plate_number)
@@ -123,6 +125,8 @@ class RaspberryAdministrator(object):
                 else:
                     logger.warning("Access denied!")
 
+                end_time = time.time()
+                logger.info("Verification time: {}".format(end_time-start_time))
                 video_capture = cv2.VideoCapture(0)
 
             if cv2.waitKey(1) & 0xFF == ord('q'):
