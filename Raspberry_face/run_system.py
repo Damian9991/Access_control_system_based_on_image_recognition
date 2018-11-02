@@ -190,14 +190,14 @@ class RaspberryAdministrator(object):
         return image_path
 
     def check_if_driver_has_access(self, licence_plate, owner):
-        licence_plate_from_db = self.database.get_licence_plate_number_from_db(owner)
-        if licence_plate_from_db is not None:
-            if licence_plate_from_db == licence_plate:
+        licence_plates_from_db = self.database.get_licence_plates_from_db(owner)
+        if licence_plates_from_db:
+            if licence_plate in licence_plates_from_db:
                     logger.info(licence_plate)
                     logger.info(owner)
                     return True
         else:
-            if self.database.check_if_user_in_database(owner_hash):
+            if self.database.check_if_user_in_database(owner):
                 logger.info("User exists in database but is assigned to different licence plate number!")
             else:
                 logger.info("User does not exist in database!")

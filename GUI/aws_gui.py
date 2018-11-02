@@ -467,7 +467,7 @@ class MainMenuPage(Frame, Utilities):
         if owner == "" or plate_number == "":
             tkinter.messagebox.showerror("Error", "Please, fill both fields")
         else:
-            if self.db_manager.add_plate_and_owner_to_db(owner, plate_number):
+            if self.db_manager.add_licence_plate_and_owner_to_db(owner, plate_number):
                 tkinter.messagebox.showinfo("Info", "Relation has been added to db")
             else:
                 tkinter.messagebox.showerror("Error", "Error")

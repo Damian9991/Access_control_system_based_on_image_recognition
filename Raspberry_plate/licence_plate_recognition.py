@@ -69,10 +69,8 @@ class LicencePlateRecognition:
 
     @staticmethod
     def add_licence_plate_number_to_database(licence_plate, name):
-        licence_plate_hash = create_hash(licence_plate)
-        name_hash = create_hash(name)
         database_manager = DatabaseManager()
-        database_manager.insert_data('licence_plates', name_hash, licence_plate_hash)
+        database_manager.insert_into_licence_plates_table(name, licence_plate)
         database_manager.close_connection_to_db()
 
 
