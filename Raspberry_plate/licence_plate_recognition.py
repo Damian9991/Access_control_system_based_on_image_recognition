@@ -14,8 +14,10 @@ import re
 import logging
 import os
 import picamera
+import sys
+sys.path.append('/home/pi/')
 from Access_control_system_based_on_image_recognition.Database.Database import DatabaseManager
-from utils import *
+from Access_control_system_based_on_image_recognition.utils import *
 
 logger = logging.getLogger("Access_control_system_based_on_image_recognition")
 hdlr = logging.FileHandler(os.popen("pwd").read().replace('\n', '') + "/licence_plate_recognition.log")
@@ -31,7 +33,7 @@ class LicencePlateRecognition:
         self.licence_plates_bucket = 'access-control-system-based-on-image-recognition-licence-plates'
         self.collection_id_licence_plates = ''
         self.client = boto3.client('rekognition')
-        self.image_dir_path = '/tmp/licence_plates/'
+        self.image_dir_path = '/tmp/'
         self.image_path = None
 
     def recognise_licence_plate(self):
