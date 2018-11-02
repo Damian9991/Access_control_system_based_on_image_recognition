@@ -161,8 +161,15 @@ class DatabaseManager(object):
             return None
 
     def fetch_licence_plates_and_owners(self):
-        pass
-
+        drivers_dict = {}
+        self.cursor.execute('SELECT * from licence_plates order by licence_plate_number;')
+        results = self.cursor.fetchall()
+        for row in results:
+            if row[0] not in drivers_dict:
+                drivers_dict[row[0]] = [row[1]]
+            else:
+                drivers_dict[row[0]].append(row[1])
+        return drivers_dict
 
 if __name__ == "__main__":
     sql_object = DatabaseManager()
@@ -170,10 +177,13 @@ if __name__ == "__main__":
     # sql_object.execute_commanc_and_commit("CREATE TABLE licence_plates(owner TEXT, licence_plate_number TEXT)")
     # sql_object.add_licence_plate_and_owner_to_db('RDE 1234', 'Kamil Kryczka')
     # sql_object.add_licence_plate_and_owner_to_db('KRK 1234', 'Damian Osinka')
+    # sql_object.add_licence_plate_and_owner_to_db('KRK 5555', 'Damian Osinka')
+    # sql_object.add_licence_plate_and_owner_to_db('KRK 0909', 'Damian Osinka')
     # sql_object.add_licence_plate_and_owner_to_db('ABC 6666', 'Piotr Pacyna')
     # sql_object.del_owner_from_database('Kamil Kryczka')
     # sql_object.del_owner_from_database('Piotr Pacyna')
     # sql_object.del_licence_plate_from_database('KRK 1234')
     # print(sql_object.check_if_owner_in_database('Kamil Kryczka'))
     # print(sql_object.get_licence_plates_from_db('Kamil Kryczka'))
+    print(sql_object.fetch_licence_plates_and_owners())
     sql_object.close_connection_to_db()
