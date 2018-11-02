@@ -19,6 +19,7 @@ from Access_control_system_based_on_image_recognition.GUI.gui_scripts import *
 from Access_control_system_based_on_image_recognition.utils import *
 from Access_control_system_based_on_image_recognition.Raspberry_face.face_recognition import *
 
+
 import logging
 logger = logging.getLogger("gui.log")
 hdlr = logging.FileHandler(os.popen("pwd").read().replace('\n', '').replace(' ', '') + "/gui.log")
@@ -37,7 +38,7 @@ LARGE_FONT=("Verdana", 12)
 class Utilities(object):
     def __init__(self):
         self.db_manager = DatabaseManager()
-       # self.aws_communication_obj = FaceRecognition()
+        self.aws_communication_obj = FaceRecognition()
 
     def create_label(self, text, x_position, y_position, size):
         text_field = Label(self, text=text, font=("Helvetica bold", size), anchor= CENTER)
@@ -298,48 +299,17 @@ class MainMenuPage(Frame, Utilities):
         self.create_label_in_new_window(self.new_window, text="Delete template photo face:", x_position=13, y_position=5)
         self.del_face_photo_input = self.create_user_input_in_new_window(self.new_window, x_position=23, y_position=25)
 
-        self.del_face_photo_button = Button(self.new_window, text="Confirm", command=self.del_face_photo)
+        self.del_face_photo_button = Button(self.new_window, text="Confirm", command=self.del_face_photo_from_aws)
         self.del_face_photo_button.pack()
         self.del_face_photo_button.place(x=62, y=45)
 
 
-        self.create_label_in_new_window(self.new_window, text="Delete user from db:", x_position=35, y_position=80)
+        self.create_label_in_new_window(self.new_window, text="Delete owner from db:", x_position=35, y_position=80)
         self.del_owner_input = self.create_user_input_in_new_window(self.new_window, x_position=23, y_position=105)
 
-        self.del_owner_button = Button(self.new_window, text="Confirm", command=self.del_owner)
+        self.del_owner_button = Button(self.new_window, text="Confirm", command=self.del_owner_from_db)
         self.del_owner_button.pack()
         self.del_owner_button.place(x=62, y=126)
-
-    def search_window(self):
-        self.create_new_window("", size_x=180, size_y=370)
-
-        self.create_label_in_new_window(self.new_window, text="Face patterns from AWS:")
-
-        listFrame = Frame(self.new_window)
-        listFrame.pack(side=TOP, padx=5, pady=5)
-
-        scrollBar = Scrollbar(listFrame)
-        scrollBar.pack(side=RIGHT, fill=Y)
-        self.listBox = Listbox(listFrame, selectmode=SINGLE)
-        self.listBox.pack(side=LEFT, fill=Y)
-        scrollBar.config(command=self.listBox.yview)
-        self.listBox.config(yscrollcommand=scrollBar.set)
-        for item in ['1','1','1']:
-            self.listBox.insert(END, item)
-
-        self.create_label_in_new_window(self.new_window, text="Plate numbers from db:")
-
-        listFrame2 = Frame(self.new_window)
-        listFrame2.pack(side=TOP, padx=5, pady=5)
-
-        scrollBar2 = Scrollbar(listFrame2)
-        scrollBar2.pack(side=RIGHT, fill=Y)
-        self.listBox2 = Listbox(listFrame2, selectmode=SINGLE)
-        self.listBox2.pack(side=LEFT, fill=Y)
-        scrollBar2.config(command=self.listBox2.yview)
-        self.listBox2.config(yscrollcommand=scrollBar2.set)
-        for item in ['2','2','2']:
-            self.listBox2.insert(END, item)
 
     def create_new_window(self, title, size_x, size_y):
         try:
@@ -485,12 +455,11 @@ class MainMenuPage(Frame, Utilities):
 
     def send_photo_to_aws(self):
         name_surname = self.file_plate_input.get()
-
         if name_surname == "" or self.path_to_file == "":
-            tkinter.messagebox.showerror('Name and surname and photo', 'Please, type picture and name')
+            tkinter.messagebox.showerror('Name, surname and photo', 'Please, type picture and name')
         else:
-            pass
-            #self.aws_communication_obj.add_face_to_collection(self.path_to_file, name_surname)
+            self.aws_communication_obj.add_face_to_collection(self.path_to_file, name_surname)
+            tkinter.messagebox.showinfo('Name, surname and photo', 'The picture has been added to aws collection')
 
     def add_relation_photo_plate(self):
         owner = self.add_photo_face_input.get()
@@ -498,28 +467,65 @@ class MainMenuPage(Frame, Utilities):
         if owner == "" or plate_number == "":
             tkinter.messagebox.showerror("Error", "Please, fill both fields")
         else:
-            pass
-            #if self.aws_communication_obj.add_plate_and_owner_to_db(owner, plate_number)
-            #    tkinter.messagebox.showinfo("Info", "Relation has been added to db")
-            #else
-            #    tkinter.messagebox.showerror("Error", "Error")
+            if self.db_manager.add_plate_and_owner_to_db(owner, plate_number):
+                tkinter.messagebox.showinfo("Info", "Relation has been added to db")
+            else:
+                tkinter.messagebox.showerror("Error", "Error")
 
-    def del_face_photo(self):
-        pass
-
-    def del_owner(self):
-        owner_to_delete = self.del_owner_input.get()
-        if owner_to_delete == "":
-            tkinter.messagebox.showerror("Error", "Please, type user")
+    def del_face_photo_from_aws(self):
+        face_photo_name = self.del_face_photo_input.get()
+        if not face_photo_name == "":
+            self.aws_communication_obj.remove_face_from_collection(face_photo_name)
+            tkinter.messagebox.showinfo("Info", "info")
         else:
-            pass
-            #if self.aws_communication_obj.del_owner_from_database(owner_to_delete)
-            #    tkinter.messagebox.showinfo("Info", "info")
-            #else
-            #    tkinter.messagebox.showerror("Error", "Error")
+            tkinter.messagebox.showinfo("Error", "Please type photo name")
+
+    def del_owner_from_db(self):
+        owner_to_delete = self.del_owner_input.get()
+        if not owner_to_delete == "":
+            self.db_manager.del_owner_from_database(owner_to_delete)
+            tkinter.messagebox.showinfo("Info", "info")
+        else:
+            tkinter.messagebox.showerror("Error", "Please, type user")
 
 
+    def search_window(self):
+        self.create_new_window("", size_x=180, size_y=370)
 
+        self.create_label_in_new_window(self.new_window, text="Face patterns from AWS:")
+
+        listFrame = Frame(self.new_window)
+        listFrame.pack(side=TOP, padx=5, pady=5)
+
+        scrollBar = Scrollbar(listFrame)
+        scrollBar.pack(side=RIGHT, fill=Y)
+        self.listBox = Listbox(listFrame, selectmode=SINGLE)
+        self.listBox.pack(side=LEFT, fill=Y)
+        scrollBar.config(command=self.listBox.yview)
+        self.listBox.config(yscrollcommand=scrollBar.set)
+
+        aws_faces_collection = self.aws_communication_obj.list_faces_in_collection()
+        for item in aws_faces_collection:
+            self.listBox.insert(END, item)
+
+        self.create_label_in_new_window(self.new_window, text="Owners and plate numbers:")
+
+        listFrame2 = Frame(self.new_window)
+        listFrame2.pack(side=TOP, padx=5, pady=5)
+
+        scrollBar2 = Scrollbar(listFrame2)
+        scrollBar2.pack(side=RIGHT, fill=Y)
+        self.listBox2 = Listbox(listFrame2, selectmode=SINGLE)
+        self.listBox2.pack(side=LEFT, fill=Y)
+        scrollBar2.config(command=self.listBox2.yview)
+        self.listBox2.config(yscrollcommand=scrollBar2.set)
+
+       #  aws_faces_collection = self.aws_communication_obj.get_licence_plate_number_from_db_ALL()
+       #  for item in aws_faces_collection:
+       #      self.listBox.insert(END, item)
+
+        for item in ['2','2','2']:
+            self.listBox2.insert(END, item)
 
 
     def back_login_page(self):

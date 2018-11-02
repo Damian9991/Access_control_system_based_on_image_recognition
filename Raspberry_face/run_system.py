@@ -15,6 +15,7 @@ import sys
 import datetime
 import cv2
 import time
+import RPi.GPIO  as GPIO
 from threading import Thread
 from paramiko import SSHClient, AutoAddPolicy
 from Access_control_system_based_on_image_recognition.utils import *
@@ -41,14 +42,14 @@ class RaspberryConnection(object):
     def __init__(self, second_raspberry_ip):
         self.ssh_raspberry_plate_connection = None
         self.second_raspberry = second_raspberry_ip
-        self.create_ssh_connection_to_second_raspberry(self.second_raspberry, 22, "pi", "pi")
+        self.create_ssh_connection_to_second_raspberry(self.second_raspberry, 22, "pi")
 
-    def create_ssh_connection_to_second_raspberry(self, address, port, user, password, timeout=10):
+    def create_ssh_connection_to_second_raspberry(self, address, port, user, timeout=10):
         try:
             ssh_client = SSHClient()
             ssh_client.load_system_host_keys()
             ssh_client.set_missing_host_key_policy(AutoAddPolicy())
-            ssh_client.connect(address, port, user, password, timeout=timeout)
+            ssh_client.connect(hostname=address, port=port, username=user, timeout=timeout, allow_agent=False, look_for_keys=True)
             self.ssh_raspberry_plate_connection = ssh_client
             logger.info("ssh connection to icence plate Raspberry has been created successfully")
         except Exception as err:
@@ -61,6 +62,36 @@ class RaspberryConnection(object):
             self.ssh_raspberry_plate_connection.close()
         except AttributeError as err:
             logger.warning(str(err))
+
+########################################################################################################################
+# -------------------------------------------- DiodesManagement class ------------------------------------------------ #
+########################################################################################################################
+
+class DiodesManagement(object):
+
+        def __init__(self):
+            self.green_diode_pin = 21
+            self.red_diode_pin = 20
+            GPIO.setmode(GPIO.BCM)
+            GPIO.setwarnings(False)
+
+        def turn_on_diode(self, color, on_time=0.5):
+            try:
+                if color == "green":
+                    pin = self.green_diode_pin
+                else:
+                    pin = self.red_diode_pin
+
+                GPIO.setup(pin, GPIO.OUT)
+                GPIO.output(pin, GPIO.HIGH)
+                time.sleep(on_time)
+
+            except Exception as err:
+                logger.error(str(err))
+
+            finally:
+                GPIO.cleanup()
+
 
 
 ########################################################################################################################
@@ -83,6 +114,7 @@ class RaspberryAdministrator(object):
 
         self.raspberry_plate_ip = raspberry_plate_ip
         self.raspberry_connection = RaspberryConnection(self.raspberry_plate_ip)
+        self.diodes = DiodesManagement()
         self.face_recognition = FaceRecognition()
         self.database = DatabaseManager()
 
@@ -121,11 +153,13 @@ class RaspberryAdministrator(object):
                 recognise_licence_plate_thread.join()
 
                 if self.owner is not None and self.check_if_driver_has_access(self.licence_plate, self.owner):
+                    self.diodes.turn_on_diode(color="green")
                     logger.info("Access granted")
                 else:
+                    self.diodes.turn_on_diode(color="red")
                     logger.warning("Access denied!")
 
-                end_time = time.time()
+                end_time = time.time() - 0.5
                 logger.info("Verification time: {}".format(end_time-start_time))
                 video_capture = cv2.VideoCapture(0)
 
