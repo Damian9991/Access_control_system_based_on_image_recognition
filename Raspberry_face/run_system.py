@@ -136,11 +136,12 @@ class RaspberryAdministrator(object):
                 break
 
     def recognise_licence_plate_number(self):
-        python_script = "nohup python /home/pi/licence_plate_recognition.py"
+        python_script = "python3 /home/pi/licence_plate_recognition.py"
         stdin, stdout, stderr = self.raspberry_connection.ssh_raspberry_plate_connection.exec_command(python_script)
-        logger.info(str(stdout))
-        logger.error(str(stderr))
-        self.licence_plate = stdout
+        stdin.close()
+        logger.info(stdout.read().decode().strip())
+        logger.error(stderr.read().decode().strip())
+        self.licence_plate = stdout.read().decode().strip()
 
     def recognise_face(self, frame):
         image_path = self.save_face_photo(frame)
@@ -155,11 +156,9 @@ class RaspberryAdministrator(object):
         return image_path
 
     def check_if_driver_has_access(self, licence_plate, owner):
-        licence_plate_hash = create_hash(licence_plate)
-        owner_hash = create_hash(owner)
-        licence_plate_from_db = self.database.get_licence_plate_number_from_db(owner_hash)
+        licence_plate_from_db = self.database.get_licence_plate_number_from_db(owner)
         if licence_plate_from_db is not None:
-            if licence_plate_from_db == licence_plate_hash:
+            if licence_plate_from_db == licence_plate:
                     logger.info(licence_plate)
                     logger.info(owner)
                     return True

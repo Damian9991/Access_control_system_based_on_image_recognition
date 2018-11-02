@@ -15,7 +15,7 @@ import logging
 import os
 import picamera
 from Database.Database import DatabaseManager
-from utils import upload_image_to_s3_bucket, create_hash
+from utils import *
 
 logger = logging.getLogger("Access_control_system_based_on_image_recognition")
 hdlr = logging.FileHandler(os.popen("pwd").read().replace('\n', '') + "/licence_plate_recognition.log")
@@ -47,11 +47,10 @@ class LicencePlateRecognition:
             if text_dict['Confidence'] > 80:
                     if self.check_if_text_matches_to_licence_plate_regex(text_dict['DetectedText']):
                         logger.info('Verification successful, access granted for licence number: '.format(text_dict['DetectedText']))
-                        return text_dict['DetectedText']
+                        print(text_dict['DetectedText'])
                     logger.info('Licence plate number not found id database, access denied for licence number: '.format(text_dict['DetectedText']))
             else:
                 logger.info('Picture did not contain any clear text')
-        return None
 
     def take_picture(self):
         with picamera.PiCamera() as camera:
