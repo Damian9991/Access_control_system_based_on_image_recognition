@@ -1,23 +1,22 @@
-import tkinter as tk
+import socket
+from paramiko import SSHClient, AutoAddPolicy
 
-class Example(tk.Frame):
-    def __init__(self, *args, **kwargs):
-        tk.Frame.__init__(self, *args, **kwargs)
-        self.l1 = tk.Label(self, text="Hover over me")
-        self.l2 = tk.Label(self, text="", width=40)
-        self.l1.pack(side="top")
-        self.l2.pack(side="top", fill="x")
 
-        self.l1.bind("<Enter>", self.on_enter)
-        self.l1.bind("<Leave>", self.on_leave)
 
-    def on_enter(self, event):
-        self.l2.configure(text="Hello world")
+def create_ssh_connection(address, port, user, timeout=10):
+    try:
+        ssh_client = SSHClient()
+        ssh_client.load_system_host_keys()
+        ssh_client.set_missing_host_key_policy(AutoAddPolicy())
+        ssh_client.connect(hostname=address, port=port, username=user, timeout=timeout, allow_agent=False, look_for_keys=True)
+        ssh_client.exec_command("python /home/pi/Desktop/TEST.py")
+       # print(stderr.read())
+        #print(stdout.read())
 
-    def on_leave(self, enter):
-        self.l2.configure(text="")
 
-if __name__ == "__main__":
-    root = tk.Tk()
-    Example(root).pack(side="top", fill="both", expand="true")
-    root.mainloop()
+
+    except Exception as err:
+        print(str(err))
+        return None
+
+create_ssh_connection('192.168.2.100', 22, "pi")

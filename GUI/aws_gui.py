@@ -15,7 +15,6 @@ from tkinter import *
 from PIL import ImageTk
 from tkinter.filedialog import askopenfilename
 from Access_control_system_based_on_image_recognition.Database.Database import *
-from Access_control_system_based_on_image_recognition.GUI.gui_scripts import *
 from Access_control_system_based_on_image_recognition.utils import *
 from Access_control_system_based_on_image_recognition.Raspberry_face.face_recognition import *
 
@@ -349,6 +348,7 @@ class MainMenuPage(Frame, Utilities):
 
         self.create_label_in_new_window(self.new_window, text="Raspberry_face_ip")
         self.rasp_1_start_input = self.create_user_input_in_new_window(self.new_window)
+        self.rasp_1_start_input.insert(0, "192.168.2.100")
 
         self.create_label_in_new_window(self.new_window, text="Raspberry_plate_ip")
         self.rasp_2_start_input = self.create_user_input_in_new_window(self.new_window)
@@ -361,6 +361,7 @@ class MainMenuPage(Frame, Utilities):
 
         self.create_label_in_new_window(self.new_window, text="Raspberry_face_ip")
         self.rasp_1_stop_input = self.create_user_input_in_new_window(self.new_window)
+        self.rasp_1_stop_input.insert(0, "192.168.2.100")
 
         self.stop_system_button = Button(self.new_window, text="Start", command=self.stop_system_from_gui)
         self.stop_system_button.pack()
@@ -370,6 +371,7 @@ class MainMenuPage(Frame, Utilities):
 
         self.create_label_in_new_window(self.new_window, text="Raspberry_face_ip")
         self.rasp_1_check_input = self.create_user_input_in_new_window(self.new_window)
+        self.rasp_1_check_input.insert(0, "192.168.2.100")
 
         self.start_system_button = Button(self.new_window, text="Start", command=self.check_status_from_gui)
         self.start_system_button.pack()
@@ -412,16 +414,22 @@ class MainMenuPage(Frame, Utilities):
 # II RZĄD
 #_____________________________________________________________________________________
     def start_system_from_gui(self):
-        if start_system(self.rasp_1_start_input , self.rasp_2_start_input):
+        result = start_system(self.rasp_1_start_input , self.rasp_2_start_input)
+        if result == "ON":
             tkinter.messagebox.showinfo('Information', 'System has been started')
+        elif result == "ALREADY_RUNNING":
+            tkinter.messagebox.showinfo('Information', 'System is already running')
         else:
             tkinter.messagebox.showerror('Error', 'Check your connectivity')
 
     def check_status_from_gui(self):
-        if check_system_status(self.rasp_1_check_input):
-            tkinter.messagebox.showinfo('System is on', 'System is on')
+        result = check_system_status(self.rasp_1_check_input)
+        if result == "ON":
+            tkinter.messagebox.showinfo('Information', 'System is on')
+        elif result == "OFF":
+            tkinter.messagebox.showinfo('Information', 'System is off')
         else:
-            tkinter.messagebox.showerror('System is off', 'Check your connectivity')
+            tkinter.messagebox.showerror('Check your connectivity', 'Check your connectivity')
 
     def stop_system_from_gui(self):
         if stop_system(self.rasp_1_stop_input):
