@@ -170,7 +170,7 @@ class RaspberryAdministrator(object):
                 break
 
     def recognise_licence_plate_number(self):
-        python_script = "python3 /home/pi/licence_plate_recognition.py"
+        python_script = "python3 /home/pi/Access_control_system_based_on_image_recognition/Raspberry_plate/licence_plate_recognition.py"
         stdin, stdout, stderr = self.raspberry_connection.ssh_raspberry_plate_connection.exec_command(python_script)
         stdin.close()
         logger.info(stdout.read().decode().strip())

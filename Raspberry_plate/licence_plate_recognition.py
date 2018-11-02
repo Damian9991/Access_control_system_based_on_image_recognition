@@ -14,7 +14,7 @@ import re
 import logging
 import os
 import picamera
-from Database.Database import DatabaseManager
+from Access_control_system_based_on_image_recognition.Database.Database import DatabaseManager
 from utils import *
 
 logger = logging.getLogger("Access_control_system_based_on_image_recognition")
