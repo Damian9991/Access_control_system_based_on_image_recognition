@@ -31,13 +31,6 @@ class CollectionNotDeletedException(Exception):
     pass
 
 
-class FaceNotAddedToCollectionException(Exception):
-    pass
-
-class FaceNotDeletedFromCollectionException(Exception):
-    pass
-
-
 class FaceRecognition:
     """ The class is responsible for face recognition with the use of AWS rekognition cloud system
         -- check whether the recognised face exists in collection; similarity should be above 80%
@@ -100,7 +93,9 @@ class FaceRecognition:
                                            DetectionAttributes=['ALL'])
 
         if 'FaceRecords' not in response:
-            raise FaceNotAddedToCollectionException('An error occured. Face has not been added to collection!')
+            logger.error('An error occured. Face has not been added to collection!')
+        else:
+            return True
 
     def remove_face_from_collection(self, name):
         tokens = True
@@ -118,8 +113,9 @@ class FaceRecognition:
                 tokens = False
         try:
             self.client.delete_faces(CollectionId=self.collection_id_faces, FaceIds=[face_id])
+            return True
         except UnboundLocalError:
-            raise FaceNotDeletedFromCollectionException('Face does not exist in collection!')
+            logger.error('Face does not exist in collection!')
 
     def search_for_face_in_collection(self, image_path):
         image_name = datetime.datetime.now().strftime("face_%d%m%Y_%H%M%S.jpg")

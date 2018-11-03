@@ -149,6 +149,7 @@ class RaspberryAdministrator(object):
                 self.owner = None
                 recognise_licence_plate_thread = Thread(target=self.recognise_licence_plate_number)
                 recognise_licence_plate_thread.start()
+                time.sleep(0.2)
                 self.recognise_face(frame)
                 recognise_licence_plate_thread.join()
 

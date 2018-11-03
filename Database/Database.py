@@ -117,7 +117,6 @@ class DatabaseManager(object):
             self.cursor.execute(query)
             self.db.commit()
         except sqlite3.OperationalError as err:
-            print(str(err))
             logger.error(str(err))
 
     def del_licence_plate_from_database(self, licence_plate):
@@ -127,7 +126,6 @@ class DatabaseManager(object):
             self.cursor.execute(query)
             self.db.commit()
         except sqlite3.OperationalError as err:
-            print(str(err))
             logger.error(str(err))
 
     def check_if_owner_in_database(self, owner):

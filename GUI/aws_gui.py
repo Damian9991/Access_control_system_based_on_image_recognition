@@ -293,7 +293,7 @@ class MainMenuPage(Frame, Utilities):
 
     def delete_window(self):
 
-        self.create_new_window("", size_x=220, size_y=170)
+        self.create_new_window("", size_x=220, size_y=240)
 
         self.create_label_in_new_window(self.new_window, text="Delete template photo face:", x_position=13, y_position=5)
         self.del_face_photo_input = self.create_user_input_in_new_window(self.new_window, x_position=23, y_position=25)
@@ -309,6 +309,14 @@ class MainMenuPage(Frame, Utilities):
         self.del_owner_button = Button(self.new_window, text="Confirm", command=self.del_owner_from_db)
         self.del_owner_button.pack()
         self.del_owner_button.place(x=62, y=126)
+
+        self.create_label_in_new_window(self.new_window, text="Delete number plate from db:", x_position=10, y_position=162)
+        self.del_plate_input = self.create_user_input_in_new_window(self.new_window, x_position=23, y_position=185)
+
+        self.del_plate_button = Button(self.new_window, text="Confirm", command=self.del_plate_from_db)
+        self.del_plate_button.pack()
+        self.del_plate_button.place(x=62, y=206)
+
 
     def create_new_window(self, title, size_x, size_y):
         try:
@@ -466,8 +474,10 @@ class MainMenuPage(Frame, Utilities):
         if name_surname == "" or self.path_to_file == "":
             tkinter.messagebox.showerror('Name, surname and photo', 'Please, type picture and name')
         else:
-            self.aws_communication_obj.add_face_to_collection(self.path_to_file, name_surname)
-            tkinter.messagebox.showinfo('Name, surname and photo', 'The picture has been added to aws collection')
+            if self.aws_communication_obj.add_face_to_collection(self.path_to_file, name_surname):
+                tkinter.messagebox.showinfo('Name, surname and photo', 'The picture has been added to aws collection')
+            else:
+                tkinter.messagebox.showerror('An error occured. Face has not been added to collection!')
 
     def add_relation_photo_plate(self):
         owner = self.add_photo_face_input.get()
@@ -475,7 +485,7 @@ class MainMenuPage(Frame, Utilities):
         if owner == "" or plate_number == "":
             tkinter.messagebox.showerror("Error", "Please, fill both fields")
         else:
-            if self.db_manager.add_licence_plate_and_owner_to_db(owner, plate_number):
+            if self.db_manager.add_licence_plate_and_owner_to_db(plate_number, owner):
                 tkinter.messagebox.showinfo("Info", "Relation has been added to db")
             else:
                 tkinter.messagebox.showerror("Error", "Error")
@@ -483,8 +493,10 @@ class MainMenuPage(Frame, Utilities):
     def del_face_photo_from_aws(self):
         face_photo_name = self.del_face_photo_input.get()
         if not face_photo_name == "":
-            self.aws_communication_obj.remove_face_from_collection(face_photo_name)
-            tkinter.messagebox.showinfo("Info", "info")
+            if self.aws_communication_obj.remove_face_from_collection(face_photo_name):
+                tkinter.messagebox.showinfo("Info", "Photo has been deleted")
+            else:
+                tkinter.messagebox.showerror("Error", "Face does not exist in collection!")
         else:
             tkinter.messagebox.showinfo("Error", "Please type photo name")
 
@@ -496,9 +508,16 @@ class MainMenuPage(Frame, Utilities):
         else:
             tkinter.messagebox.showerror("Error", "Please, type user")
 
+    def del_plate_from_db(self):
+        plate_to_delete = self.del_plate_input.get()
+        if not plate_to_delete == "":
+            self.db_manager.del_licence_plate_from_database(plate_to_delete)
+            tkinter.messagebox.showinfo("Info", "Plate number has been deleted")
+        else:
+            tkinter.messagebox.showerror("Error", "Please, type plate number")
 
     def search_window(self):
-        self.create_new_window("", size_x=180, size_y=370)
+        self.create_new_window("", size_x=190, size_y=370)
 
         self.create_label_in_new_window(self.new_window, text="Face patterns from AWS:")
 
@@ -516,7 +535,7 @@ class MainMenuPage(Frame, Utilities):
         for item in aws_faces_collection:
             self.listBox.insert(END, item)
 
-        self.create_label_in_new_window(self.new_window, text="Owners and plate numbers:")
+        self.create_label_in_new_window(self.new_window, text="Owner and plate number:")
 
         listFrame2 = Frame(self.new_window)
         listFrame2.pack(side=TOP, padx=5, pady=5)
@@ -532,8 +551,14 @@ class MainMenuPage(Frame, Utilities):
        #  for item in aws_faces_collection:
        #      self.listBox.insert(END, item)
 
-        for item in ['2','2','2']:
-            self.listBox2.insert(END, item)
+       # for item in ['2','2','2']:
+       #     self.listBox2.insert(END, item)
+
+        output = self.db_manager.fetch_licence_plates_and_owners()
+        for owner in output:
+            self.listBox2.insert(END, owner)
+            for plate_n in output[owner]:
+                self.listBox2.insert(END, "--- " + plate_n)
 
 
     def back_login_page(self):
