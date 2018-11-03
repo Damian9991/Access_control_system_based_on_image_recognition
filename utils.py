@@ -18,11 +18,13 @@ def upload_image_to_s3_bucket(path, bucket, image_name):
     s3 = boto3.resource('s3')
     s3.meta.client.upload_file(path, bucket, image_name)
 
+    
 def delete_image_from_s3_bucket(bucket, image_name):
     s3 = boto3.resource('s3')
     obj = s3.Object(bucket, image_name)
     obj.delete()
 
+    
 def create_hash(input_str):
     hash_object = hashlib.sha256(bytes(input_str, encoding='utf-8'))
     output = hash_object.hexdigest()
@@ -52,6 +54,7 @@ def start_system(rasp_1_ip, rasp_2_ip):
     except Exception as err:
         print(str(err))
 
+        
 def check_system_status(rasp_1_ip):
     try:
         command = "pgrep -af TEST.py | awk '{print $1}' | xargs echo"
@@ -66,6 +69,7 @@ def check_system_status(rasp_1_ip):
     except Exception as err:
         print(str(err))
 
+        
 def stop_system(rasp_1_ip):
     try:
         command = "pgrep -af TEST.py | awk '{print $1}' | xargs kill"
