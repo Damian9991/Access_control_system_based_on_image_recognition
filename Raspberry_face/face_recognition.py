@@ -138,6 +138,6 @@ class FaceRecognition:
                 logger.info('FaceId:' + match['Face']['FaceId'])
                 logger.info('Similarity: ' + "{:.2f}".format(match['Similarity']) + "%")
                 if match["Similarity"] > 80:
-                    return match['Face']['ExternalImageId']
+                    return match['Face']['ExternalImageId'].replace('_', ' ')
         else:
             return None
