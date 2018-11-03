@@ -11,12 +11,25 @@
 import boto3
 import hashlib
 import socket
+import logging
+import os
+import time
 from paramiko import SSHClient, AutoAddPolicy
+
+logger = logging.getLogger("Access_control_system_based_on_image_recognition")
+hdlr = logging.FileHandler(os.popen("pwd").read().replace('\n', '') + "/utils.log")
+formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+hdlr.setFormatter(formatter)
+logger.addHandler(hdlr)
+logger.setLevel(logging.INFO)
 
 
 def upload_image_to_s3_bucket(path, bucket, image_name):
+    start_time = time.time()
     s3 = boto3.resource('s3')
     s3.meta.client.upload_file(path, bucket, image_name)
+    end_time = time.time()
+    logger.info("Image {} uploading time: {}".format(path, end_time-start_time))
 
     
 def delete_image_from_s3_bucket(bucket, image_name):
