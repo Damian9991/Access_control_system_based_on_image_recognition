@@ -68,7 +68,6 @@ class DatabaseManager(object):
             else:
                 return False
         except sqlite3.OperationalError as err:
-            print(str(err))
             logger.error(str(err))
             return None
 
@@ -83,7 +82,6 @@ class DatabaseManager(object):
                 return None
             return results
         except sqlite3.OperationalError as err:
-            print(str(err))
             logger.error(str(err))
             return None
 
@@ -95,7 +93,6 @@ class DatabaseManager(object):
             results = self.cursor.fetchall()
             return results
         except sqlite3.OperationalError as err:
-            print(str(err))
             logger.error(str(err))
 
 # --------------------------------------------- system users management --------------------------------------------- #
@@ -140,7 +137,6 @@ class DatabaseManager(object):
             else:
                 return False
         except sqlite3.OperationalError as err:
-            print(str(err))
             logger.error(str(err))
 
     def get_licence_plates_from_db(self, owner):
@@ -154,7 +150,6 @@ class DatabaseManager(object):
                 licence_plates.append(item[0])
             return licence_plates
         except sqlite3.OperationalError as err:
-            print(str(err))
             logger.error(str(err))
             return None
 
@@ -183,5 +178,5 @@ if __name__ == "__main__":
     # sql_object.del_licence_plate_from_database('KRK 1234')
     # print(sql_object.check_if_owner_in_database('Kamil Kryczka'))
     # print(sql_object.get_licence_plates_from_db('Kamil Kryczka'))
-    print(sql_object.fetch_licence_plates_and_owners())
+    # print(sql_object.fetch_licence_plates_and_owners())
     sql_object.close_connection_to_db()

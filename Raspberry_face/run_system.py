@@ -144,14 +144,16 @@ class RaspberryAdministrator(object):
             )
 
             if len(faces) > 0:
+                time.sleep(0.2)
+                ret, frame_for_recognition = video_capture.read()
                 start_time = time.time()
                 self.licence_plate = None
                 self.owner = None
                 recognise_licence_plate_thread = Thread(target=self.recognise_licence_plate_number)
                 recognise_licence_plate_thread.start()
-                time.sleep(0.2)
-                self.recognise_face(frame)
+                self.recognise_face(frame_for_recognition)
                 recognise_licence_plate_thread.join()
+                end_time = time.time()
 
                 if self.owner is not None and self.check_if_driver_has_access(self.licence_plate, self.owner):
                     self.diodes.turn_on_diode(color="green")
@@ -160,7 +162,6 @@ class RaspberryAdministrator(object):
                     self.diodes.turn_on_diode(color="red")
                     logger.warning("Access denied!")
 
-                end_time = time.time() - 0.5
                 logger.info("Verification time: {}".format(end_time-start_time))
                 video_capture = cv2.VideoCapture(0)
 
