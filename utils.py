@@ -60,7 +60,7 @@ def start_system(rasp_1_ip, rasp_2_ip):
     try:
         if check_system_status(rasp_1_ip) == "OFF":
             ssh_client = create_ssh_connection(rasp_1_ip, 22, 'pi')
-            ssh_client.exec_command("python /home/pi/Desktop/TEST.py")
+            ssh_client.exec_command("python /home/pi/Desktop/ACSBOIR/Raspberry_face/run_system.py")
             return "ON"
         else:
             return "ALREADY_RUNNING"
