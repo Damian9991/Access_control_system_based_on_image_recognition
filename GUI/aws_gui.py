@@ -251,9 +251,9 @@ class MainMenuPage(Frame, Utilities):
         self.search_button.bind("<Enter>", self.on_enter_search_data)
         self.search_button.bind("<Leave>", self.on_leave)
 
-        self.back_home_img = tk.PhotoImage(file="logout.png")
-        self.back_home_button = Button(self, image=self.back_home_img, width="150", height="47", command=self.back_login_page)
-        self.back_home_button.place(x=110, y=392)
+        self.back_home_img = tk.PhotoImage(file="logout2.png")
+        self.back_home_button = Button(self, image=self.back_home_img, width="375", height="80", command=self.back_login_page)
+        self.back_home_button.place(x=0, y=392)
 
     def upload_window(self):
         self.create_new_window("", size_x=280, size_y=370)
@@ -429,6 +429,7 @@ class MainMenuPage(Frame, Utilities):
             tkinter.messagebox.showinfo('Information', 'System is already running')
         else:
             tkinter.messagebox.showerror('Error', 'Check your connectivity')
+        self.new_window.destroy()
 
     def check_status_from_gui(self):
         result = check_system_status(self.rasp_1_check_input)
@@ -438,12 +439,14 @@ class MainMenuPage(Frame, Utilities):
             tkinter.messagebox.showinfo('Information', 'System is off')
         else:
             tkinter.messagebox.showerror('Check your connectivity', 'Check your connectivity')
+        self.new_window.destroy()
 
     def stop_system_from_gui(self):
         if stop_system(self.rasp_1_stop_input):
             tkinter.messagebox.showinfo('Information', 'System has been stopped')
         else:
             tkinter.messagebox.showerror('Error', 'Check your connectivity')
+        self.new_window.destroy()
 
 #_____________________________________________________________________________________
 
@@ -547,12 +550,6 @@ class MainMenuPage(Frame, Utilities):
         scrollBar2.config(command=self.listBox2.yview)
         self.listBox2.config(yscrollcommand=scrollBar2.set)
 
-       #  aws_faces_collection = self.aws_communication_obj.get_licence_plate_number_from_db_ALL()
-       #  for item in aws_faces_collection:
-       #      self.listBox.insert(END, item)
-
-       # for item in ['2','2','2']:
-       #     self.listBox2.insert(END, item)
 
         output = self.db_manager.fetch_licence_plates_and_owners()
         for owner in output:
@@ -570,6 +567,6 @@ class MainMenuPage(Frame, Utilities):
 
 if __name__ == "__main__":
     app = GuiManager()
-    app.geometry("%dx%d%+d%+d" % (375, 445, 400, 125))
+    app.geometry("%dx%d%+d%+d" % (375, 479, 400, 125))
     app.resizable(False, False)
     app.mainloop()

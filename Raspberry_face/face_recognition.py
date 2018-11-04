@@ -52,7 +52,7 @@ class FaceRecognition:
         while True:
             collection_ids = collections_dict['CollectionIds']
             for collection in collection_ids:
-                print(collection)
+                logger.info(collection)
             if 'NextToken' in collections_dict:
                 next_token = collections_dict['NextToken']
                 collections_dict = self.client.list_collections(NextToken=next_token)
@@ -68,12 +68,12 @@ class FaceRecognition:
         tokens = True
         response_dict = self.client.list_faces(CollectionId=self.collection_id_faces)
         names = []
-        print('Faces in collection ' + self.collection_id_faces + ':')
+        logger.info('Faces in collection ' + self.collection_id_faces + ':')
 
         while tokens:
             faces_list = response_dict['Faces']
             for face in faces_list:
-                print(face['ExternalImageId'].replace('_', ' '))
+                logger.info(face['ExternalImageId'].replace('_', ' '))
                 names.append(face['ExternalImageId'].replace('_', ' '))
             if 'NextToken' in response_dict:
                 next_token = response_dict['NextToken']

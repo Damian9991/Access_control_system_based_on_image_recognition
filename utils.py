@@ -36,9 +36,11 @@ def delete_image_from_s3_bucket(bucket, image_name):
     s3 = boto3.resource('s3')
     obj = s3.Object(bucket, image_name)
     obj.delete()
+    logger.info("image: {} has been deleted".format(image_name))
 
     
 def create_hash(input_str):
+    logger.info("Creating hash: " + input_str)
     hash_object = hashlib.sha256(bytes(input_str, encoding='utf-8'))
     output = hash_object.hexdigest()
     return output
@@ -53,41 +55,49 @@ def create_ssh_connection(address, port, user, timeout=10):
         ssh_client.connect(hostname=address2, port=port, username=user, timeout=timeout, allow_agent=False, look_for_keys=True)
         return ssh_client
     except Exception as err:
-        print(str(err))
+        logger.error(str(err))
 
 
 def start_system(rasp_1_ip, rasp_2_ip):
     try:
+        logger.info("Starting system...")
         if check_system_status(rasp_1_ip) == "OFF":
             ssh_client = create_ssh_connection(rasp_1_ip, 22, 'pi')
-            ssh_client.exec_command("python /home/pi/Desktop/ACSBOIR/Raspberry_face/run_system.py")
+            ssh_client.exec_command("python /home/pi/Desktop/ACSBOIR/Raspberry_face/run_system.py --raspberry_plate " + rasp_2_ip)
+            logger.info("System started successfully")
             return "ON"
         else:
+            logger.info("System already running!")
             return "ALREADY_RUNNING"
     except Exception as err:
-        print(str(err))
+        logger.error(str(err))
 
         
 def check_system_status(rasp_1_ip):
     try:
-        command = "pgrep -af TEST.py | awk '{print $1}' | xargs echo"
+        command = "pgrep -af run_system.py | awk '{print $1}' | xargs echo"
         ssh_client = create_ssh_connection(rasp_1_ip, 22, 'pi')
         stdin, stdout, stderr = ssh_client.exec_command(command)
-        print(stderr.read())
+        logger.info("Checking system status ...")
+        logger.info(stdout.read())
+        logger.info(stderr.read())
         if len(stdout.read().decode("utf-8").split(" ")) > 1:
+            logger.info("Status is ON")
             return "ON"
         else:
+            logger.info("Status is OFF")
             return "OFF"
-
     except Exception as err:
-        print(str(err))
+        logger.error(str(err))
 
         
 def stop_system(rasp_1_ip):
     try:
+        logger.info("Stopping system...")
         command = "pgrep -af TEST.py | awk '{print $1}' | xargs kill"
         ssh_client = create_ssh_connection(rasp_1_ip, 22, 'pi')
         ssh_client.exec_command(command)
+        logger.info("System stopped successfully")
         return True
     except Exception as err:
-        print(str(err))
+        logger.error(str(err))
