@@ -20,7 +20,7 @@ sys.path.append('/home/pi/')
 from Access_control_system_based_on_image_recognition.Database.Database import DatabaseManager
 from Access_control_system_based_on_image_recognition.utils import *
 
-logger = logging.getLogger("Access_control_system_based_on_image_recognition")
+logger = logging.getLogger("licence_plate_recognition")
 hdlr = logging.FileHandler(os.popen("pwd").read().replace('\n', '') + "/licence_plate_recognition.log")
 formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 hdlr.setFormatter(formatter)
