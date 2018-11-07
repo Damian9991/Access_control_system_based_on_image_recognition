@@ -13,6 +13,7 @@ import datetime
 import re
 import logging
 import os
+import time
 import picamera
 import sys
 sys.path.append('/home/pi/')
@@ -37,6 +38,7 @@ class LicencePlateRecognition:
         self.image_path = None
 
     def recognise_licence_plate(self):
+        start_time = time.time()
         image_name = datetime.datetime.now().strftime("licence_plate_%d%m%Y_%H%M%S.jpg")
         self.image_path = self.image_dir_path + image_name
         self.take_picture()
@@ -53,6 +55,8 @@ class LicencePlateRecognition:
                     logger.info('Licence plate number not found id database, access denied for licence number: '.format(text_dict['DetectedText']))
             else:
                 logger.info('Picture did not contain any clear text')
+        end_time = time.time()
+        logger.info("Licence plate recognition time: {}".format(end_time - start_time))
 
     def take_picture(self):
         with picamera.PiCamera() as camera:
