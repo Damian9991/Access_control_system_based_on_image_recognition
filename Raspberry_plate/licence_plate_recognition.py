@@ -50,11 +50,14 @@ class LicencePlateRecognition:
         for text_dict in detected_texts_dict:
             if text_dict['Confidence'] > 80:
                     if self.check_if_text_matches_to_licence_plate_regex(text_dict['DetectedText']):
-                        logger.info('Verification successful, access granted for licence number: '.format(text_dict['DetectedText']))
+                        logger.info('Verification successful, access granted for licence number: {}'.format(text_dict['DetectedText']))
                         print(text_dict['DetectedText'])
-                    logger.info('Licence plate number not found id database, access denied for licence number: '.format(text_dict['DetectedText']))
+                        end_time = time.time()
+                        logger.info("Licence plate recognition time: {}".format(end_time - start_time))
+                        break
+                    logger.info('Text does not match licence plate regex')
             else:
-                logger.info('Picture did not contain any clear text')
+                logger.info('Text is not clear enough for recognition: {}'.format(text_dict['DetectedText']))
         end_time = time.time()
         logger.info("Licence plate recognition time: {}".format(end_time - start_time))
 
