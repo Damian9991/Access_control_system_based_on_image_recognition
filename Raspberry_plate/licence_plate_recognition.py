@@ -13,13 +13,14 @@ import datetime
 import re
 import logging
 import os
+import time
 import picamera
 import sys
 sys.path.append('/home/pi/')
 from Access_control_system_based_on_image_recognition.Database.Database import DatabaseManager
 from Access_control_system_based_on_image_recognition.utils import *
 
-logger = logging.getLogger("Access_control_system_based_on_image_recognition")
+logger = logging.getLogger("licence_plate_recognition")
 hdlr = logging.FileHandler(os.popen("pwd").read().replace('\n', '') + "/licence_plate_recognition.log")
 formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 hdlr.setFormatter(formatter)
@@ -37,6 +38,7 @@ class LicencePlateRecognition:
         self.image_path = None
 
     def recognise_licence_plate(self):
+        start_time = time.time()
         image_name = datetime.datetime.now().strftime("licence_plate_%d%m%Y_%H%M%S.jpg")
         self.image_path = self.image_dir_path + image_name
         self.take_picture()
@@ -48,10 +50,16 @@ class LicencePlateRecognition:
         for text_dict in detected_texts_dict:
             if text_dict['Confidence'] > 80:
                     if self.check_if_text_matches_to_licence_plate_regex(text_dict['DetectedText']):
-                        logger.info('Verification successful, access granted for licence number: '.format(text_dict['DetectedText']))
-                    logger.info('Licence plate number not found id database, access denied for licence number: '.format(text_dict['DetectedText']))
+                        logger.info('Recognised licence number: {}'.format(text_dict['DetectedText']))
+                        print(text_dict['DetectedText'])
+                        end_time = time.time()
+                        logger.info("Licence plate recognition time: {}".format(end_time - start_time))
+                        return 0
+                    logger.info('Text does not match licence plate regex')
             else:
-                logger.info('Picture did not contain any clear text')
+                logger.info('Text is not clear enough for recognition: {}'.format(text_dict['DetectedText']))
+        end_time = time.time()
+        logger.info("Licence plate recognition time: {}".format(end_time - start_time))
 
     def take_picture(self):
         with picamera.PiCamera() as camera:

@@ -16,7 +16,7 @@ import os
 import time
 from paramiko import SSHClient, AutoAddPolicy
 
-logger = logging.getLogger("Access_control_system_based_on_image_recognition")
+logger = logging.getLogger("utils")
 hdlr = logging.FileHandler(os.popen("pwd").read().replace('\n', '') + "/utils.log")
 formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 hdlr.setFormatter(formatter)

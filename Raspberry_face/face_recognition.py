@@ -15,7 +15,7 @@ import os
 from Access_control_system_based_on_image_recognition.utils import *
 
 
-logger = logging.getLogger("Access_control_system_based_on_image_recognition")
+logger = logging.getLogger("face_recognition")
 hdlr = logging.FileHandler(os.popen("pwd").read().replace('\n', '') + "/face_recognition.log")
 formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 hdlr.setFormatter(formatter)
