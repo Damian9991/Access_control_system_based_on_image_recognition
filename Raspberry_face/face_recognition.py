@@ -119,7 +119,10 @@ class FaceRecognition:
 
     def search_for_face_in_collection(self, image_path):
         image_name = datetime.datetime.now().strftime("face_%d%m%Y_%H%M%S.jpg")
+        upload_start = time.time()
         upload_image_to_s3_bucket(image_path, self.faces_bucket, image_name)
+        upload_stop = time.time()
+        logger.info("Search for face in collection, picture upload time: " + str(upload_stop - upload_start))
         threshold = 80
         response_dict = self.client.search_faces_by_image(CollectionId=self.collection_id_faces,
                                                           Image={'S3Object': {'Bucket': self.faces_bucket,
