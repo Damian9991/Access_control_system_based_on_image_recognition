@@ -145,7 +145,11 @@ class RaspberryAdministrator(object):
                 #recognise_licence_plate_thread = Thread(target=self.recognise_licence_plate_number)
                 #recognise_licence_plate_thread.start()
                 logger.info("recognise_face start")
-                self.recognise_face(gray)
+                try:
+                    self.recognise_face(gray)
+                except Exception as err:
+                    print(str(err))
+                    sys.exit(0)
                 logger.info("recognise_face end")
                 #recognise_licence_plate_thread.join()
                 end_time = time.time()
