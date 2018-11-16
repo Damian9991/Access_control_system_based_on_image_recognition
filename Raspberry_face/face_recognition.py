@@ -1,18 +1,10 @@
 #!/usr/bin/env python3
 
-# -----------------------------------------------------------
-# Name: Access_control_system_based_on_image_recognition
-# Authors: Kamil Kryczka, Damian Osinka
-# Thesis supervisor: dr hab. inz. Mikołaj Leszczuk
-# Purpose: Engineering Thesis
-# Created: 13-10-2018
-# -----------------------------------------------------------
-
 import boto3
 import datetime
 import logging
 import os
-from Access_control_system_based_on_image_recognition.utils import *
+from utils import *
 
 
 logger = logging.getLogger("face_recognition")
