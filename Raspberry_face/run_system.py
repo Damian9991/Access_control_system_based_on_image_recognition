@@ -14,6 +14,8 @@ import os
 import sys
 import datetime
 import cv2
+from picamera.array import PiRGBArray
+from picamera import PiCamera
 import time
 import RPi.GPIO  as GPIO
 from threading import Thread
@@ -128,30 +130,26 @@ class RaspberryAdministrator(object):
         face_cascade = cv2.CascadeClassifier(casc_path)
 
         try:
-            video_capture = cv2.VideoCapture(0)
+            camera = PiCamera()
+            camera.resolution = (208, 112)
+            camera.framerate = 8
+            rawCapture = PiRGBArray(camera, size=(208, 112))
+            time.sleep(0.1)
         except Exception as err:
             logger.error(str(err))
             sys.exit(0)
-        while True:
-            ret, frame = video_capture.read()
-            gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-            faces = face_cascade.detectMultiScale(
-                    gray,
-                    scaleFactor=1.1,
-                    minNeighbors=5,
-                    minSize=(70, 70),
-                    flags=cv2.cv.CV_HAAR_SCALE_IMAGE
-            )
+        for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True):
+            image = frame.array
+            gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+            faces = face_cascade.detectMultiScale(gray, 1.1, 5)
 
             if len(faces) > 0:
-                time.sleep(0.2)
-                ret, frame_for_recognition = video_capture.read()
                 start_time = time.time()
                 self.licence_plate = None
                 self.owner = None
                 recognise_licence_plate_thread = Thread(target=self.recognise_licence_plate_number)
                 recognise_licence_plate_thread.start()
-                self.recognise_face(frame_for_recognition)
+                self.recognise_face(gray)
                 recognise_licence_plate_thread.join()
                 end_time = time.time()
 
@@ -163,13 +161,14 @@ class RaspberryAdministrator(object):
                     logger.warning("Access denied!")
 
                 logger.info("Verification time: {}".format(end_time-start_time))
-                video_capture = cv2.VideoCapture(0)
+                time.sleep(15)
 
             if cv2.waitKey(1) & 0xFF == ord('q'):
-                video_capture.release()
                 cv2.destroyAllWindows()
                 self.raspberry_connection.end_ssh_connection()
                 break
+            rawCapture.truncate(0)
+
 
     def recognise_licence_plate_number(self):
         python_script = "python3 /home/pi/Access_control_system_based_on_image_recognition/Raspberry_plate/licence_plate_recognition.py"
@@ -209,10 +208,25 @@ class RaspberryAdministrator(object):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Access_control_system_based_on_image_recognition")
-    parser.add_argument("raspberry_plates", "--raspberry_plate", help="raspberry_plate ip address", required=True)
-    args = vars(parser.parse_args())
-    raspberry_plate_ip = args['raspberry_plates']
+    #parser = argparse.ArgumentParser(description="Access_control_system_based_on_image_recognition")
+    #parser.add_argument("raspberry_plates", "--raspberry_plate", help="raspberry_plate ip address", required=True)
+    #args = vars(parser.parse_args())
+    #raspberry_plate_ip = args['raspberry_plates']
 
-    raspberry_administrator = RaspberryAdministrator(raspberry_plate_ip)
-    raspberry_administrator.capture_stream_and_perform_access_verification()
+    #raspberry_administrator = RaspberryAdministrator(raspberry_plate_ip)
+    #raspberry_administrator.capture_stream_and_perform_access_verification()
+
+
+
+    def recognise_face():
+        image_path = '/home/damian/Pulpit/123.jpg'
+        face_recognition = FaceRecognition()
+        start = time.time()
+        owner = face_recognition.search_for_face_in_collection(image_path)
+        stop = time.time()
+
+        print(owner)
+        print(stop - start)
+
+
+   # recognise_face()
