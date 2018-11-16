@@ -22,9 +22,9 @@ import time
 import RPi.GPIO  as GPIO
 from threading import Thread
 from paramiko import SSHClient, AutoAddPolicy
-from Access_control_system_based_on_image_recognition.utils import *
-from Access_control_system_based_on_image_recognition.Raspberry_face.face_recognition import FaceRecognition
-from Access_control_system_based_on_image_recognition.Database.Database import DatabaseManager
+from utils import *
+from Raspberry_face.face_recognition import FaceRecognition
+from Database.Database import DatabaseManager
 
 logger = logging.getLogger("Access_control_system_based_on_image_recognition")
 hdlr = logging.FileHandler(os.popen("pwd").read().replace('\n', '') + "/Access_control_system_based_on_image_recognition.log")
