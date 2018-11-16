@@ -128,7 +128,7 @@ class RaspberryAdministrator(object):
             camera = PiCamera()
             camera.resolution = (208, 112)
             camera.framerate = 8
-            rawCapture = PiRGBArray(camera, size=(208, 112))
+            rawCapture = PiRGBArray(camera, size=(320, 240))
             time.sleep(0.1)
         except Exception as err:
             logger.error(str(err))
