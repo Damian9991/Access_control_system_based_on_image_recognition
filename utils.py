@@ -1,13 +1,5 @@
 #!/usr/bin/env python3
 
-# -----------------------------------------------------------
-# Name: Access_control_system_based_on_image_recognition
-# Authors: Kamil Kryczka, Damian Osinka
-# Thesis supervisor: dr hab. inz. Mikołaj Leszczuk
-# Purpose: Engineering Thesis
-# Created: 13-10-2018
-# -----------------------------------------------------------
-
 import boto3
 import hashlib
 import socket
@@ -48,11 +40,11 @@ def create_hash(input_str):
 
 def create_ssh_connection(address, port, user, timeout=10):
     try:
-        address2 = "192.168.2.100"
+        address = "192.168.0.19"
         ssh_client = SSHClient()
         ssh_client.load_system_host_keys()
         ssh_client.set_missing_host_key_policy(AutoAddPolicy())
-        ssh_client.connect(hostname=address2, port=port, username=user, timeout=timeout, allow_agent=False, look_for_keys=True)
+        ssh_client.connect(hostname=address, port=port, username=user, timeout=timeout, allow_agent=False, look_for_keys=True)
         return ssh_client
     except Exception as err:
         logger.error(str(err))
@@ -61,15 +53,17 @@ def create_ssh_connection(address, port, user, timeout=10):
 def start_system(rasp_1_ip, rasp_2_ip):
     try:
         logger.info("Starting system...")
-        if check_system_status(rasp_1_ip) == "OFF":
+        if True:
+        #if check_system_status(rasp_1_ip) == "OFF":
             ssh_client = create_ssh_connection(rasp_1_ip, 22, 'pi')
-            ssh_client.exec_command("python /home/pi/Desktop/ACSBOIR/Raspberry_face/run_system.py --raspberry_plate " + rasp_2_ip)
+            ssh_client.exec_command("python /home/pi/Desktop/Access_control_system_based_on_image_recognition/Raspberry_face/run_system.py --raspberry_plate " + "192.168.43.132")
             logger.info("System started successfully")
             return "ON"
         else:
             logger.info("System already running!")
             return "ALREADY_RUNNING"
     except Exception as err:
+        print(str(err))
         logger.error(str(err))
 
         
