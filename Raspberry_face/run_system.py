@@ -146,7 +146,7 @@ class RaspberryAdministrator(object):
                 #recognise_licence_plate_thread.start()
                 logger.info("recognise_face start")
                 try:
-                    self.recognise_face(gray)
+                    self.recognise_face(image)
                 except Exception as err:
                     logger.error(str(err))
                     sys.exit(0)
