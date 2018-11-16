@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
 # -----------------------------------------------------------
 # Name: Access_control_system_based_on_image_recognition
