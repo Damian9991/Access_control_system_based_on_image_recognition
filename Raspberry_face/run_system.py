@@ -12,6 +12,7 @@ import argparse
 import logging
 import os
 import sys
+sys.path.append("../")
 import datetime
 import cv2
 from picamera.array import PiRGBArray
@@ -208,25 +209,10 @@ class RaspberryAdministrator(object):
 
 
 if __name__ == "__main__":
-    #parser = argparse.ArgumentParser(description="Access_control_system_based_on_image_recognition")
-    #parser.add_argument("raspberry_plates", "--raspberry_plate", help="raspberry_plate ip address", required=True)
-    #args = vars(parser.parse_args())
-    #raspberry_plate_ip = args['raspberry_plates']
+    parser = argparse.ArgumentParser(description="Access_control_system_based_on_image_recognition")
+    parser.add_argument("raspberry_plates", "--raspberry_plate", help="raspberry_plate ip address", required=True)
+    args = vars(parser.parse_args())
+    raspberry_plate_ip = args['raspberry_plates']
 
-    #raspberry_administrator = RaspberryAdministrator(raspberry_plate_ip)
-    #raspberry_administrator.capture_stream_and_perform_access_verification()
-
-
-
-    def recognise_face():
-        image_path = '/home/damian/Pulpit/123.jpg'
-        face_recognition = FaceRecognition()
-        start = time.time()
-        owner = face_recognition.search_for_face_in_collection(image_path)
-        stop = time.time()
-
-        print(owner)
-        print(stop - start)
-
-
-   # recognise_face()
+    raspberry_administrator = RaspberryAdministrator(raspberry_plate_ip)
+    raspberry_administrator.capture_stream_and_perform_access_verification()
