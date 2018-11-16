@@ -105,12 +105,13 @@ class RaspberryAdministrator(object):
         -- decide whether the driver has access to the parking lot
     """
 
-    def __init__(self, raspberry_plate_ip):
+#    def __init__(self, raspberry_plate_ip):
+    def __init__(self):
         logger.info("System Start")
 
-        self.raspberry_plate_ip = raspberry_plate_ip
-        self.raspberry_connection = RaspberryConnection(self.raspberry_plate_ip)
-        self.diodes = DiodesManagement()
+        #self.raspberry_plate_ip = raspberry_plate_ip
+        #self.raspberry_connection = RaspberryConnection(self.raspberry_plate_ip)
+        #self.diodes = DiodesManagement()
         self.face_recognition = FaceRecognition()
         self.database = DatabaseManager()
 
@@ -141,25 +142,29 @@ class RaspberryAdministrator(object):
                 start_time = time.time()
                 self.licence_plate = None
                 self.owner = None
-                recognise_licence_plate_thread = Thread(target=self.recognise_licence_plate_number)
-                recognise_licence_plate_thread.start()
+                #recognise_licence_plate_thread = Thread(target=self.recognise_licence_plate_number)
+                #recognise_licence_plate_thread.start()
+                logger.info("recognise_face start")
                 self.recognise_face(gray)
-                recognise_licence_plate_thread.join()
+                logger.info("recognise_face end")
+                #recognise_licence_plate_thread.join()
                 end_time = time.time()
 
-                if self.owner is not None and self.check_if_driver_has_access(self.licence_plate, self.owner):
-                    self.diodes.turn_on_diode(color="green")
+                #if self.owner is not None and self.check_if_driver_has_access(self.licence_plate, self.owner):
+                if self.owner is not None:
+                    #self.diodes.turn_on_diode(color="green")
                     logger.info("Access granted")
                 else:
-                    self.diodes.turn_on_diode(color="red")
+                    #self.diodes.turn_on_diode(color="red")
                     logger.warning("Access denied!")
 
                 logger.info("Verification time: {}".format(end_time-start_time))
-                time.sleep(15)
+                logger.info("sleeping 60sec ...")
+                time.sleep(60)
 
             if cv2.waitKey(1) & 0xFF == ord('q'):
                 cv2.destroyAllWindows()
-                self.raspberry_connection.end_ssh_connection()
+                #self.raspberry_connection.end_ssh_connection()
                 break
             rawCapture.truncate(0)
 
@@ -207,5 +212,6 @@ if __name__ == "__main__":
     args = vars(parser.parse_args())
     raspberry_plate_ip = args['raspberry_plate']
 
-    raspberry_administrator = RaspberryAdministrator(raspberry_plate_ip)
+    #raspberry_administrator = RaspberryAdministrator(raspberry_plate_ip)
+    raspberry_administrator = RaspberryAdministrator()
     raspberry_administrator.capture_stream_and_perform_access_verification()
