@@ -205,7 +205,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Access_control_system_based_on_image_recognition")
     parser.add_argument("--raspberry_plate", help="raspberry_plate ip address", required=True)
     args = vars(parser.parse_args())
-    raspberry_plate_ip = args['raspberry_plates']
+    raspberry_plate_ip = args['raspberry_plate']
 
     raspberry_administrator = RaspberryAdministrator(raspberry_plate_ip)
     raspberry_administrator.capture_stream_and_perform_access_verification()
