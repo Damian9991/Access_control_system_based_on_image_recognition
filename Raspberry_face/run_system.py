@@ -111,7 +111,7 @@ class RaspberryAdministrator(object):
 
         #self.raspberry_plate_ip = raspberry_plate_ip
         #self.raspberry_connection = RaspberryConnection(self.raspberry_plate_ip)
-        #self.diodes = DiodesManagement()
+        self.diodes = DiodesManagement()
         self.face_recognition = FaceRecognition()
         self.database = DatabaseManager()
 
@@ -149,17 +149,18 @@ class RaspberryAdministrator(object):
                     self.recognise_face(image)
                 except Exception as err:
                     logger.error(str(err))
-                    sys.exit(0)
+                    self.diodes.turn_on_diode(color="red")
+
                 logger.info("recognise_face end")
                 #recognise_licence_plate_thread.join()
                 end_time = time.time()
 
                 #if self.owner is not None and self.check_if_driver_has_access(self.licence_plate, self.owner):
                 if self.owner is not None:
-                    #self.diodes.turn_on_diode(color="green")
+                    self.diodes.turn_on_diode(color="green")
                     logger.info("Access granted")
                 else:
-                    #self.diodes.turn_on_diode(color="red")
+                    self.diodes.turn_on_diode(color="red")
                     logger.warning("Access denied!")
 
                 logger.info("Verification time: {}".format(end_time-start_time))
