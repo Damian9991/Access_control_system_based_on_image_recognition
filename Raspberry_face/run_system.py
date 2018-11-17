@@ -103,10 +103,9 @@ class RaspberryAdministrator(object):
         -- manage an instance of FaceRecognition class
         -- manage an instance of RaspberryConnection class
         -- decide whether the driver has access to the parking lot
-    """
+        """
 
-#    def __init__(self, raspberry_plate_ip):
-    def __init__(self):
+    def __init__(self, raspberry_plate_ip):
         logger.info("System Start")
 
         self.raspberry_plate_ip = raspberry_plate_ip
@@ -156,7 +155,6 @@ class RaspberryAdministrator(object):
                 end_time = time.time()
 
                 if self.owner is not None and self.check_if_driver_has_access(self.licence_plate, self.owner):
-                if self.owner is not None:
                     self.diodes.turn_on_diode(color="green")
                     logger.info("Access granted")
                 else:
@@ -169,7 +167,7 @@ class RaspberryAdministrator(object):
 
             if cv2.waitKey(1) & 0xFF == ord('q'):
                 cv2.destroyAllWindows()
-                #self.raspberry_connection.end_ssh_connection()
+                self.raspberry_connection.end_ssh_connection()
                 break
             rawCapture.truncate(0)
 
