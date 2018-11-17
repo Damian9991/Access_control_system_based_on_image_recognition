@@ -216,5 +216,4 @@ if __name__ == "__main__":
     raspberry_plate_ip = args['raspberry_plate']
 
     raspberry_administrator = RaspberryAdministrator(raspberry_plate_ip)
-    raspberry_administrator = RaspberryAdministrator()
     raspberry_administrator.capture_stream_and_perform_access_verification()
