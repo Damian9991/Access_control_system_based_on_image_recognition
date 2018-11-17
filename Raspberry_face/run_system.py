@@ -109,8 +109,8 @@ class RaspberryAdministrator(object):
     def __init__(self):
         logger.info("System Start")
 
-        #self.raspberry_plate_ip = raspberry_plate_ip
-        #self.raspberry_connection = RaspberryConnection(self.raspberry_plate_ip)
+        self.raspberry_plate_ip = raspberry_plate_ip
+        self.raspberry_connection = RaspberryConnection(self.raspberry_plate_ip)
         self.diodes = DiodesManagement()
         self.face_recognition = FaceRecognition()
         self.database = DatabaseManager()
@@ -144,8 +144,8 @@ class RaspberryAdministrator(object):
                 start_time = time.time()
                 self.licence_plate = None
                 self.owner = None
-                #recognise_licence_plate_thread = Thread(target=self.recognise_licence_plate_number)
-                #recognise_licence_plate_thread.start()
+                recognise_licence_plate_thread = Thread(target=self.recognise_licence_plate_number)
+                recognise_licence_plate_thread.start()
                 logger.info("recognise_face start")
                 try:
                     self.recognise_face(image)
@@ -154,10 +154,10 @@ class RaspberryAdministrator(object):
                     self.diodes.turn_on_diode(color="red")
 
                 logger.info("recognise_face end")
-                #recognise_licence_plate_thread.join()
+                recognise_licence_plate_thread.join()
                 end_time = time.time()
 
-                #if self.owner is not None and self.check_if_driver_has_access(self.licence_plate, self.owner):
+                if self.owner is not None and self.check_if_driver_has_access(self.licence_plate, self.owner):
                 if self.owner is not None:
                     self.diodes.turn_on_diode(color="green")
                     logger.info("Access granted")
@@ -219,6 +219,6 @@ if __name__ == "__main__":
     args = vars(parser.parse_args())
     raspberry_plate_ip = args['raspberry_plate']
 
-    #raspberry_administrator = RaspberryAdministrator(raspberry_plate_ip)
+    raspberry_administrator = RaspberryAdministrator(raspberry_plate_ip)
     raspberry_administrator = RaspberryAdministrator()
     raspberry_administrator.capture_stream_and_perform_access_verification()
