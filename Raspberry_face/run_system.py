@@ -183,6 +183,7 @@ class RaspberryAdministrator(object):
     def recognise_face(self, frame):
         image_path = self.save_face_photo(frame)
         self.owner = self.face_recognition.search_for_face_in_collection(image_path)
+        logger.info("self.owner = {}".format(self.owner))
 
     def save_face_photo(self, frame):
         image_name = datetime.datetime.now().strftime("frame_%d%m%Y_%H%M%S.jpg")
@@ -198,6 +199,7 @@ class RaspberryAdministrator(object):
             if licence_plate in licence_plates_from_db:
                     logger.info(licence_plate)
                     logger.info(owner)
+                    logger.info("check_if_driver_has_access method returns True")
                     return True
         else:
             if self.database.check_if_user_in_database(owner):
@@ -206,6 +208,7 @@ class RaspberryAdministrator(object):
                 logger.info("User does not exist in database!")
         logger.info(licence_plate)
         logger.info(owner)
+        logger.info("check_if_driver_has_access method returns False")
         return False
 
 
