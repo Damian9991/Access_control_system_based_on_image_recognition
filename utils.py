@@ -40,7 +40,7 @@ def create_hash(input_str):
 
 def create_ssh_connection(address, port, user, timeout=10):
     try:
-        address = "192.168.0.19"
+        address = "10.161.220.42"
         ssh_client = SSHClient()
         ssh_client.load_system_host_keys()
         ssh_client.set_missing_host_key_policy(AutoAddPolicy())
@@ -56,7 +56,7 @@ def start_system(rasp_1_ip, rasp_2_ip):
         if True:
         #if check_system_status(rasp_1_ip) == "OFF":
             ssh_client = create_ssh_connection(rasp_1_ip, 22, 'pi')
-            stdin, stdout, stderr = ssh_client.exec_command("cd /home/pi/Desktop/Access_control_system_based_on_image_recognition/Raspberry_face/; python run_system.py --raspberry_plate 192.168.43.132")
+            stdin, stdout, stderr = ssh_client.exec_command("cd /home/pi/Desktop/Access_control_system_based_on_image_recognition/Raspberry_face/; python run_system.py --raspberry_plate 10.161.228.48")
 
             try:
                 print(stdout.read())
@@ -98,7 +98,7 @@ def check_system_status(rasp_1_ip):
 def stop_system(rasp_1_ip):
     try:
         logger.info("Stopping system...")
-        command = "pgrep -af TEST.py | awk '{print $1}' | xargs kill"
+        command = "pgrep -af run_system.py | awk '{print $1}' | xargs kill"
         ssh_client = create_ssh_connection(rasp_1_ip, 22, 'pi')
         ssh_client.exec_command(command)
         logger.info("System stopped successfully")
