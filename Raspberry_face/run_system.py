@@ -111,7 +111,6 @@ class RaspberryAdministrator(object):
 
         self.raspberry_plate_ip = raspberry_plate_ip
         self.raspberry_connection = RaspberryConnection(self.raspberry_plate_ip)
-        self.diodes = DiodesManagement()
         self.face_recognition = FaceRecognition()
         self.database = DatabaseManager()
 
@@ -160,6 +159,7 @@ class RaspberryAdministrator(object):
                 self.licence_plate = async_result.get()
                 end_time = time.time()
 
+        		self.diodes = DiodesManagement()
                 if self.owner is not None and self.check_if_driver_has_access(self.licence_plate, self.owner):
                     self.diodes.turn_on_diode(color="green")
                     logger.info("Access granted")
