@@ -139,12 +139,12 @@ class RaspberryAdministrator(object):
 
             if len(faces) > 0:
                 start_time = time.time()
-                self.licence_plate = None
-                # self.licence_plate = 'KRK 1234'
+                # self.licence_plate = None
+                self.licence_plate = 'RDE 65W5'
                 self.owner = None
-                self.recognise_licence_plate_number()
-                # recognise_licence_plate_thread = Thread(target=self.recognise_licence_plate_number)
-                # recognise_licence_plate_thread.start()
+                # self.recognise_licence_plate_number()
+                recognise_licence_plate_thread = Thread(target=self.recognise_licence_plate_number)
+                recognise_licence_plate_thread.start()
                 logger.info("recognise_face start")
                 try:
                     self.recognise_face(image)
@@ -153,7 +153,7 @@ class RaspberryAdministrator(object):
                     self.diodes.turn_on_diode(color="red")
 
                 logger.info("recognise_face end")
-                # recognise_licence_plate_thread.join()
+                recognise_licence_plate_thread.join()
                 end_time = time.time()
 
                 if self.owner is not None and self.check_if_driver_has_access(self.licence_plate, self.owner):
