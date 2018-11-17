@@ -195,6 +195,8 @@ class RaspberryAdministrator(object):
 
     def check_if_driver_has_access(self, licence_plate, owner):
         licence_plates_from_db = self.database.get_licence_plates_from_db(owner)
+        logger.info("licence_plates_from_db = {}".format(licence_plates_from_db))
+        logger.info("licence_plate = {}".format(licence_plate))
         if licence_plates_from_db:
             if licence_plate in licence_plates_from_db:
                     logger.info(licence_plate)
