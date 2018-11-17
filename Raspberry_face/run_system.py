@@ -171,13 +171,13 @@ class RaspberryAdministrator(object):
                 break
             rawCapture.truncate(0)
 
-
     def recognise_licence_plate_number(self):
         python_script = "python3 /home/pi/Access_control_system_based_on_image_recognition/Raspberry_plate/licence_plate_recognition.py"
         stdin, stdout, stderr = self.raspberry_connection.ssh_raspberry_plate_connection.exec_command(python_script)
         stdin.close()
-        logger.info(stdout.read().decode().strip())
-        logger.error(stderr.read().decode().strip())
+        logger.info("output from plate recognition script: {}".format(stdout.read().decode().strip()))
+        if stderr:
+            logger.info("output from plate recognition script: {}".format(stderr.read().decode().strip()))
         self.licence_plate = stdout.read().decode().strip()
 
     def recognise_face(self, frame):
