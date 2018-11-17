@@ -187,7 +187,7 @@ class RaspberryAdministrator(object):
     def save_face_photo(self, frame):
         image_name = datetime.datetime.now().strftime("frame_%d%m%Y_%H%M%S.jpg")
         image_path = self.photo_directory_path + image_name
-        resize = cv2.resize(frame, (500, 300))
+        resize = cv2.resize(frame, (320, 240))
         cv2.imwrite(image_path, resize)
         logger.info("{} written!".format(image_path))
         return image_path
