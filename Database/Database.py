@@ -141,6 +141,7 @@ class DatabaseManager(object):
             results = self.cursor.fetchall()
             for item in results:
                 licence_plates.append(item[0])
+            logger.info(licence_plates)
             return licence_plates
         except sqlite3.OperationalError as err:
             logger.error(str(err))
