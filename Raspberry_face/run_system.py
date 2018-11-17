@@ -71,7 +71,7 @@ class DiodesManagement(object):
             GPIO.setmode(GPIO.BCM)
             GPIO.setwarnings(False)
 
-        def turn_on_diode(self, color, on_time=0.5):
+        def turn_on_diode(self, color, on_time=1.0):
             try:
                 if color == "green":
                     pin = self.green_diode_pin
@@ -121,6 +121,8 @@ class RaspberryAdministrator(object):
         self.photo_directory_path = "/tmp/face_photos/"
 
     def capture_stream_and_perform_access_verification(self):
+        os.popen("mkdir /tmp/face_photos")
+
         casc_path = "haarcascade_frontalface_default.xml"
         face_cascade = cv2.CascadeClassifier(casc_path)
 

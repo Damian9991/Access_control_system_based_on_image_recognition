@@ -7,6 +7,8 @@
 # Purpose: Engineering Thesis
 # Created: 13-10-2018
 #-----------------------------------------------------------
+import sys
+sys.path.append("../")
 
 import PIL.Image
 import tkinter.messagebox
@@ -15,9 +17,8 @@ from tkinter import *
 from PIL import ImageTk
 from tkinter.filedialog import askopenfilename
 from Access_control_system_based_on_image_recognition.Database.Database import *
-from Access_control_system_based_on_image_recognition.utils import *
 from Access_control_system_based_on_image_recognition.Raspberry_face.face_recognition import *
-
+from Access_control_system_based_on_image_recognition.utils import *
 
 import logging
 logger = logging.getLogger("gui.log")
