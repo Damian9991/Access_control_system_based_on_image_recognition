@@ -126,7 +126,7 @@ class RaspberryAdministrator(object):
 
         try:
             camera = PiCamera()
-            camera.resolution = (208, 112)
+            camera.resolution = (320, 240)
             camera.framerate = 8
             rawCapture = PiRGBArray(camera, size=(320, 240))
             time.sleep(0.1)
