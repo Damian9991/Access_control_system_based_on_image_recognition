@@ -28,7 +28,7 @@ def delete_image_from_s3_bucket(bucket, image_name):
     s3 = boto3.resource('s3')
     obj = s3.Object(bucket, image_name)
     obj.delete()
-    logger.info("image: {} has been deleted".format(image_name))
+    logger.info("Image {} has been deleted".format(image_name))
 
     
 def create_hash(input_str):

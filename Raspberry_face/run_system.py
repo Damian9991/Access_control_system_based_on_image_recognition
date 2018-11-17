@@ -12,7 +12,6 @@ from picamera.array import PiRGBArray
 from picamera import PiCamera
 import time
 import RPi.GPIO  as GPIO
-# from threading import Thread
 from multiprocessing.pool import ThreadPool
 from paramiko import SSHClient, AutoAddPolicy
 from utils import *
@@ -141,9 +140,6 @@ class RaspberryAdministrator(object):
                 start_time = time.time()
                 self.licence_plate = None
                 self.owner = None
-                # self.recognise_licence_plate_number()
-                # recognise_licence_plate_thread = Thread(target=self.recognise_licence_plate_number)
-                # recognise_licence_plate_thread.start()
                 pool = ThreadPool(processes=1)
                 async_result = pool.apply_async(self.recognise_licence_plate_number, ())
 
@@ -155,7 +151,6 @@ class RaspberryAdministrator(object):
                     self.diodes.turn_on_diode(color="red")
 
                 logger.info("recognise_face end")
-                # recognise_licence_plate_thread.join()
                 self.licence_plate = async_result.get()
                 end_time = time.time()
                 self.diodes = DiodesManagement()
@@ -180,7 +175,6 @@ class RaspberryAdministrator(object):
         python_script = "python3 /home/pi/Access_control_system_based_on_image_recognition/Raspberry_plate/licence_plate_recognition.py"
         stdin, stdout, stderr = self.raspberry_connection.ssh_raspberry_plate_connection.exec_command(python_script)
         stdin.close()
-        # self.licence_plate = stdout.read().decode().strip()
         logger.info("output from plate recognition script: {}".format(self.licence_plate))
         return stdout.read().decode().strip()
 
