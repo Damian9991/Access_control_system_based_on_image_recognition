@@ -177,7 +177,7 @@ class RaspberryAdministrator(object):
         stdin.close()
         logger.info("output from plate recognition script: {}".format(stdout.read().decode().strip()))
         if stderr:
-            logger.info("output from plate recognition script: {}".format(stderr.read().decode().strip()))
+            logger.warning("output from plate recognition script: {}".format(stderr.read().decode().strip()))
         self.licence_plate = stdout.read().decode().strip()
 
     def recognise_face(self, frame):
