@@ -118,11 +118,9 @@ class RaspberryAdministrator(object):
         self.licence_plate = None
         self.owner = None
 
-        self.photo_directory_path = "/tmp/face_photos/"
+        self.photo_directory_path = "/tmp/"
 
     def capture_stream_and_perform_access_verification(self):
-        os.popen("mkdir /tmp/face_photos")
-
         casc_path = "haarcascade_frontalface_default.xml"
         face_cascade = cv2.CascadeClassifier(casc_path)
 
