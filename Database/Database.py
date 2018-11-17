@@ -135,6 +135,7 @@ class DatabaseManager(object):
         licence_plates = []
         logger.info("Fetching licence plate number from licence_plates database for user {}".format(owner))
         query = "SELECT licence_plate_number FROM licence_plates WHERE owner = '{}'".format(owner)
+        logger.info(query)
         try:
             self.cursor.execute(query)
             results = self.cursor.fetchall()
