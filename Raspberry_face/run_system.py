@@ -158,8 +158,7 @@ class RaspberryAdministrator(object):
                 # recognise_licence_plate_thread.join()
                 self.licence_plate = async_result.get()
                 end_time = time.time()
-
-        		self.diodes = DiodesManagement()
+                self.diodes = DiodesManagement()
                 if self.owner is not None and self.check_if_driver_has_access(self.licence_plate, self.owner):
                     self.diodes.turn_on_diode(color="green")
                     logger.info("Access granted")
