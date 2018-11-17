@@ -176,7 +176,7 @@ class RaspberryAdministrator(object):
         stdin, stdout, stderr = self.raspberry_connection.ssh_raspberry_plate_connection.exec_command(python_script)
         stdin.close()
         logger.info("output from plate recognition script: {}".format(stdout.read().decode().strip()))
-        if stderr:
+        if stderr is not None:
             logger.warning("output from plate recognition script: {}".format(stderr.read().decode().strip()))
         self.licence_plate = stdout.read().decode().strip()
 
