@@ -139,7 +139,8 @@ class RaspberryAdministrator(object):
 
             if len(faces) > 0:
                 start_time = time.time()
-                self.licence_plate = None
+                # self.licence_plate = None
+                self.licence_plate = 'KRK 1234'
                 self.owner = None
                 recognise_licence_plate_thread = Thread(target=self.recognise_licence_plate_number)
                 recognise_licence_plate_thread.start()
@@ -175,10 +176,8 @@ class RaspberryAdministrator(object):
         python_script = "python3 /home/pi/Access_control_system_based_on_image_recognition/Raspberry_plate/licence_plate_recognition.py"
         stdin, stdout, stderr = self.raspberry_connection.ssh_raspberry_plate_connection.exec_command(python_script)
         stdin.close()
-        logger.info("output from plate recognition script: {}".format(stdout.read().decode().strip()))
-        if stderr is not None:
-            logger.warning("output from plate recognition script: {}".format(stderr.read().decode().strip()))
         self.licence_plate = stdout.read().decode().strip()
+        logger.info("output from plate recognition script: {}".format(self.licence_plate))
 
     def recognise_face(self, frame):
         image_path = self.save_face_photo(frame)
@@ -199,8 +198,6 @@ class RaspberryAdministrator(object):
         logger.info("licence_plate = {}".format(licence_plate))
         if licence_plates_from_db:
             if licence_plate in licence_plates_from_db:
-                    logger.info(licence_plate)
-                    logger.info(owner)
                     logger.info("check_if_driver_has_access method returns True")
                     return True
         else:
@@ -208,8 +205,6 @@ class RaspberryAdministrator(object):
                 logger.info("User exists in database but is assigned to different licence plate number!")
             else:
                 logger.info("User does not exist in database!")
-        logger.info(licence_plate)
-        logger.info(owner)
         logger.info("check_if_driver_has_access method returns False")
         return False
 
