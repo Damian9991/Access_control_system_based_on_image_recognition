@@ -11,7 +11,7 @@ import cv2
 from picamera.array import PiRGBArray
 from picamera import PiCamera
 import time
-import RPi.GPIO  as GPIO
+import RPi.GPIO as GPIO
 from multiprocessing.pool import ThreadPool
 from paramiko import SSHClient, AutoAddPolicy
 from utils import *
@@ -115,6 +115,7 @@ class RaspberryAdministrator(object):
 
         self.licence_plate = None
         self.owner = None
+        self.diodes = None
 
         self.photo_directory_path = "/tmp/"
 
@@ -143,14 +144,12 @@ class RaspberryAdministrator(object):
                 pool = ThreadPool(processes=1)
                 async_result = pool.apply_async(self.recognise_licence_plate_number, ())
 
-                logger.info("recognise_face start")
                 try:
                     self.recognise_face(image)
                 except Exception as err:
                     logger.error(str(err))
                     self.diodes.turn_on_diode(color="red")
 
-                logger.info("recognise_face end")
                 self.licence_plate = async_result.get()
                 end_time = time.time()
                 self.diodes = DiodesManagement()
@@ -172,16 +171,24 @@ class RaspberryAdministrator(object):
             rawCapture.truncate(0)
 
     def recognise_licence_plate_number(self):
+        logger.info("recognise_licence_plate_number start")
+        start_time = time.time()
         python_script = "python3 /home/pi/Access_control_system_based_on_image_recognition/Raspberry_plate/licence_plate_recognition.py"
         stdin, stdout, stderr = self.raspberry_connection.ssh_raspberry_plate_connection.exec_command(python_script)
         stdin.close()
         logger.info("output from plate recognition script: {}".format(self.licence_plate))
+        end_time = time.time()
+        logger.info("recognise_licence_plate_number method finished. Time elapsed: {}".format(end_time - start_time))
         return stdout.read().decode().strip()
 
     def recognise_face(self, frame):
+        logger.info("recognise_face start")
+        start_time = time.time()
         image_path = self.save_face_photo(frame)
         self.owner = self.face_recognition.search_for_face_in_collection(image_path)
         logger.info("self.owner = {}".format(self.owner))
+        end_time = time.time()
+        logger.info("recognise_face method finished. Time elapsed: {}".format(end_time-start_time))
 
     def save_face_photo(self, frame):
         image_name = datetime.datetime.now().strftime("frame_%d%m%Y_%H%M%S.jpg")
