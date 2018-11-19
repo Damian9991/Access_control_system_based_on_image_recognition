@@ -113,12 +113,15 @@ class FaceRecognition:
         image_name = datetime.datetime.now().strftime("face_%d%m%Y_%H%M%S.jpg")
         upload_image_to_s3_bucket(image_path, self.faces_bucket, image_name)
         threshold = 80
+        start_time = time.time()
         response_dict = self.client.search_faces_by_image(CollectionId=self.collection_id_faces,
                                                           Image={'S3Object': {'Bucket': self.faces_bucket,
                                                                               'Name': image_name}},
                                                           FaceMatchThreshold=threshold)
-
+        end_time = time.time()
+        logger.info("Time elapsed while waiting for search_faces_by_image response: {}".format(end_time - start_time))
         delete_image_from_s3_bucket(self.faces_bucket, image_name)
+
         face_matches = response_dict['FaceMatches']
         if face_matches:
             for match in face_matches:

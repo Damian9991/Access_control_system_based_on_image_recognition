@@ -62,9 +62,12 @@ class LicencePlateRecognition:
         logger.info("Licence plate recognition time: {}".format(end_time - start_time))
 
     def take_picture(self):
+        start_time = time.time()
         with picamera.PiCamera() as camera:
             camera.resolution = (640, 640)
             camera.capture(self.image_path)
+        end_time = time.time()
+        logger.info("take_picture method time: {}".format(end_time - start_time))
 
     @staticmethod
     def check_if_text_matches_to_licence_plate_regex(text):

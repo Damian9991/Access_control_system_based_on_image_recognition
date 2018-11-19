@@ -25,10 +25,12 @@ def upload_image_to_s3_bucket(path, bucket, image_name):
 
     
 def delete_image_from_s3_bucket(bucket, image_name):
+    start_time = time.time()
     s3 = boto3.resource('s3')
     obj = s3.Object(bucket, image_name)
     obj.delete()
-    logger.info("Image {} has been deleted".format(image_name))
+    end_time = time.time()
+    logger.info("Image {} deleting time: {}".format(image_name, end_time - start_time))
 
     
 def create_hash(input_str):
