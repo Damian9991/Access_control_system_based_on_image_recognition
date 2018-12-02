@@ -49,7 +49,7 @@ class RaspberryConnection(object):
             self.ssh_raspberry_plate_connection = ssh_client
             logger.info("ssh connection to icence plate Raspberry has been created successfully")
         except Exception as err:
-            logger.error("An error occured while creating SSH session: " + str(err))
+            logger.error("An error occurred while creating SSH session: " + str(err))
             sys.exit(0)
 
     def end_ssh_connection(self):
