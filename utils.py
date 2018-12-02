@@ -58,7 +58,7 @@ def start_system(rasp_1_ip, rasp_2_ip):
         if True:
         #if check_system_status(rasp_1_ip) == "OFF":
             ssh_client = create_ssh_connection(rasp_1_ip, 22, 'pi')
-            stdin, stdout, stderr = ssh_client.exec_command("cd /home/pi/Desktop/Access_control_system_based_on_image_recognition/Raspberry_face/; python run_system.py --raspberry_plate 10.161.228.48")
+            stdin, stdout, stderr = ssh_client.exec_command("cd /home/pi/Desktop/Access_control_system_based_on_image_recognition/Raspberry_face/; python run_system.py --secondary_raspberry 10.161.228.48")
 
             try:
                 print(stdout.read())
