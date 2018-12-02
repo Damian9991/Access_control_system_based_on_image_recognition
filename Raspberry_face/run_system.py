@@ -47,7 +47,7 @@ class RaspberryConnection(object):
             ssh_client.set_missing_host_key_policy(AutoAddPolicy())
             ssh_client.connect(hostname=address, port=port, username=user, timeout=timeout, allow_agent=False, look_for_keys=True)
             self.ssh_raspberry_plate_connection = ssh_client
-            logger.info("ssh connection to icence plate Raspberry has been created successfully")
+            logger.info("ssh connection to licence plate Raspberry has been created successfully")
         except Exception as err:
             logger.error("An error occurred while creating SSH session: " + str(err))
             sys.exit(0)
@@ -161,8 +161,8 @@ class RaspberryAdministrator(object):
                     logger.warning("Access denied!")
 
                 logger.info("Verification time: {}".format(end_time-start_time))
-                logger.info("sleeping 60sec ...")
-                time.sleep(60)
+                logger.info("sleeping 5 seconds")
+                time.sleep(5)
 
             if cv2.waitKey(1) & 0xFF == ord('q'):
                 cv2.destroyAllWindows()
