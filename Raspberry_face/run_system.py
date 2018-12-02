@@ -59,6 +59,7 @@ class RaspberryConnection(object):
         except AttributeError as err:
             logger.warning(str(err))
 
+
 ########################################################################################################################
 # -------------------------------------------- DiodesManagement class ------------------------------------------------ #
 ########################################################################################################################
@@ -87,7 +88,6 @@ class DiodesManagement(object):
 
             finally:
                 GPIO.cleanup()
-
 
 
 ########################################################################################################################
@@ -217,7 +217,7 @@ class RaspberryAdministrator(object):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Access_control_system_based_on_image_recognition")
-    parser.add_argument("--secondary_raspberry", help="Licence plate raspberry ip address", required=True)
+    parser.add_argument("--secondary_raspberry", help="Licence plate Raspberry IP address", required=True)
     args = vars(parser.parse_args())
     raspberry_plate_ip = args['secondary_raspberry']
 
