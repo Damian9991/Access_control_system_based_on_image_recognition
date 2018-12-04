@@ -43,10 +43,10 @@ class LicencePlateRecognition:
         self.image_path = self.image_dir_path + image_name
         self.take_picture()
         upload_image_to_s3_bucket(self.image_path, self.licence_plates_bucket, image_name)
-        start_time = time.time()
+        start_time_response = time.time()
         response = self.client.detect_text(Image={'S3Object': {'Bucket': self.licence_plates_bucket, 'Name': image_name}})
-        end_time = time.time()
-        logger.info("Time elapsed while waiting for detect_text response: {}".format(end_time - start_time))
+        end_time_response = time.time()
+        logger.info("Time elapsed while waiting for detect_text response: {}".format(end_time_response - start_time_response))
         delete_image_from_s3_bucket(self.licence_plates_bucket, image_name)
         
         detected_texts_dict = response['TextDetections']
