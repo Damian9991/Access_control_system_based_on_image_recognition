@@ -151,7 +151,6 @@ class RaspberryAdministrator(object):
                     self.diodes.turn_on_diode(color="red")
 
                 self.licence_plate = async_result.get()
-                end_time = time.time()
                 self.diodes = DiodesManagement()
                 if self.owner is not None and self.check_if_driver_has_access(self.licence_plate, self.owner):
                     self.diodes.turn_on_diode(color="green")
@@ -160,6 +159,7 @@ class RaspberryAdministrator(object):
                     self.diodes.turn_on_diode(color="red")
                     logger.warning("Access denied!")
 
+                end_time = time.time()
                 logger.info("Verification time: {}".format(end_time-start_time))
                 logger.info("sleeping 5 seconds")
                 time.sleep(5)
@@ -193,8 +193,7 @@ class RaspberryAdministrator(object):
     def save_face_photo(self, frame):
         image_name = datetime.datetime.now().strftime("frame_%d%m%Y_%H%M%S.jpg")
         image_path = self.photo_directory_path + image_name
-        resize = cv2.resize(frame, (320, 240))
-        cv2.imwrite(image_path, resize)
+        cv2.imwrite(image_path, frame)
         logger.info("{} written!".format(image_path))
         return image_path
 

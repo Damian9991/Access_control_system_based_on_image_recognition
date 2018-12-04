@@ -36,7 +36,7 @@ class FaceRecognition:
     def create_collection(self, collection_id):
         response = self.client.create_collection(CollectionId=collection_id)
         if response['StatusCode'] is not 200:
-            raise CollectionNotCreatedException("An error occured. Collection has not been created!")
+            raise CollectionNotCreatedException("An error occurred. Collection has not been created!")
 
     def list_collections(self):
         collections_dict = self.client.list_collections()
@@ -54,7 +54,7 @@ class FaceRecognition:
     def delete_collection(self, collection_id):
         response = self.client.delete_collection(CollectionId=collection_id)
         if response['StatusCode'] is not 200:
-            raise CollectionNotDeletedException("An error occured. Collection has not been deleted!")
+            raise CollectionNotDeletedException("An error occurred. Collection has not been deleted!")
 
     def list_faces_in_collection(self):
         tokens = True
@@ -85,7 +85,7 @@ class FaceRecognition:
                                            DetectionAttributes=['ALL'])
 
         if 'FaceRecords' not in response:
-            logger.error('An error occured. Face has not been added to collection!')
+            logger.error('An error occurred. Face has not been added to collection!')
         else:
             return True
 
