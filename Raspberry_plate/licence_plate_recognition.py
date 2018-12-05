@@ -17,7 +17,7 @@ import time
 import picamera
 import sys
 sys.path.append('/home/pi/')
-from Access_control_system_based_on_image_recognition.Database.Database import DatabaseManager
+# from Access_control_system_based_on_image_recognition.Database.Database import DatabaseManager
 from Access_control_system_based_on_image_recognition.utils import *
 
 logger = logging.getLogger("licence_plate_recognition")
@@ -67,7 +67,7 @@ class LicencePlateRecognition:
     def take_picture(self):
         start_time = time.time()
         with picamera.PiCamera() as camera:
-            camera.resolution = (640, 640)
+            camera.resolution = (320, 320)
             camera.capture(self.image_path)
         end_time = time.time()
         logger.info("take_picture method time: {}".format(end_time - start_time))
@@ -80,11 +80,11 @@ class LicencePlateRecognition:
                 return True
         return False
 
-    @staticmethod
-    def add_licence_plate_number_to_database(licence_plate, name):
-        database_manager = DatabaseManager()
-        database_manager.insert_into_licence_plates_table(name, licence_plate)
-        database_manager.close_connection_to_db()
+    # @staticmethod
+    # def add_licence_plate_number_to_database(licence_plate, name):
+    #     database_manager = DatabaseManager()
+    #     database_manager.insert_into_licence_plates_table(name, licence_plate)
+    #     database_manager.close_connection_to_db()
 
 
 if __name__ == "__main__":
