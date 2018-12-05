@@ -51,7 +51,7 @@ class LicencePlateRecognition:
         detected_texts_dict = response['TextDetections']
         for text_dict in detected_texts_dict:
             if text_dict['Confidence'] > 80:
-                    if self.check_if_text_matches_to_licence_plate_regex(text_dict['DetectedText']):
+                    if self.check_if_text_matches_licence_plate_regex(text_dict['DetectedText']):
                         logger.info('Recognised licence number: {}'.format(text_dict['DetectedText']))
                         print(text_dict['DetectedText'])
                         end_time = time.time()
@@ -72,7 +72,7 @@ class LicencePlateRecognition:
         logger.info("take_picture method time: {}".format(end_time - start_time))
 
     @staticmethod
-    def check_if_text_matches_to_licence_plate_regex(text):
+    def check_if_text_matches_licence_plate_regex(text):
         licence_plate_regex_list = [r'^[A-Z]{3}\ \w{4}$', r'^[A-Z]{2}\ \w{5}$', r'^[A-Z]\ \w{3}$']
         for regex in licence_plate_regex_list:
             if re.fullmatch(regex, text):
