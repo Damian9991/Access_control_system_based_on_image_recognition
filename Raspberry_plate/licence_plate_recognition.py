@@ -32,7 +32,6 @@ class LicencePlateRecognition:
 
     def __init__(self):
         self.licence_plates_bucket = 'access-control-system-based-on-image-recognition-licence-plates'
-        self.collection_id_licence_plates = ''
         self.client = boto3.client('rekognition')
         self.image_dir_path = '/tmp/'
         self.image_path = None
