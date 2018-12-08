@@ -112,6 +112,17 @@ class DatabaseManager(object):
         except sqlite3.OperationalError as err:
             logger.error(str(err))
 
+    def fetch_licence_plates_and_owners(self):
+        drivers_dict = {}
+        self.cursor.execute('SELECT * from licence_plates order by licence_plate_number;')
+        results = self.cursor.fetchall()
+        for row in results:
+            if row[0] not in drivers_dict:
+                drivers_dict[row[0]] = [row[1]]
+            else:
+                drivers_dict[row[0]].append(row[1])
+        return drivers_dict
+
     def check_if_owner_in_database(self, owner):
         logger.info("Fetching info about {} user from licence_plates_database".format(owner))
         query = "SELECT EXISTS(SELECT * FROM licence_plates where owner = ?)"
@@ -140,14 +151,3 @@ class DatabaseManager(object):
         except sqlite3.OperationalError as err:
             logger.error(str(err))
             return None
-
-    def fetch_licence_plates_and_owners(self):
-        drivers_dict = {}
-        self.cursor.execute('SELECT * from licence_plates order by licence_plate_number;')
-        results = self.cursor.fetchall()
-        for row in results:
-            if row[0] not in drivers_dict:
-                drivers_dict[row[0]] = [row[1]]
-            else:
-                drivers_dict[row[0]].append(row[1])
-        return drivers_dict
