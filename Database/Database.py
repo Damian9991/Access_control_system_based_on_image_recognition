@@ -58,19 +58,19 @@ class DatabaseManager(object):
             logger.error(str(err))
             return None
 
-    def get_users_password_hash_from_db(self, username):
-        logger.info("Fetching user's password from users database for user {}".format(username))
-        query = "SELECT password FROM users WHERE username = ?"
-        logger.info(query)
-        try:
-            self.cursor.execute(query, [username])
-            results = self.cursor.fetchall()
-            if not results:
-                return None
-            return results
-        except sqlite3.OperationalError as err:
-            logger.error(str(err))
-            return None
+    # def get_users_password_hash_from_db(self, username):
+    #     logger.info("Fetching user's password from users database for user {}".format(username))
+    #     query = "SELECT password FROM users WHERE username = ?"
+    #     logger.info(query)
+    #     try:
+    #         self.cursor.execute(query, [username])
+    #         results = self.cursor.fetchall()
+    #         if not results:
+    #             return None
+    #         return results
+    #     except sqlite3.OperationalError as err:
+    #         logger.error(str(err))
+    #         return None
 
     def check_login_and_password_hash(self, table_name, login, password_hash):
         logger.info("checking data in db: " + login)
