@@ -79,12 +79,6 @@ class LicencePlateRecognition:
                 return True
         return False
 
-    # @staticmethod
-    # def add_licence_plate_number_to_database(licence_plate, name):
-    #     database_manager = DatabaseManager()
-    #     database_manager.insert_into_licence_plates_table(name, licence_plate)
-    #     database_manager.close_connection_to_db()
-
 
 if __name__ == "__main__":
     plate_recognition = LicencePlateRecognition()

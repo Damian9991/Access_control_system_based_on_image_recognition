@@ -18,11 +18,6 @@ class DatabaseManager(object):
         self.db = sqlite3.connect('../Database/Access_control_system.db')
         self.cursor = self.db.cursor()
 
-    def execute_commanc_and_commit(self, command):
-        logger.info("executing command: " + command)
-        self.cursor.execute(command)
-        self.db.commit()
-
     def close_connection_to_db(self):
         logger.info("closing connection to db")
         self.db.close()
@@ -63,7 +58,7 @@ class DatabaseManager(object):
             logger.error(str(err))
             return None
 
-    def get_users_password_from_db(self, username):
+    def get_users_password_hash_from_db(self, username):
         logger.info("Fetching user's password from users database for user {}".format(username))
         query = "SELECT password FROM users WHERE username = ?"
         logger.info(query)
@@ -77,11 +72,11 @@ class DatabaseManager(object):
             logger.error(str(err))
             return None
 
-    def check_login_and_password(self, table_name, login, password):
-        logger.info("checking data in db: " + login + " " + password)
+    def check_login_and_password_hash(self, table_name, login, password_hash):
+        logger.info("checking data in db: " + login)
         query = "SELECT * FROM ? WHERE username = ? AND password =?"
         try:
-            self.cursor.execute(query, [table_name, login, password])
+            self.cursor.execute(query, [table_name, login, password_hash])
             results = self.cursor.fetchall()
             return results
         except sqlite3.OperationalError as err:
