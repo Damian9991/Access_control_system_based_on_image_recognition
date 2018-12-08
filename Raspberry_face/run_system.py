@@ -206,7 +206,7 @@ class RaspberryAdministrator(object):
                     logger.info("check_if_driver_has_access method returns True")
                     return True
         else:
-            if self.database.check_if_user_in_database(owner):
+            if self.database.check_if_owner_in_database(owner):
                 logger.info("User exists in database but is assigned to different licence plate number!")
             else:
                 logger.info("User does not exist in database!")
