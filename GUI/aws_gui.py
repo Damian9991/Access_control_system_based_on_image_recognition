@@ -131,7 +131,7 @@ class LoginPage(Frame, Utilities):
         username = self.name_entry.get()
         password = create_hash(self.password_entry.get())
 
-        if self.db_manager.check_login_and_password_hash("users", username, password):
+        if self.db_manager.check_login_and_password_hash(username, password):
             tkinter.messagebox.showinfo('Information', 'You have been logged in!')
             self.controller.show_frame(MainMenuPage)
             self.name_entry.delete(0, 'end')

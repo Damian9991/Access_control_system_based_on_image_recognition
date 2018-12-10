@@ -72,15 +72,17 @@ class DatabaseManager(object):
     #         logger.error(str(err))
     #         return None
 
-    def check_login_and_password_hash(self, table_name, login, password_hash):
+    def check_login_and_password_hash(self, login, password_hash):
         logger.info("checking data in db: " + login)
-        query = "SELECT * FROM ? WHERE username = ? AND password =?"
+        query = "SELECT * FROM users WHERE username=? AND password=?"
         try:
-            self.cursor.execute(query, [table_name, login, password_hash])
+            self.cursor.execute(query, [login, password_hash])
             results = self.cursor.fetchall()
-            return results
+            if results:
+                return True
         except sqlite3.OperationalError as err:
             logger.error(str(err))
+        return False
 
 # --------------------------------------------- system users management --------------------------------------------- #
 
